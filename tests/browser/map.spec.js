@@ -1,7 +1,7 @@
 import initial from '../fixtures/initial-residential.json' with {type:'json'};
 import {test,expect} from '@playwright/test';
 // Network failures are deliberate: these tests validate UI without fabricating geographic data.
-test.beforeEach(async({page})=>{await page.route('https://**',r=>r.abort());await page.route('**/data/residential.json',r=>r.fulfill({json:initial}));await page.route('**/data/infrastructure.json',r=>r.abort());});
+test.beforeEach(async({page})=>{await page.route(/^https:\/\//,r=>r.abort());await page.route('**/data/residential.json',r=>r.fulfill({json:initial}));await page.route('**/data/infrastructure.json',r=>r.abort());});
 test('all 17 complexes, search, unverified detail and filters',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');
  await expect(page.locator('.home-card')).toHaveCount(17);

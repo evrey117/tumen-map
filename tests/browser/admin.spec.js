@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 import initial from '../fixtures/initial-residential.json' with {type:'json'};
 const central='https://raw.githubusercontent.com/evrey117/tumen-map/main/public/data/residential.json*';
 async function setup(page){
- await page.route('https://**',r=>r.abort());await page.route(central,r=>r.fulfill({json:initial}));await page.goto('/');await page.getByRole('button',{name:'Управление ЖК',exact:true}).click();await expect(page.locator('#admin-message')).toContainText('Общая версия загружена');
+ await page.route(/^https:\/\//,r=>r.abort());await page.route(central,r=>r.fulfill({json:initial}));await page.route('**/admin-config.json*',r=>r.fulfill({json:{workflowEnabled:false}}));await page.goto('/');await page.getByRole('button',{name:'Управление ЖК',exact:true}).click();await expect(page.locator('#admin-message')).toContainText('Общая версия загружена');
 }
 test('create, edit, confirmed delete and cancel only affect draft; no write endpoint exists',async({page})=>{
  const writes=[];page.on('request',r=>{if(['POST','PUT','PATCH','DELETE'].includes(r.method())&&r.url().includes('github'))writes.push(r.url());});await setup(page);
@@ -21,7 +21,7 @@ test('history restoration prepares immutable revision and detects concurrent cha
  const changed=structuredClone(initial);changed.homes[0].name='Другая новая версия';await page.route(central,r=>r.fulfill({json:changed}));await page.locator('#admin-save').click();await expect(page.locator('#admin-message')).toContainText('уже изменилась');
 });
 test('two devices read same central data and public map refreshes after returning to page',async({browser})=>{
- const current=structuredClone(initial);const context=await browser.newContext();await context.route('https://**',r=>r.abort());await context.route(central,r=>r.fulfill({json:current}));const a=await context.newPage();await a.goto('/');await expect(a.locator('.home-card')).toHaveCount(17);current.homes[0].name='Общая новая версия';const b=await context.newPage();await b.goto('/');await expect(b.locator('.home-card').first()).toContainText('Общая новая версия');await a.locator('#retry').click();await expect(a.locator('.home-card').first()).toContainText('Общая новая версия');await context.close();
+ const current=structuredClone(initial);const context=await browser.newContext();await context.route(/^https:\/\//,r=>r.abort());await context.route(central,r=>r.fulfill({json:current}));const a=await context.newPage();await a.goto('/');await expect(a.locator('.home-card')).toHaveCount(17);current.homes[0].name='Общая новая версия';const b=await context.newPage();await b.goto('/');await expect(b.locator('.home-card').first()).toContainText('Общая новая версия');await a.locator('#retry').click();await expect(a.locator('.home-card').first()).toContainText('Общая новая версия');await context.close();
 });
 test('mobile management fits screen and main layers remain present',async({page})=>{
  await page.setViewportSize({width:390,height:844});await setup(page);await expect(page.locator('#housing-admin')).toBeVisible();expect(await page.evaluate(()=>document.querySelector('#housing-admin').scrollWidth<=innerWidth)).toBe(true);await page.locator('#admin-close').click();await expect(page.locator('[data-category="industrial"]')).toBeVisible();await expect(page.locator('.home-card')).toHaveCount(17);
