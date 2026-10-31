@@ -12,6 +12,20 @@ const $=s=>document.querySelector(s);
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const map=L.map('map',{zoomControl:false}).setView([57.153,65.542],12);
 L.control.zoom({position:'topright'}).addTo(map);
+const mobileView=()=>window.matchMedia('(max-width:600px)').matches;
+function collapseSidebar(collapsed){$('.sidebar').classList.toggle('collapsed',collapsed);$('#mobile-toggle').textContent=collapsed?'ЖК и фильтры':'Скрыть список';}
+map.on('popupopen',event=>{const pane=event.popup._source?.options?.pane;if(pane==='socialPane'||pane==='industrialPane'){$('#detail').hidden=true;if(mobileView())collapseSidebar(true);}});
+function focusHomePoint(home,fly){
+ const zoom=fly?15:map.getZoom();let center=L.latLng(home.lat,home.lon);
+ if(mobileView()){
+  collapseSidebar(true);map.closePopup();
+  const size=map.getSize(),mapTop=map.getContainer().getBoundingClientRect().top,cardTop=$('#detail').getBoundingClientRect().top-mapTop;
+  const bottom=Math.max(130,Math.min(size.y-80,cardTop-24));const target=L.point(size.x/2,(80+bottom)/2);
+  center=map.unproject(map.project(center,zoom).subtract(target.subtract(size.divideBy(2))),zoom);
+  if(fly)map.flyTo(center,zoom,{duration:.6});else map.setView(center,zoom,{animate:false});
+ }else{if(fly)map.flyTo(center,zoom,{duration:.6});home.marker?.openPopup();}
+}
+
 let tileLoaded=false;
 const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
 tiles.on('tileload',()=>{tileLoaded=true;$('#tile-warning').hidden=true;});
@@ -50,17 +64,17 @@ function renderList(){const q=normalize($('#search').value);const filtered=homes
 }
 function drawHomes(){layers.home.clearLayers();for(const h of homes){if(!h.lat)continue;h.marker=L.marker([h.lat,h.lon],{icon:markerIcon('home',markerPreset),pane:'housingPane',title:h.name}).addTo(layers.home).bindPopup(`<strong>${escape(h.name)}</strong><br>${escape(h.developer)}<br>${escape(h.address)}<br><small>${h.approximate?escape(h.precisionLabel||'Приблизительная точка'):'Адрес найден в OSM'}</small>`);h.marker.on('click',()=>selectHome(h,false));}updateHomeVisuals();}
 function detail(h){$('#detail').hidden=false;$('#detail').innerHTML=`<button class="close" aria-label="Закрыть карточку">×</button><span class="eyebrow">ЖИЛОЙ КОМПЛЕКС</span><h2>${escape(h.name)}</h2><p>${escape(h.developer)}<br>Тюмень, ${escape(h.address)}</p><p>${h.lat?(h.approximate?'≈ '+escape(h.precisionLabel||'Приблизительная точка района; не адрес здания.'):'В OSM найден объект с совпадающим адресом. Принадлежность ЖК отдельно не подтверждена.'):'Координаты не подтверждены. Метка появится после успешной проверки адреса.'}</p>${housingEvidenceNote(h)?`<p class="state">${escape(housingEvidenceNote(h))}</p>`:''}${h.identityNote?`<p class="state">${escape(h.identityNote)}</p>`:''}${h.source?`<a class="source" href="${escape(h.source)}" target="_blank" rel="noopener">Источник координат ↗</a>`:''}<div class="nearby industrial-nearby" id="industrial-nearby">${h.lat?'Ближайшие промышленные территории…':'Расстояния до промзон доступны после определения координат.'}</div><div class="nearby" id="nearby">${h.lat?'Инфраструктура в радиусе 2 км…':'Поиск инфраструктуры доступен после определения координат.'}</div>`;$('.close').onclick=()=>{$('#detail').hidden=true;map.closePopup();selected=null;renderList();updateHomeVisuals();};}
-function selectHome(h,fly=true){selected=h;updateHomeVisuals();renderList();detail(h);if(h.lat){enable('home');if(fly)map.flyTo([h.lat,h.lon],15,{duration:.6});h.marker?.openPopup();loadNearby(h);loadIndustrialNearby(h);}}
+function selectHome(h,fly=true){selected=h;updateHomeVisuals();renderList();detail(h);if(h.lat){enable('home');focusHomePoint(h,fly);loadNearby(h);loadIndustrialNearby(h);}}
 $('#search').addEventListener('input',renderList);$('#search').addEventListener('keydown',e=>{if(e.key==='Enter'){const h=homes.find(h=>normalize(h.name).includes(normalize($('#search').value)));if(h)selectHome(h);}});
 document.addEventListener('keydown',e=>{if(e.key==='/'&&e.target.tagName!=='INPUT'){e.preventDefault();$('#search').focus();}});
-$('#all').onclick=()=>{map.closePopup();selected=null;updateHomeVisuals();$('#detail').hidden=true;enable('home');$('#search').value='';renderList();const points=homes.filter(h=>h.lat).map(h=>[h.lat,h.lon]);if(points.length)map.fitBounds(points,{padding:[50,50],maxZoom:13});else map.setView([57.153,65.542],12);};
-$('#mobile-toggle').onclick=()=>{const collapsed=$('.sidebar').classList.toggle('collapsed');$('#mobile-toggle').textContent=collapsed?'ЖК и фильтры':'Скрыть список';};
+$('#all').onclick=()=>{if(mobileView())collapseSidebar(true);map.closePopup();selected=null;updateHomeVisuals();$('#detail').hidden=true;enable('home');$('#search').value='';renderList();const points=homes.filter(h=>h.lat).map(h=>[h.lat,h.lon]);if(points.length)map.fitBounds(points,{padding:[50,50],maxZoom:13});else map.setView([57.153,65.542],12);};
+$('#mobile-toggle').onclick=()=>collapseSidebar(!$('.sidebar').classList.contains('collapsed'));
 async function getJSON(url,options={}){const response=await fetch(url,{...options,signal:AbortSignal.timeout(20000)});if(!response.ok)throw Error(`HTTP ${response.status}`);return response.json();}
 function replaceHousing(latest){
  if(latest.revision===currentRevision)return;
  currentDataset=structuredClone(latest.data);currentRevision=latest.revision;
- const selectedId=selected?.id;homes.splice(0,homes.length,...structuredClone(currentDataset.homes));drawHomes();renderList();
- if(selectedId!==undefined){const home=homes.find(h=>String(h.id)===String(selectedId));if(home){selected=home;updateHomeVisuals();detail(home);loadNearby(home);loadIndustrialNearby(home);}else{selected=null;$('#detail').hidden=true;}}
+ const selectedId=selected?.id,detailWasOpen=!$('#detail').hidden;homes.splice(0,homes.length,...structuredClone(currentDataset.homes));drawHomes();renderList();
+ if(selectedId!==undefined){const home=homes.find(h=>String(h.id)===String(selectedId));if(home){selected=home;updateHomeVisuals();if(detailWasOpen){detail(home);loadNearby(home);loadIndustrialNearby(home);}}else{selected=null;$('#detail').hidden=true;}}
  $('#status').textContent=`ЖК на карте: ${homes.length} · общая версия обновлена`;
 }
 async function refreshHousing(manual=false){try{const latest=await fetchCentral();replaceHousing(latest);if(manual)$('#status').textContent=`ЖК на карте: ${homes.length} · данные GitHub актуальны`;}catch(e){if(manual)$('#status').textContent='GitHub недоступен · показана последняя загруженная версия';}}
@@ -72,7 +86,7 @@ async function fetchInfrastructure(){if(infrastructureRequest)return infrastruct
  const query='[out:json][timeout:30];(nwr[amenity=school](56.95,65.15,57.3,65.85);nwr[amenity=kindergarten](56.95,65.15,57.3,65.85);nwr[amenity=clinic](56.95,65.15,57.3,65.85););out center tags;';
  infrastructureRequest=(async()=>{let data;try{data=await getJSON(import.meta.env.BASE_URL+'data/infrastructure.json');}catch{}let lastError;for(const host of ['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter']){if(data)break;try{data=await getJSON(host,{method:'POST',body:new URLSearchParams({data:query})});break;}catch(e){lastError=e;}}if(!data)throw lastError;
  const prepared=preparePlaces(data.elements);infrastructure=prepared.places;
- for(const i of infrastructure){i.marker=L.marker([i.lat,i.lon],{icon:markerIcon(i.category,markerPreset),pane:'socialPane',title:''}).addTo(layers[i.category]).bindPopup(`<strong>${escape(i.name)}</strong><br>${categories[i.category].label} · категория по OSM<br>${escape(placeAddress(i))}<br><small>${escape(placeStatus(i))} ${i.osmType==='node'?'Точка OSM.':'Центр контура OSM, не подтверждённый вход в учреждение.'}</small><br>${i.sources.map((source,index)=>`<a href="${escape(source)}" target="_blank" rel="noopener">Источник OSM ${index+1} ↗</a>`).join('<br>')}`);const name=document.createElement('span');name.textContent=i.name;i.marker.bindTooltip(name,{className:'social-label',direction:'top',offset:[0,-8]});i.marker.getElement()?.setAttribute('aria-label',i.name);i.marker.on('add',()=>i.marker.getElement()?.setAttribute('aria-label',i.name));}
+ for(const i of infrastructure){i.marker=L.marker([i.lat,i.lon],{icon:markerIcon(i.category,markerPreset),pane:'socialPane',title:''}).addTo(layers[i.category]).bindPopup(`<strong>${escape(i.name)}</strong><br>${categories[i.category].label} · категория по OSM<br>${escape(placeAddress(i))}<br><small>${escape(placeStatus(i))} ${i.osmType==='node'?'Точка OSM.':'Центр контура OSM, не подтверждённый вход в учреждение.'}</small><br>${i.sources.map((source,index)=>`<a href="${escape(source)}" target="_blank" rel="noopener">Источник OSM ${index+1} ↗</a>`).join('<br>')}`,{autoPanPaddingTopLeft:[12,80],autoPanPaddingBottomRight:[12,80]});const name=document.createElement('span');name.textContent=i.name;i.marker.bindTooltip(name,{className:'social-label',direction:'top',offset:[0,-8]});i.marker.getElement()?.setAttribute('aria-label',i.name);i.marker.on('add',()=>i.marker.getElement()?.setAttribute('aria-label',i.name));}
  return infrastructure;})();
  try{return await infrastructureRequest;}catch(e){infrastructureRequest=null;throw e;}
 }
@@ -93,7 +107,7 @@ async function loadIndustrial(){
    const p=feature.properties,t=p.tags||{};
    const status=t.disused==='yes'||t['disused:landuse']?'В OSM есть отметка о неиспользовании территории. ':'';
    const popup=`<strong>${escape(p.name)}</strong><br><span>Промышленная территория</span><br>Площадь по контуру OSM: ${formatArea(industrialArea(feature))}<br>Тег использования в OpenStreetMap: landuse=industrial${t.industrial?' · '+escape(t.industrial):''}<br>${t.operator?'Оператор по OSM: '+escape(t.operator)+'<br>':''}<p>${escape(status+industrialWarning)}</p><small>Расчёт площади по сферической модели Земли. Это не кадастровые сведения, ВРИ, зонирование ПЗЗ или санитарно-защитная зона.</small><br><a href="${escape(p.source)}" target="_blank" rel="noopener">Источник: OpenStreetMap ↗</a>`;
-   layer.bindPopup(popup);layer.bindTooltip(p.name,{sticky:true});
+   layer.bindPopup(popup,{autoPanPaddingTopLeft:[12,80],autoPanPaddingBottomRight:[12,80]});layer.bindTooltip(p.name,{sticky:true});
    layer.on('mouseover',()=>layer.setStyle({weight:3,fillOpacity:0.33}));
    layer.on('mouseout',()=>layer.setStyle(style));
    industrialLayers.set(p.id,layer);

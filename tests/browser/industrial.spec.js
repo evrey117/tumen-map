@@ -1,3 +1,4 @@
+import initial from '../fixtures/initial-residential.json' with {type:'json'};
 import {test,expect} from '@playwright/test';
 test('real industrial polygons toggle independently; nearest boundary opens sourced popup',async({page})=>{
  await page.route(/^https:\/\//,r=>r.abort());await page.goto('/');
@@ -10,5 +11,11 @@ test('real industrial polygons toggle independently; nearest boundary opens sour
 });
 test('industrial filter and approximate-home distance warning work on mobile',async({page})=>{
  await page.route(/^https:\/\//,r=>r.abort());await page.setViewportSize({width:390,height:844});await page.goto('/');await page.getByRole('searchbox').fill('Сезоны');await page.locator('.home-card').click();await expect(page.locator('#industrial-nearby')).toContainText('расстояния также ориентировочные');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
- await page.locator('[data-category="industrial"]').uncheck();await expect(page.locator('path.leaflet-interactive')).toHaveCount(0);
+ await page.locator('#mobile-toggle').click();await page.locator('[data-category="industrial"]').uncheck();await expect(page.locator('path.leaflet-interactive')).toHaveCount(0);
+});
+test('mobile selections show their actual content above overlays, not just in the DOM',async({page})=>{
+ await page.route(/^https:\/\//,r=>r.abort());await page.setViewportSize({width:390,height:844});await page.goto('/');await page.locator('.home-card').first().click();await page.waitForTimeout(800);await expect(page.locator('.sidebar')).toHaveClass(/collapsed/);
+ expect(await page.locator('.housing-marker.is-selected svg').evaluate(node=>{const r=node.getBoundingClientRect();return Boolean(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('.housing-marker.is-selected'));})).toBe(true);
+ await page.locator('#nearby button').first().click();await page.waitForTimeout(400);await expect(page.locator('#detail')).toBeHidden();expect(await page.locator('.leaflet-popup-content strong').evaluate(node=>{const r=node.getBoundingClientRect();return Boolean(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('.leaflet-popup-content'));})).toBe(true);
+ const updated=structuredClone(initial);updated.homes[0].name='Совместное обновление ЖК';await page.route('https://raw.githubusercontent.com/evrey117/tumen-map/main/public/data/residential.json*',r=>r.fulfill({json:updated}));await page.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));await expect(page.locator('.housing-marker[title="Совместное обновление ЖК"]')).toHaveCount(1);await expect(page.locator('#detail')).toBeHidden();await page.locator('#mobile-toggle').click();await page.locator('.home-card').first().click();await page.locator('#industrial-nearby button').first().click();await page.waitForTimeout(400);await expect(page.locator('#detail')).toBeHidden();await expect(page.locator('.leaflet-popup-content')).toContainText('landuse=industrial');expect(await page.locator('.leaflet-popup-content strong').evaluate(node=>{const r=node.getBoundingClientRect();return Boolean(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('.leaflet-popup-content'));})).toBe(true);
 });
