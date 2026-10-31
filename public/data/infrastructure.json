@@ -1,0 +1,5737 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-31T08:39:28Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 268406175,
+      "lat": 57.1052257,
+      "lon": 65.5826389,
+      "tags": {
+        "addr:city": "Тюмень",
+        "amenity": "school",
+        "check_date": "2024-09-20",
+        "name": "Средняя школа № 65"
+      }
+    },
+    {
+      "type": "node",
+      "id": 989218392,
+      "lat": 57.1454996,
+      "lon": 65.5526434,
+      "tags": {
+        "amenity": "clinic",
+        "name": "МСЧ Нефтянник"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1489831109,
+      "lat": 57.1574421,
+      "lon": 65.5579646,
+      "tags": {
+        "amenity": "clinic",
+        "contact:email": "info.tum@alfazdrav.ru",
+        "contact:phone": "+7 345 2396528",
+        "contact:website": "https://tumen.alfazdrav.ru/",
+        "name": "Альфа-центр Здоровья",
+        "opening_hours": "Mo-Sa 08:00-20:00; Su 09:00-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2055549946,
+      "lat": 57.142966,
+      "lon": 65.5255347,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 122"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2075901877,
+      "lat": 57.1492885,
+      "lon": 65.5309774,
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2178007307,
+      "lat": 57.0884733,
+      "lon": 65.5304732,
+      "tags": {
+        "amenity": "kindergarten",
+        "education": "kindergarten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2271364915,
+      "lat": 57.2067199,
+      "lon": 65.6014436,
+      "tags": {
+        "amenity": "school",
+        "check_date": "2025-05-09",
+        "name": "гимназия «Аврора»"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2682244767,
+      "lat": 57.2064541,
+      "lon": 65.6016428,
+      "tags": {
+        "amenity": "kindergarten",
+        "check_date": "2025-05-09",
+        "name": "детский сад «Аврора»"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2862739556,
+      "lat": 57.1480072,
+      "lon": 65.4949662,
+      "tags": {
+        "amenity": "school",
+        "name": "Лицей № 34"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2946437033,
+      "lat": 57.1337791,
+      "lon": 65.5812262,
+      "tags": {
+        "amenity": "clinic",
+        "check_date": "2025-04-16",
+        "name": "Детская поликлиника №6"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3277889504,
+      "lat": 57.1056178,
+      "lon": 65.5659575,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "1",
+        "addr:street": "Василия Гальцова",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Детский доктор",
+        "opening_hours": "08:00-20:00",
+        "phone": "73452699112"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3277996266,
+      "lat": 57.147473,
+      "lon": 65.4957485,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 50"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488628690,
+      "lat": 57.128111,
+      "lon": 65.5403789,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Поликлиника №5",
+        "name:ru": "Поликлиника №5",
+        "opening_hours": "Mo-Sa 07:30-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4525151891,
+      "lat": 57.1229971,
+      "lon": 65.6100301,
+      "tags": {
+        "amenity": "school",
+        "check_date": "2024-05-20",
+        "name": "средняя общеобразовательная школа № 41",
+        "name:ru": "средняя общеобразовательная школа № 41",
+        "ref": "41"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4596482157,
+      "lat": 57.1566094,
+      "lon": 65.4897303,
+      "tags": {
+        "addr:housenumber": "2/1",
+        "addr:street": "Таврическая улица",
+        "amenity": "school",
+        "name": "Школа № 73 «Лира»"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4618963759,
+      "lat": 57.1661413,
+      "lon": 65.5149821,
+      "tags": {
+        "amenity": "school",
+        "name": "Тюменская православная гимназия"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4635369457,
+      "lat": 57.1038936,
+      "lon": 65.6113678,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Поликлиника № 12"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4642572721,
+      "lat": 57.1464088,
+      "lon": 65.5715715,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Центр гигиены и эпидемиологии"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4663768553,
+      "lat": 57.1204855,
+      "lon": 65.5583154,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Поликлиника № 12",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-16:00; Su 09:00-12:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4663768564,
+      "lat": 57.1432911,
+      "lon": 65.5260169,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 122"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5032810321,
+      "lat": 57.1607927,
+      "lon": 65.4916911,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Городская поликлиника № 3",
+        "name:ru": "Городская поликлиника № 3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5044022062,
+      "lat": 57.1292272,
+      "lon": 65.575063,
+      "tags": {
+        "amenity": "clinic",
+        "check_date": "2024-05-25",
+        "name": "Доктор-А"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6953733310,
+      "lat": 57.1581478,
+      "lon": 65.5337213,
+      "tags": {
+        "amenity": "school",
+        "name": "Пикча"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6953733315,
+      "lat": 57.1580257,
+      "lon": 65.5337106,
+      "tags": {
+        "amenity": "school",
+        "name": "Поколение Z"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6953733342,
+      "lat": 57.1577929,
+      "lon": 65.5343221,
+      "tags": {
+        "amenity": "school",
+        "name": "Версия"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7518573976,
+      "lat": 57.1363936,
+      "lon": 65.5824378,
+      "tags": {
+        "amenity": "school",
+        "name": "Гимназия ТюмГУ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8002365108,
+      "lat": 57.13674,
+      "lon": 65.5830574,
+      "tags": {
+        "amenity": "school",
+        "name": "Научно-исследовательский институт экологии ТюмГУ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8649653471,
+      "lat": 57.1618463,
+      "lon": 65.4946845,
+      "tags": {
+        "amenity": "clinic",
+        "contact:phone": "+7 3452 564598",
+        "description": "диагностический центр Хеликс \"На Ямской\"",
+        "healthcare": "laboratory",
+        "healthcare:speciality": "dermatovenereology;gynaecology;physiotherapy;vaccination",
+        "name": "Хеликс",
+        "opening_hours": "Mo-Fr 07:00-19:00;Sa-Su 08:00-15:00",
+        "website": "https://helix.expert/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9139550719,
+      "lat": 57.1512614,
+      "lon": 65.5550212,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Детская поликлиника",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 09:00-16:00; Su 09:00-12:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9179326304,
+      "lat": 57.1236115,
+      "lon": 65.5465622,
+      "tags": {
+        "addr:housenumber": "127",
+        "addr:street": "Депутатская улица",
+        "amenity": "kindergarten",
+        "name": "Ступеньки"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9179376558,
+      "lat": 57.1230202,
+      "lon": 65.5467377,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "127",
+        "addr:postcode": "625007",
+        "addr:street": "Депутатская улица",
+        "amenity": "clinic",
+        "email": "gp5@med-to.ru",
+        "healthcare": "clinic",
+        "healthcare:speciality": "dermatology;vaccination;paediatrics",
+        "name": "Городская поликлиника № 5",
+        "opening_hours": "Mo-Sa 7:30-20:00",
+        "operator": "ГАУЗ Городская поликлиника №5",
+        "operator:type": "public",
+        "phone": "+7(3452)560005",
+        "website": "https://www.poliklinika5.ru/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9179545354,
+      "lat": 57.2253997,
+      "lon": 65.2611097,
+      "tags": {
+        "amenity": "school",
+        "name": "СОШ Тюменского района"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9179545357,
+      "lat": 57.1102601,
+      "lon": 65.18477,
+      "tags": {
+        "amenity": "school",
+        "name": "Ушаковская средняя общеобразовательная школа",
+        "official_name": "МАОУ Ушаковская средняя общеобразовательная школа"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9502619660,
+      "lat": 57.1276678,
+      "lon": 65.5496456,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "109",
+        "addr:postcode": "625007",
+        "addr:street": "улица Демьяна Бедного",
+        "amenity": "kindergarten",
+        "name": "Старт"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9645293157,
+      "lat": 57.1822459,
+      "lon": 65.6571649,
+      "tags": {
+        "addr:housenumber": "79 к3",
+        "addr:street": "улица Тимофея Чаркова",
+        "amenity": "kindergarten",
+        "name": "Звездочки",
+        "opening_hours": "Mo-Fr 07:00-19:00",
+        "preschool": "yes",
+        "website": "http://www.sad65.ru/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9808857840,
+      "lat": 57.1160971,
+      "lon": 65.5400652,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "142а к1",
+        "addr:postcode": "625062",
+        "addr:street": "улица Мельникайте",
+        "amenity": "clinic",
+        "email": "osteo_72@mail.ru",
+        "healthcare": "clinic",
+        "healthcare:speciality": "osteopathy",
+        "name": "Остео",
+        "phone": "+7 (3452) 381‒381",
+        "website": "https://www.osteo72.ru/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9832758735,
+      "lat": 57.1199672,
+      "lon": 65.484893,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "5",
+        "addr:postcode": "625063",
+        "addr:street": "улица Созидателей",
+        "amenity": "clinic",
+        "description": "клиника эстетической медицины",
+        "healthcare": "clinic",
+        "level": "0",
+        "name": "Венец Афродиты",
+        "phone": "+7‒958‒262‒66‒19",
+        "website": "косметологтюмень.рф"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9832758737,
+      "lat": 57.1204319,
+      "lon": 65.4851924,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "1",
+        "addr:postcode": "625063",
+        "addr:street": "улица Созидателей",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "level": "0",
+        "name": "Здоровая семья",
+        "phone": "+7 (3452) 283‒103"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9899981009,
+      "lat": 57.1547752,
+      "lon": 65.5603371,
+      "tags": {
+        "alt_name": "Клиника пластической хирургии и косметологии Laplas",
+        "amenity": "clinic",
+        "name": "Лаплас",
+        "name:en": "LAPLAS",
+        "name:ru": "Лаплас",
+        "official_name": "Клиника Лаплас",
+        "website": "https://lap-las.ru/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10206801073,
+      "lat": 57.2047399,
+      "lon": 65.6056344,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "17",
+        "addr:street": "улица Мелиораторов",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Городская поликлиника № 8"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10744921652,
+      "lat": 57.1606085,
+      "lon": 65.5516284,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Медис",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 09:00-14:00",
+        "website": "https://medis72.ru/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10788245090,
+      "lat": 57.1638715,
+      "lon": 65.4807848,
+      "tags": {
+        "amenity": "clinic",
+        "contact:email": "neuro_nova72@mail.ru",
+        "contact:phone": "+7 345 2253030;+7 982 9283035",
+        "contact:website": "https://neuronova.ru/",
+        "name": "NeuroNova",
+        "opening_hours": "Mo-Sa 08:30-20:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10872918445,
+      "lat": 57.1157549,
+      "lon": 65.4952507,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "9",
+        "addr:postcode": "625063",
+        "addr:street": "Заполярная улица",
+        "amenity": "school",
+        "description": "Академия программирования Itcity приглашает на курс разработки игр и создание роботов для детей от 4 до 16 лет.",
+        "email": "ekhazov1978@mail.ru",
+        "name": "Itcity School",
+        "phone": "+7‒922‒408‒07‒50",
+        "website": "https://itcityschool.ru/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10875138556,
+      "lat": 57.1153529,
+      "lon": 65.4978632,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "21",
+        "addr:postcode": "625063",
+        "addr:street": "улица Василия Подшибякина",
+        "amenity": "school",
+        "name": "IT School",
+        "phone": "+7‒982‒982‒24‒23",
+        "website": "https://www.itschoolit.ru/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10880722117,
+      "lat": 57.118891,
+      "lon": 65.5026969,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "10 к1",
+        "addr:postcode": "625063",
+        "addr:street": "улица Александра Протозанова",
+        "amenity": "kindergarten",
+        "description": "​Частный детский сад",
+        "name": "Медвежонок",
+        "phone": "+7‒982‒923‒29‒90",
+        "preschool": "no",
+        "website": "https://medvezhonok72.ru/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10976162401,
+      "lat": 57.1363121,
+      "lon": 65.5810028,
+      "tags": {
+        "amenity": "clinic",
+        "check_date": "2025-04-16",
+        "contact:email": "graziallelux@mail.ru",
+        "contact:phone": "+7 345 2587858;+7 922 4803858",
+        "contact:website": "https://grazialle.ru",
+        "name": "Здоровье кожи",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 10:00-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10976251723,
+      "lat": 57.1488319,
+      "lon": 65.5319571,
+      "tags": {
+        "amenity": "clinic",
+        "contact:email": "arbitailodoktora@mail.ru",
+        "contact:phone": "+7 345 2500617;+7 345 2561617",
+        "contact:website": "https://doctor-arbitailo.ru/",
+        "healthcare": "clinic",
+        "name": "Доктор Арбитайло",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-18:00; Su 09:00-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10976251724,
+      "lat": 57.1557435,
+      "lon": 65.5346865,
+      "tags": {
+        "amenity": "clinic",
+        "contact:email": "arbitailodoktora@mail.ru",
+        "contact:phone": "+7 345 2500617;+7 345 2500917;+7 345 2561617",
+        "contact:website": "https://doctor-arbitailo.ru/",
+        "name": "Доктор Арбитайло",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-18:00; Su 09:00-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10976251725,
+      "lat": 57.1021843,
+      "lon": 65.5844682,
+      "tags": {
+        "amenity": "clinic",
+        "contact:email": "arbitailodoktora@mail.ru",
+        "contact:phone": "+7 345 2500617;+7 345 2561617",
+        "contact:website": "https://doctor-arbitailo.ru/",
+        "name": "Доктор Арбитайло",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-18:00; Su 09:00-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10976251726,
+      "lat": 57.17664,
+      "lon": 65.652082,
+      "tags": {
+        "amenity": "clinic",
+        "contact:email": "arbitailodoktora@mail.ru",
+        "contact:phone": "+7 345 2500617;+7 345 2561617",
+        "contact:website": "https://doctor-arbitailo.ru/",
+        "name": "Доктор Арбитайло",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-18:00; Su 09:00-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10976251727,
+      "lat": 57.175019,
+      "lon": 65.559864,
+      "tags": {
+        "amenity": "clinic",
+        "contact:email": "arbitailodoktora@mail.ru",
+        "contact:phone": "+7 345 2500617;+7 345 2500917;+7 345 2561617",
+        "contact:website": "https://doctor-arbitailo.ru/",
+        "healthcare": "clinic",
+        "name": "Доктор Арбитайло",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-18:00; Su 09:00-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11014332517,
+      "lat": 57.137542,
+      "lon": 65.5505826,
+      "tags": {
+        "amenity": "kindergarten",
+        "check_date": "2023-06-29",
+        "name": "Топотушка"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11059318791,
+      "lat": 57.1390575,
+      "lon": 65.5688882,
+      "tags": {
+        "addr:housenumber": "147",
+        "addr:street": "улица Республики",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "healthcare:speciality": "infectious_diseases;pathology",
+        "name": "Тюменский Научно-Исследовательский Институт Краевой Инфекционной Патологии"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11622480600,
+      "lat": 57.1572069,
+      "lon": 65.5574368,
+      "tags": {
+        "amenity": "clinic",
+        "contact:email": "info.tum@alfazdrav.ru",
+        "contact:phone": "+7 345 2396528",
+        "contact:website": "https://tumen.alfazdrav.ru/",
+        "name": "Альфа-Центр Здоровья",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 09:00-17:00; Su 09:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11683864766,
+      "lat": 57.1488909,
+      "lon": 65.5323011,
+      "tags": {
+        "amenity": "clinic",
+        "check_date": "2024-03-02",
+        "email": "tmn.vera@gmail.com",
+        "healthcare": "clinic",
+        "name": "Вера",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 09:00-17:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+7 345 239-07-07; +7 345 239-08-08; +7 952 680-70-26",
+        "website": "https://www.vera-72.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11925614117,
+      "lat": 57.1593801,
+      "lon": 65.5238074,
+      "tags": {
+        "amenity": "clinic",
+        "contact:email": "tumen@omiclinic.ru",
+        "contact:phone": "+7 345 2393311",
+        "contact:website": "https://omiclinic.ru",
+        "name": "Омикрон",
+        "opening_hours": "Tu-Sa 09:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12298907330,
+      "lat": 57.1434025,
+      "lon": 65.5432238,
+      "tags": {
+        "amenity": "clinic",
+        "contact:phone": "+7 800 5501711;+7 912 5224305",
+        "contact:website": "https://mastersluh.ru",
+        "name": "МастерСлух",
+        "opening_hours": "Tu-Sa 10:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12329221958,
+      "lat": 57.1490295,
+      "lon": 65.4940486,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "level": "0",
+        "name": "Городская поликлиника №5"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12655174517,
+      "lat": 57.1551992,
+      "lon": 65.544998,
+      "tags": {
+        "amenity": "clinic",
+        "contact:phone": "+7 3452 500133",
+        "healthcare": "laboratory",
+        "name": "ЮниМед",
+        "opening_hours": "Mo-Fr 08:00-20:00;Sa 09:00-17:00;Su 09:00-15:00",
+        "website": "https://uni-center.com/unimed/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13001289723,
+      "lat": 57.1110726,
+      "lon": 65.600408,
+      "tags": {
+        "addr:housenumber": "36",
+        "addr:street": "Олимпийская улица",
+        "amenity": "clinic",
+        "name": "Женская консультация"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13030961392,
+      "lat": 57.1619517,
+      "lon": 65.499925,
+      "tags": {
+        "addr:housenumber": "38",
+        "addr:street": "улица Луначарского",
+        "amenity": "clinic",
+        "name": "Женская консультация"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13125101944,
+      "lat": 57.0931343,
+      "lon": 65.5759473,
+      "tags": {
+        "addr:floor": "1",
+        "amenity": "kindergarten",
+        "check_date": "2025-09-07",
+        "level": "0",
+        "name": "Львенок",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa-Su off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13187166591,
+      "lat": 57.1102217,
+      "lon": 65.1851036,
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13708675220,
+      "lat": 57.1658725,
+      "lon": 65.5613309,
+      "tags": {
+        "addr:floor": "1",
+        "amenity": "clinic",
+        "check_date": "2026-04-05",
+        "healthcare": "clinic",
+        "level": "1",
+        "name": "Clean Clinic",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-18:00; Su 10:00-18:00",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13723053097,
+      "lat": 57.1640446,
+      "lon": 65.5014807,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "rehabilitation",
+        "name": "Отделение восстановительного лечения",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 09:00-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14301712994,
+      "lat": 57.1596971,
+      "lon": 65.5014878,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Лукошко",
+        "website": "https://lukoshko72.ru/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 24818695,
+      "center": {
+        "lat": 57.1090031,
+        "lon": 65.6033814
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "11 с1",
+        "addr:street": "проезд Монтажников",
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "1",
+        "contact:email": "info@avicenna72.ru",
+        "contact:phone": "+7 345 2593957",
+        "contact:website": "https://avicenna72.ru/",
+        "name": "Авиценна",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 24929896,
+      "center": {
+        "lat": 57.1151112,
+        "lon": 65.5784675
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "51 к1",
+        "addr:street": "улица Пермякова",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26541496,
+      "center": {
+        "lat": 57.1458492,
+        "lon": 65.5709006
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "63",
+        "addr:street": "Холодильная улица",
+        "amenity": "kindergarten",
+        "building": "civic",
+        "building:levels": "2",
+        "name": "МАДОУ Д/С № 51",
+        "social_facility": "group_home",
+        "social_facility:for": "orphan"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26542323,
+      "center": {
+        "lat": 57.145055,
+        "lon": 65.5509686
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "19",
+        "addr:street": "Мурманская улица",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26768011,
+      "center": {
+        "lat": 57.1366509,
+        "lon": 65.5813996
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "52",
+        "addr:street": "улица Пржевальского",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "2",
+        "check_date": "2025-04-16",
+        "name": "МАДОУ детский сад № 58"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26920820,
+      "center": {
+        "lat": 57.1311845,
+        "lon": 65.5889956
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "10",
+        "addr:street": "Текстильная улица",
+        "amenity": "school",
+        "building": "yes",
+        "building:levels": "3",
+        "check_date": "2024-05-25",
+        "name": "средняя общеобразовательная школа № 8",
+        "ref": "8"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27588952,
+      "center": {
+        "lat": 57.1841729,
+        "lon": 65.5869924
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "10Б",
+        "addr:street": "улица Ватутина",
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "6",
+        "healthcare": "clinic",
+        "name": "Городская поликлиника № 8"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27749433,
+      "center": {
+        "lat": 57.1311861,
+        "lon": 65.5852077
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "177",
+        "addr:street": "улица Республики",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "детский сад № 82"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27749545,
+      "center": {
+        "lat": 57.129155,
+        "lon": 65.5824133
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "39",
+        "addr:street": "проезд Геологоразведчиков",
+        "amenity": "school",
+        "building": "yes",
+        "building:levels": "4",
+        "name": "средняя общеобразовательная школа № 17",
+        "ref": "17"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30060417,
+      "center": {
+        "lat": 57.1434577,
+        "lon": 65.5462706
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "8/1",
+        "addr:street": "улица Малыгина",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "3",
+        "name": "средняя общеобразовательная школа № 89",
+        "ref": "89"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30063083,
+      "center": {
+        "lat": 57.1377918,
+        "lon": 65.595037
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "76А",
+        "addr:street": "улица 50 лет Октября",
+        "amenity": "school",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "Вечерняя образовательная школа № 10"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30846812,
+      "center": {
+        "lat": 57.1294435,
+        "lon": 65.5894071
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "82А",
+        "addr:street": "Рижская улица",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "Детский сад № 87"
+      }
+    },
+    {
+      "type": "way",
+      "id": 43266292,
+      "center": {
+        "lat": 57.1089993,
+        "lon": 65.5760255
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "средняя общеобразовательная школа № 92",
+        "ref": "92"
+      }
+    },
+    {
+      "type": "way",
+      "id": 44327048,
+      "center": {
+        "lat": 57.1470867,
+        "lon": 65.4962498
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "112",
+        "addr:street": "улица Куйбышева",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "Детский сад № 50"
+      }
+    },
+    {
+      "type": "way",
+      "id": 44327049,
+      "center": {
+        "lat": 57.146668,
+        "lon": 65.4969506
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "110",
+        "addr:street": "улица Куйбышева",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "2",
+        "name": "детский сад № 17",
+        "ref": "17"
+      }
+    },
+    {
+      "type": "way",
+      "id": 46228019,
+      "center": {
+        "lat": 57.1230499,
+        "lon": 65.5540181
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "131/1",
+        "addr:street": "улица Мельникайте",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "2",
+        "name": "Детский сад № 176 «Фантазёры»",
+        "ref": "177",
+        "roof:shape": "hipped"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48963572,
+      "center": {
+        "lat": 57.1313239,
+        "lon": 65.5735586
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "14",
+        "addr:street": "проезд Геологоразведчиков",
+        "amenity": "school",
+        "building": "yes",
+        "name": "средняя общеобразовательная школа № 6",
+        "ref": "6"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48963595,
+      "center": {
+        "lat": 57.1322088,
+        "lon": 65.5752284
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "19",
+        "addr:street": "проезд Геологоразведчиков",
+        "amenity": "school",
+        "building": "yes",
+        "email": "education@tyumen-city.ru",
+        "name": "Лицей № 93",
+        "official_name": "Муниципальное автономное общеобразовательное учреждение «Лицей № 93 города Тюмени»",
+        "ownership": "municipal",
+        "phone": "+7 3452 365190",
+        "ref": "4",
+        "short_name": "МАОУ «Лицей № 93»",
+        "website": "https://licey93.ru/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 49330978,
+      "center": {
+        "lat": 57.1617296,
+        "lon": 65.4913153
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "name": "детский сад № 109",
+        "ref": "109"
+      }
+    },
+    {
+      "type": "way",
+      "id": 49359931,
+      "center": {
+        "lat": 57.1650606,
+        "lon": 65.5089644
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "14",
+        "addr:street": "улица Луначарского",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "3",
+        "name": "Вечерняя школа № 2",
+        "start_date": "1905"
+      }
+    },
+    {
+      "type": "way",
+      "id": 51274109,
+      "center": {
+        "lat": 57.1580851,
+        "lon": 65.5640106
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "9",
+        "addr:postcode": "625002",
+        "addr:street": "Загородная улица",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 52325370,
+      "center": {
+        "lat": 57.2213512,
+        "lon": 65.3580211
+      },
+      "tags": {
+        "addr:housenumber": "7 с1",
+        "addr:street": "Плодовая улица",
+        "amenity": "school",
+        "building": "yes",
+        "grades": "1-11",
+        "name": "Луговская Среднеобразовательная школа",
+        "website": "https://vk.com/public201468919"
+      }
+    },
+    {
+      "type": "way",
+      "id": 81730635,
+      "center": {
+        "lat": 57.1429474,
+        "lon": 65.5744587
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 79 «Золотой ключик»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 81946999,
+      "center": {
+        "lat": 57.1431592,
+        "lon": 65.5623918
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 51",
+        "ref": "51"
+      }
+    },
+    {
+      "type": "way",
+      "id": 82131219,
+      "center": {
+        "lat": 57.1302289,
+        "lon": 65.5814115
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "176А",
+        "addr:street": "улица Республики",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "детский сад № 85"
+      }
+    },
+    {
+      "type": "way",
+      "id": 82131262,
+      "center": {
+        "lat": 57.1507565,
+        "lon": 65.5501517
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад №135",
+        "ref": "135"
+      }
+    },
+    {
+      "type": "way",
+      "id": 82173294,
+      "center": {
+        "lat": 57.1549849,
+        "lon": 65.5580776
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 135"
+      }
+    },
+    {
+      "type": "way",
+      "id": 82173338,
+      "center": {
+        "lat": 57.1530005,
+        "lon": 65.5544848
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "средняя общеобразовательная школа № 40",
+        "ref": "40"
+      }
+    },
+    {
+      "type": "way",
+      "id": 82187729,
+      "center": {
+        "lat": 57.1260393,
+        "lon": 65.5831074
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "103",
+        "addr:street": "улица 50 лет ВЛКСМ",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "2",
+        "name": "Детский сад № 85"
+      }
+    },
+    {
+      "type": "way",
+      "id": 84629257,
+      "center": {
+        "lat": 57.2068362,
+        "lon": 65.607355
+      },
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:street": "улица 70 лет Октября",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "2",
+        "name": "детский сад № 144",
+        "ref": "144"
+      }
+    },
+    {
+      "type": "way",
+      "id": 84629270,
+      "center": {
+        "lat": 57.205355,
+        "lon": 65.6065964
+      },
+      "tags": {
+        "addr:housenumber": "15",
+        "addr:street": "улица Мелиораторов",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "2",
+        "check_date": "2025-05-09",
+        "name": "средняя общеобразовательная школа № 45",
+        "ref": "45"
+      }
+    },
+    {
+      "type": "way",
+      "id": 84659887,
+      "center": {
+        "lat": 57.1819923,
+        "lon": 65.5772459
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "48 к2",
+        "addr:street": "Волочаевская улица",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "name": "Детский сад № 133"
+      }
+    },
+    {
+      "type": "way",
+      "id": 84660000,
+      "center": {
+        "lat": 57.1872757,
+        "lon": 65.5682941
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "15",
+        "addr:street": "улица Шишкова",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "3",
+        "name": "средняя общеобразовательная школа № 39",
+        "ref": "39"
+      }
+    },
+    {
+      "type": "way",
+      "id": 84674452,
+      "center": {
+        "lat": 57.138007,
+        "lon": 65.5723454
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 79 «Золотой ключик»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 84674454,
+      "center": {
+        "lat": 57.1358409,
+        "lon": 65.5697901
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 85183462,
+      "center": {
+        "lat": 57.1278187,
+        "lon": 65.5212171
+      },
+      "tags": {
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "2",
+        "healthcare": "clinic",
+        "name": "Поликлиника № 5"
+      }
+    },
+    {
+      "type": "way",
+      "id": 85247645,
+      "center": {
+        "lat": 57.1290228,
+        "lon": 65.5262859
+      },
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:street": "Молодёжная улица",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Детский сад № 39"
+      }
+    },
+    {
+      "type": "way",
+      "id": 85248040,
+      "center": {
+        "lat": 57.1304742,
+        "lon": 65.526653
+      },
+      "tags": {
+        "addr:housenumber": "1Б",
+        "addr:street": "Южная улица",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Детский сад № 39"
+      }
+    },
+    {
+      "type": "way",
+      "id": 85651816,
+      "center": {
+        "lat": 57.1202328,
+        "lon": 65.5235992
+      },
+      "tags": {
+        "addr:housenumber": "5А",
+        "addr:street": "улица Федюнинского",
+        "amenity": "clinic",
+        "building": "yes",
+        "healthcare": "clinic",
+        "name": "Детская поликлиника № 5"
+      }
+    },
+    {
+      "type": "way",
+      "id": 85651889,
+      "center": {
+        "lat": 57.139534,
+        "lon": 65.5843825
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "check_date": "2024-07-04",
+        "name": "детский сад № 58 «Искорка»",
+        "ref": "58"
+      }
+    },
+    {
+      "type": "way",
+      "id": 86580321,
+      "center": {
+        "lat": 57.11586,
+        "lon": 65.5882754
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Физико-математическая школа"
+      }
+    },
+    {
+      "type": "way",
+      "id": 86580326,
+      "center": {
+        "lat": 57.1152156,
+        "lon": 65.5898322
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "средняя общеобразовательная школа № 27 корпус 2",
+        "ref": "10"
+      }
+    },
+    {
+      "type": "way",
+      "id": 88330774,
+      "center": {
+        "lat": 57.1367265,
+        "lon": 65.5949555
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 90",
+        "ref": "90"
+      }
+    },
+    {
+      "type": "way",
+      "id": 94092895,
+      "center": {
+        "lat": 57.1874272,
+        "lon": 65.5538717
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "8",
+        "addr:street": "улица Павлова",
+        "amenity": "school",
+        "building": "yes",
+        "building:levels": "4",
+        "name": "средняя общеобразовательная школа № 9",
+        "ref": "9"
+      }
+    },
+    {
+      "type": "way",
+      "id": 94554420,
+      "center": {
+        "lat": 57.1776276,
+        "lon": 65.4908533
+      },
+      "tags": {
+        "addr:housenumber": "11",
+        "addr:street": "Мельзаводская улица",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "детский сад № 55 (корпус 2)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 94903899,
+      "center": {
+        "lat": 57.1516116,
+        "lon": 65.6505128
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "9/1",
+        "addr:postcode": "625034",
+        "addr:street": "улица Казачьи Луга",
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "4",
+        "healthcare": "clinic",
+        "name": "поликлиника № 13 «Тура»",
+        "official_name": "поликлиника № 13",
+        "ref": "13",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 95924261,
+      "center": {
+        "lat": 57.1278528,
+        "lon": 65.5853573
+      },
+      "tags": {
+        "addr:housenumber": "45",
+        "addr:street": "проезд Геологоразведчиков",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "2",
+        "check_date": "2024-05-25",
+        "name": "Детский сад № 87"
+      }
+    },
+    {
+      "type": "way",
+      "id": 96567904,
+      "center": {
+        "lat": 57.0453495,
+        "lon": 65.7182112
+      },
+      "tags": {
+        "addr:city": "Боровский",
+        "addr:housenumber": "16",
+        "addr:street": "Ленинградская улица",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Поликлиника № 19"
+      }
+    },
+    {
+      "type": "way",
+      "id": 96567930,
+      "center": {
+        "lat": 57.0499733,
+        "lon": 65.6979532
+      },
+      "tags": {
+        "addr:housenumber": "11А",
+        "addr:street": "улица Мира",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "2",
+        "name": "Журавушка"
+      }
+    },
+    {
+      "type": "way",
+      "id": 97193970,
+      "center": {
+        "lat": 57.1560508,
+        "lon": 65.5568615
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 135"
+      }
+    },
+    {
+      "type": "way",
+      "id": 98261959,
+      "center": {
+        "lat": 57.1694757,
+        "lon": 65.5223861
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "18",
+        "addr:street": "Ангарская улица",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "name": "Детский сад № 167"
+      }
+    },
+    {
+      "type": "way",
+      "id": 101672210,
+      "center": {
+        "lat": 57.1147636,
+        "lon": 65.5928175
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 132"
+      }
+    },
+    {
+      "type": "way",
+      "id": 101921528,
+      "center": {
+        "lat": 57.114207,
+        "lon": 65.5950597
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 131",
+        "ref": "131"
+      }
+    },
+    {
+      "type": "way",
+      "id": 102539743,
+      "center": {
+        "lat": 57.135345,
+        "lon": 65.5811669
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "check_date": "2024-07-04",
+        "name": "Детский сад № 58 «Искорка»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 102539796,
+      "center": {
+        "lat": 57.1326185,
+        "lon": 65.5889061
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад №76"
+      }
+    },
+    {
+      "type": "way",
+      "id": 102574709,
+      "center": {
+        "lat": 57.1287361,
+        "lon": 65.5777055
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 103",
+        "ref": "103"
+      }
+    },
+    {
+      "type": "way",
+      "id": 102750598,
+      "center": {
+        "lat": 57.1628834,
+        "lon": 65.4916615
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 57",
+        "ref": "57"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104113720,
+      "center": {
+        "lat": 57.1511633,
+        "lon": 65.645438
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 59"
+      }
+    },
+    {
+      "type": "way",
+      "id": 105572253,
+      "center": {
+        "lat": 57.16748,
+        "lon": 65.5105543
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 55"
+      }
+    },
+    {
+      "type": "way",
+      "id": 105572256,
+      "center": {
+        "lat": 57.1673612,
+        "lon": 65.4990627
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "fence_type": "metal",
+        "name": "средняя общеобразовательная школа № 38",
+        "ref": "38"
+      }
+    },
+    {
+      "type": "way",
+      "id": 105572261,
+      "center": {
+        "lat": 57.1661835,
+        "lon": 65.5038867
+      },
+      "tags": {
+        "addr:housenumber": "16А",
+        "addr:street": "Затюменская улица",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "2",
+        "name": "Православная гимназия"
+      }
+    },
+    {
+      "type": "way",
+      "id": 105873447,
+      "center": {
+        "lat": 57.1535228,
+        "lon": 65.5736682
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "fence_type": "chain_link",
+        "name": "Средняя общеобразовательная школа № 15",
+        "ref": "15"
+      }
+    },
+    {
+      "type": "way",
+      "id": 106731642,
+      "center": {
+        "lat": 57.1838647,
+        "lon": 65.5028239
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 3",
+        "ref": "3"
+      }
+    },
+    {
+      "type": "way",
+      "id": 107656686,
+      "center": {
+        "lat": 57.1617682,
+        "lon": 65.4984769
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "40",
+        "addr:street": "улица Луначарского",
+        "amenity": "school",
+        "name": "Школа № 26"
+      }
+    },
+    {
+      "type": "way",
+      "id": 111290344,
+      "center": {
+        "lat": 57.1585293,
+        "lon": 65.4890251
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "1А",
+        "addr:street": "улица Белинского",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "2",
+        "name": "Школа № 73 «Лира»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 113709435,
+      "center": {
+        "lat": 57.1225074,
+        "lon": 65.5592996
+      },
+      "tags": {
+        "amenity": "school",
+        "building": "yes",
+        "name": "средняя общеобразовательная школа № 70",
+        "ref": "70"
+      }
+    },
+    {
+      "type": "way",
+      "id": 115062959,
+      "center": {
+        "lat": 57.1218461,
+        "lon": 65.5603445
+      },
+      "tags": {
+        "amenity": "school",
+        "building": "yes",
+        "name": "средняя общеобразовательная школа № 70",
+        "ref": "70"
+      }
+    },
+    {
+      "type": "way",
+      "id": 131872183,
+      "center": {
+        "lat": 57.188999,
+        "lon": 65.6399962
+      },
+      "tags": {
+        "addr:housenumber": "28",
+        "addr:street": "Пражская улица",
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Городская поликлиника №8"
+      }
+    },
+    {
+      "type": "way",
+      "id": 135370650,
+      "center": {
+        "lat": 57.1427281,
+        "lon": 65.5438338
+      },
+      "tags": {
+        "addr:housenumber": "27/2А",
+        "addr:street": "улица Радищева",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "3",
+        "building:material": "brick",
+        "name": "Планета детства",
+        "official_name": "детский сад №183 «Планета детства»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 157483153,
+      "center": {
+        "lat": 57.1234911,
+        "lon": 65.5446182
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "material": "steel",
+        "name": "Лингво-эстетическая гимназия № 83",
+        "ref": "83",
+        "website": "https://www.gymn83.ru/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 176274835,
+      "center": {
+        "lat": 57.0950232,
+        "lon": 65.6375168
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "средняя общеобразовательная школа № 72",
+        "ref": "72"
+      }
+    },
+    {
+      "type": "way",
+      "id": 193458559,
+      "center": {
+        "lat": 57.1209324,
+        "lon": 65.5288703
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Средняя общеобразовательная школа № 69 (корпус 2)",
+        "ref": "69"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205657842,
+      "center": {
+        "lat": 57.15804,
+        "lon": 65.527924
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "23/1",
+        "addr:street": "улица Ленина",
+        "amenity": "clinic",
+        "building": "civic",
+        "building:levels": "4",
+        "healthcare": "clinic",
+        "name": "Городская поликлиника №3"
+      }
+    },
+    {
+      "type": "way",
+      "id": 209961016,
+      "center": {
+        "lat": 57.1313787,
+        "lon": 65.5156413
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Гимназия № 49",
+        "ref": "49"
+      }
+    },
+    {
+      "type": "way",
+      "id": 217857860,
+      "center": {
+        "lat": 57.1773761,
+        "lon": 65.5561704
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "chain_link",
+        "name": "Детский сад № 167"
+      }
+    },
+    {
+      "type": "way",
+      "id": 221626999,
+      "center": {
+        "lat": 57.1444889,
+        "lon": 65.5525501
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "средняя общеобразовательная школа № 5 (корпус № 2)",
+        "ref": "29"
+      }
+    },
+    {
+      "type": "way",
+      "id": 230492923,
+      "center": {
+        "lat": 57.154617,
+        "lon": 65.4891189
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "fence_type": "wire",
+        "landuse": "education",
+        "name": "Детский сад №156 «Теремок»",
+        "ref": "156"
+      }
+    },
+    {
+      "type": "way",
+      "id": 234592318,
+      "center": {
+        "lat": 57.1225583,
+        "lon": 65.5169212
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 95"
+      }
+    },
+    {
+      "type": "way",
+      "id": 237537564,
+      "center": {
+        "lat": 57.1189375,
+        "lon": 65.5288374
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "name": "Детский сад № 78 (корпус 2)",
+        "ref": "78"
+      }
+    },
+    {
+      "type": "way",
+      "id": 237539192,
+      "center": {
+        "lat": 57.1222753,
+        "lon": 65.5293401
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 78 (корпус 3)",
+        "ref": "78"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239765136,
+      "center": {
+        "lat": 57.1230208,
+        "lon": 65.5224035
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "средняя общеобразовательная школа № 69",
+        "ref": "69"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239842405,
+      "center": {
+        "lat": 57.1196917,
+        "lon": 65.5417425
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "гимназия № 83"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239843314,
+      "center": {
+        "lat": 57.1179589,
+        "lon": 65.5314846
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "material": "metal",
+        "name": "детский сад № 78",
+        "ref": "78"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239844034,
+      "center": {
+        "lat": 57.1243022,
+        "lon": 65.5182463
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад № 95",
+        "ref": "95"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239845071,
+      "center": {
+        "lat": 57.1466495,
+        "lon": 65.4889886
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "fence_type": "metal",
+        "name": "Лицей №34"
+      }
+    },
+    {
+      "type": "way",
+      "id": 240015040,
+      "center": {
+        "lat": 57.2010528,
+        "lon": 65.5511737
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "4",
+        "addr:street": "улица Избышева",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "детский сад № 127"
+      }
+    },
+    {
+      "type": "way",
+      "id": 278319234,
+      "center": {
+        "lat": 57.1118112,
+        "lon": 65.562102
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "22",
+        "addr:street": "улица Николая Зелинского",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "4",
+        "name": "Школа № 92 (корпус № 2)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 280040886,
+      "center": {
+        "lat": 57.1515501,
+        "lon": 65.6502685
+      },
+      "tags": {
+        "amenity": "clinic",
+        "emergency": "no",
+        "healthcare": "clinic",
+        "name": "поликлиника № 13 \"Тура\""
+      }
+    },
+    {
+      "type": "way",
+      "id": 285000024,
+      "center": {
+        "lat": 57.1578478,
+        "lon": 65.6566962
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "name": "детский сад № 161",
+        "ref": "161"
+      }
+    },
+    {
+      "type": "way",
+      "id": 285843912,
+      "center": {
+        "lat": 57.1494066,
+        "lon": 65.6446844
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Школа №67 имени Б.К. Таныгина, 1-й филиал",
+        "official_name": "Средняя общеобразовательная школа №67 им. Б.К. Таныгина",
+        "ref": "67"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293141497,
+      "center": {
+        "lat": 57.1852277,
+        "lon": 65.5885318
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "metal",
+        "name": "детский сад № 113"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293141498,
+      "center": {
+        "lat": 57.1848121,
+        "lon": 65.5873765
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "metal",
+        "name": "детский сад № 123"
+      }
+    },
+    {
+      "type": "way",
+      "id": 301679847,
+      "center": {
+        "lat": 57.1079286,
+        "lon": 65.5623934
+      },
+      "tags": {
+        "addr:housenumber": "33 к2",
+        "addr:street": "улица Николая Семёнова",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Детский сад №186 \"Петрушка\""
+      }
+    },
+    {
+      "type": "way",
+      "id": 302277794,
+      "center": {
+        "lat": 57.1419281,
+        "lon": 65.527281
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2.2",
+        "material": "metal",
+        "name": "Детский сад № 99 (корпус № 1)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 307463150,
+      "center": {
+        "lat": 57.1137328,
+        "lon": 65.5644666
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "21 к1",
+        "addr:street": "улица Николая Зелинского",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "3",
+        "name": "детский сад «Волчок»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 309703536,
+      "center": {
+        "lat": 57.0970319,
+        "lon": 65.6451945
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 72 корпус 2",
+        "note": "Школы № 59 и 72 объединены в 2016 году. Новое название «Школа № 72»",
+        "old_name": "средняя общеобразовательная школа № 59"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313525434,
+      "center": {
+        "lat": 57.1101771,
+        "lon": 65.5961015
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "name": "средняя общеобразовательная школа № 61",
+        "ref": "61"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313526443,
+      "center": {
+        "lat": 57.1082437,
+        "lon": 65.5946501
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "bars",
+        "name": "детский сад № 141 корпус 1",
+        "ref": "141"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313526444,
+      "center": {
+        "lat": 57.1090028,
+        "lon": 65.5921201
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад № 84",
+        "ref": "84"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313526445,
+      "center": {
+        "lat": 57.1100946,
+        "lon": 65.5934135
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 42",
+        "ref": "42"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313526818,
+      "center": {
+        "lat": 57.1118171,
+        "lon": 65.5973592
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад №111 корпус 1",
+        "ref": "111"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313526819,
+      "center": {
+        "lat": 57.11161,
+        "lon": 65.5988784
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад №111 корпус 2",
+        "old_name": "детский сад №119",
+        "ref": "119"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313527338,
+      "center": {
+        "lat": 57.1073416,
+        "lon": 65.6041729
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Средняя общеобразовательная школа №63",
+        "ref": "63"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313528939,
+      "center": {
+        "lat": 57.1173283,
+        "lon": 65.5822247
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2.2",
+        "name": "Детский сад № 108"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313528940,
+      "center": {
+        "lat": 57.11829,
+        "lon": 65.5832774
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2",
+        "name": "детский сад № 118 корпус 3 «Маленькая страна»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313528941,
+      "center": {
+        "lat": 57.1136122,
+        "lon": 65.5802434
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад № 153",
+        "ref": "153"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313528942,
+      "center": {
+        "lat": 57.1141947,
+        "lon": 65.5818475
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад № 153",
+        "ref": "153"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313528943,
+      "center": {
+        "lat": 57.1157718,
+        "lon": 65.5823348
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "name": "средняя общеобразовательная школа № 27",
+        "ref": "27"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313529957,
+      "center": {
+        "lat": 57.1225257,
+        "lon": 65.5469959
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад № 42",
+        "ref": "42"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313533504,
+      "center": {
+        "lat": 57.1317613,
+        "lon": 65.5927397
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 10",
+        "ref": "10"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313533505,
+      "center": {
+        "lat": 57.1312348,
+        "lon": 65.5918245
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 83",
+        "ref": "83"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313678552,
+      "center": {
+        "lat": 57.1385793,
+        "lon": 65.5868771
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 20",
+        "ref": "20"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313678554,
+      "center": {
+        "lat": 57.1744487,
+        "lon": 65.6356363
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "средняя общеобразовательная школа № 48",
+        "official_name": "МАОУ СОШ № 48 города Тюмени имени Героя Советского Союза Дмитрия Михайловича Карбышева",
+        "ref": "48",
+        "website": "https://48.tyumenschool.ru/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314372420,
+      "center": {
+        "lat": 57.1488941,
+        "lon": 65.5357881
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 14",
+        "ref": "14"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314373537,
+      "center": {
+        "lat": 57.1554303,
+        "lon": 65.5408272
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 25",
+        "ref": "25"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314373538,
+      "center": {
+        "lat": 57.1388793,
+        "lon": 65.5510184
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "средняя общеобразовательная школа № 90 «Крепыш»",
+        "ref": "90"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314374281,
+      "center": {
+        "lat": 57.1437579,
+        "lon": 65.5167853
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Средняя общеобразовательная школа №30 им. Ф.Е. Федорова кор.2",
+        "ref": "35"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315471608,
+      "center": {
+        "lat": 57.1782999,
+        "lon": 65.6392605
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "fence_type": "bars",
+        "height": "2.5",
+        "name": "средняя общеобразовательная школа № 91",
+        "ref": "91"
+      }
+    },
+    {
+      "type": "way",
+      "id": 317535504,
+      "center": {
+        "lat": 57.1361269,
+        "lon": 65.5070803
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад № 166 «Игрушка»",
+        "ref": "166"
+      }
+    },
+    {
+      "type": "way",
+      "id": 317616880,
+      "center": {
+        "lat": 57.1411734,
+        "lon": 65.5507532
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "специальная (коррекционная) общеобразовательная школа № 2",
+        "ref": "2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 318346958,
+      "center": {
+        "lat": 57.1102719,
+        "lon": 65.5882043
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад № 125",
+        "ref": "125"
+      }
+    },
+    {
+      "type": "way",
+      "id": 318382913,
+      "center": {
+        "lat": 57.0951776,
+        "lon": 65.6404937
+      },
+      "tags": {
+        "amenity": "clinic",
+        "building": "civic",
+        "building:colour": "lightyellow",
+        "building:levels": "2",
+        "name": "городская поликлиника № 12"
+      }
+    },
+    {
+      "type": "way",
+      "id": 321074789,
+      "center": {
+        "lat": 57.1252535,
+        "lon": 65.5431222
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 42",
+        "ref": "42"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356594428,
+      "center": {
+        "lat": 57.1008777,
+        "lon": 65.5811929
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "landuse": "kindergarden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 371891323,
+      "center": {
+        "lat": 57.1031253,
+        "lon": 65.5934934
+      },
+      "tags": {
+        "addr:housenumber": "41 к1",
+        "addr:street": "улица Монтажников",
+        "amenity": "clinic",
+        "building": "apartments",
+        "building:levels": "3",
+        "healthcare": "clinic",
+        "name": "Городская поликлиника №17"
+      }
+    },
+    {
+      "type": "way",
+      "id": 398925307,
+      "center": {
+        "lat": 57.1561393,
+        "lon": 65.5661181
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "landuse": "education",
+        "name": "детский сад №61",
+        "ref": "61"
+      }
+    },
+    {
+      "type": "way",
+      "id": 399232070,
+      "center": {
+        "lat": 57.1517659,
+        "lon": 65.5481291
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "гимназия №21",
+        "ref": "21"
+      }
+    },
+    {
+      "type": "way",
+      "id": 399281147,
+      "center": {
+        "lat": 57.1578722,
+        "lon": 65.5687063
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад №61",
+        "ref": "61"
+      }
+    },
+    {
+      "type": "way",
+      "id": 399281154,
+      "center": {
+        "lat": 57.1566807,
+        "lon": 65.5689193
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "средняя общеобразовательная школа №15",
+        "ref": "15"
+      }
+    },
+    {
+      "type": "way",
+      "id": 440928225,
+      "center": {
+        "lat": 57.1765454,
+        "lon": 65.6376827
+      },
+      "tags": {
+        "addr:housenumber": "13",
+        "addr:street": "улица Беляева",
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "check_date": "2022-11-20",
+        "fence_type": "metal",
+        "height": "2.2",
+        "internet_access": "no",
+        "name": "Детский сад №149",
+        "payment:cards": "no",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "website": "http://www.ds149.ru",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 440928226,
+      "center": {
+        "lat": 57.1798457,
+        "lon": 65.636805
+      },
+      "tags": {
+        "amenity": "clinic",
+        "barrier": "fence",
+        "fence_type": "metal",
+        "healthcare": "clinic",
+        "name": "Поликлиника"
+      }
+    },
+    {
+      "type": "way",
+      "id": 447364920,
+      "center": {
+        "lat": 57.109703,
+        "lon": 65.7234456
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Средняя общеобразовательная школа №32",
+        "website": "http://school32.tyumen-edu.ru"
+      }
+    },
+    {
+      "type": "way",
+      "id": 448632349,
+      "center": {
+        "lat": 57.1549131,
+        "lon": 65.6650269
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Школа №67 2-й филиал",
+        "official_name": "Cредняя общеобразовательная школа №67 им. Б.К. Таныгина"
+      }
+    },
+    {
+      "type": "way",
+      "id": 449309969,
+      "center": {
+        "lat": 57.187373,
+        "lon": 65.6400979
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад №149"
+      }
+    },
+    {
+      "type": "way",
+      "id": 453901439,
+      "center": {
+        "lat": 57.1731884,
+        "lon": 65.6497506
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 65"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461190042,
+      "center": {
+        "lat": 57.093805,
+        "lon": 65.6315652
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 185",
+        "opening_hours": "Mo-Fr 07:00-18:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461514871,
+      "center": {
+        "lat": 57.110646,
+        "lon": 65.5547962
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "21 к2",
+        "addr:street": "улица Николая Семёнова",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "3",
+        "name": "Детский сад № 158 «Василёк»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461550041,
+      "center": {
+        "lat": 57.1002991,
+        "lon": 65.6190027
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "check_date": "2024-05-17",
+        "education": "school",
+        "name": "Школа № 63"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461588556,
+      "center": {
+        "lat": 57.1074256,
+        "lon": 65.729863
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "contact:email": "doy155@obl72.ru",
+        "contact:phone": "+7 3452 691973",
+        "contact:vk": "https://vk.com/club194062651",
+        "contact:website": "http://dou155.ru/",
+        "description": "Корпус 1",
+        "education": "kindergarten",
+        "education_level:preschool": "yes",
+        "education_profile:general": "yes",
+        "education_system:ru_standard": "yes",
+        "name": "Детский сад №155",
+        "official_name": "Муниципальное автономное дошкольное образовательное учреждение детский сад №155 города Тюмени",
+        "opening_hours": "Mo-Fr 07:00-19:00",
+        "ref": "155"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461589466,
+      "center": {
+        "lat": 57.1074145,
+        "lon": 65.738197
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "contact:email": "doy155@obl72.ru",
+        "contact:phone": "+7 3452 691973",
+        "contact:vk": "https://vk.com/club194062651",
+        "contact:website": "http://dou155.ru/",
+        "description": "Корпус 2",
+        "education": "kindergarten",
+        "education_level:preschool": "yes",
+        "education_profile:general": "yes",
+        "education_system:ru_standard": "yes",
+        "name": "Детский сад №155",
+        "official_name": "Муниципальное автономное дошкольное образовательное учреждение детский сад №155 города Тюмени",
+        "opening_hours": "Mo-Fr 07:00-19:00",
+        "ref": "155"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461618949,
+      "center": {
+        "lat": 57.151397,
+        "lon": 65.4238519
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 151"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461618952,
+      "center": {
+        "lat": 57.1583548,
+        "lon": 65.452736
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "education": "school",
+        "landuse": "education",
+        "name": "Школа № 51"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461618954,
+      "center": {
+        "lat": 57.1570007,
+        "lon": 65.3587494
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Школа № 51"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464190753,
+      "center": {
+        "lat": 57.1332029,
+        "lon": 65.5927826
+      },
+      "tags": {
+        "addr:housenumber": "19",
+        "addr:street": "улица Парфёнова",
+        "amenity": "school",
+        "building": "school",
+        "name": "Гимназия № 16"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464352709,
+      "center": {
+        "lat": 57.1537965,
+        "lon": 65.4994012
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Тюменское президентское кадетское училище",
+        "website": "http://tpku.edumil.ru/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 465606207,
+      "center": {
+        "lat": 57.1332606,
+        "lon": 65.5900018
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 76"
+      }
+    },
+    {
+      "type": "way",
+      "id": 465937769,
+      "center": {
+        "lat": 57.2144898,
+        "lon": 65.5493789
+      },
+      "tags": {
+        "addr:housenumber": "23А",
+        "addr:street": "Казаровская улица",
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "1",
+        "healthcare": "clinic",
+        "name": "Поликлиника № 8 (филиал)",
+        "note": "Бывшее здание школы № 52."
+      }
+    },
+    {
+      "type": "way",
+      "id": 473861409,
+      "center": {
+        "lat": 57.1189895,
+        "lon": 65.5722827
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Школа № 68"
+      }
+    },
+    {
+      "type": "way",
+      "id": 483170160,
+      "center": {
+        "lat": 57.118566,
+        "lon": 65.5686336
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Гимназия российской культуры",
+        "website": "https://grktmn.ru/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 517567228,
+      "center": {
+        "lat": 57.15729,
+        "lon": 65.6621204
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 62"
+      }
+    },
+    {
+      "type": "way",
+      "id": 519939070,
+      "center": {
+        "lat": 57.1010303,
+        "lon": 65.6025956
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 146 (корпус № 4)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 524338569,
+      "center": {
+        "lat": 57.0985219,
+        "lon": 65.5625577
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 158 «Три богатыря»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 524843029,
+      "center": {
+        "lat": 57.1123699,
+        "lon": 65.5599191
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 527477697,
+      "center": {
+        "lat": 57.107145,
+        "lon": 65.7208475
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "contact:email": "doy155@obl72.ru",
+        "contact:phone": "+7 3452 691973",
+        "contact:vk": "https://vk.com/club194062651",
+        "contact:website": "http://dou155.ru/",
+        "description": "Корпус 3",
+        "education": "kindergarten",
+        "education_level:preschool": "yes",
+        "education_profile:general": "yes",
+        "education_system:ru_standard": "yes",
+        "name": "Детский сад №155",
+        "official_name": "Муниципальное автономное дошкольное образовательное учреждение детский сад №155 города Тюмени",
+        "opening_hours": "Mo-Fr 07:00-19:00",
+        "ref": "155"
+      }
+    },
+    {
+      "type": "way",
+      "id": 529638829,
+      "center": {
+        "lat": 57.1535315,
+        "lon": 65.5895958
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 75 \"Родничок\""
+      }
+    },
+    {
+      "type": "way",
+      "id": 531600839,
+      "center": {
+        "lat": 57.1808453,
+        "lon": 65.5872586
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 172"
+      }
+    },
+    {
+      "type": "way",
+      "id": 531600851,
+      "center": {
+        "lat": 57.1810737,
+        "lon": 65.5814949
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 165",
+        "ref": "165"
+      }
+    },
+    {
+      "type": "way",
+      "id": 531653721,
+      "center": {
+        "lat": 57.1479348,
+        "lon": 65.6531993
+      },
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "landuse": "education",
+        "name": "Школа №67 им. Б.К. Таныгина, корпус 3"
+      }
+    },
+    {
+      "type": "way",
+      "id": 532009766,
+      "center": {
+        "lat": 57.1510008,
+        "lon": 65.5774489
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "chain_link",
+        "height": "2.2",
+        "name": "Детский сад № 77"
+      }
+    },
+    {
+      "type": "way",
+      "id": 532901985,
+      "center": {
+        "lat": 57.2227001,
+        "lon": 65.5131108
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "education": "school",
+        "landuse": "education",
+        "name": "Средняя общеобразовательная школа № 45 корпус 2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 533549211,
+      "center": {
+        "lat": 57.1925607,
+        "lon": 65.5834195
+      },
+      "tags": {
+        "alt_name": "Центр Развития Ребёнка",
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 121 «Гусельки»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 533736870,
+      "center": {
+        "lat": 57.1818794,
+        "lon": 65.5746456
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 28",
+        "ref": "28"
+      }
+    },
+    {
+      "type": "way",
+      "id": 533763655,
+      "center": {
+        "lat": 57.1751107,
+        "lon": 65.5643191
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 134"
+      }
+    },
+    {
+      "type": "way",
+      "id": 533763675,
+      "center": {
+        "lat": 57.1763994,
+        "lon": 65.5646239
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Средняя общеобразовательная школа № 94"
+      }
+    },
+    {
+      "type": "way",
+      "id": 534752889,
+      "center": {
+        "lat": 57.1844144,
+        "lon": 65.5787845
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 133",
+        "ref": "133"
+      }
+    },
+    {
+      "type": "way",
+      "id": 535502134,
+      "center": {
+        "lat": 57.1062443,
+        "lon": 65.5854284
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 125"
+      }
+    },
+    {
+      "type": "way",
+      "id": 535907334,
+      "center": {
+        "lat": 57.1681884,
+        "lon": 65.6975042
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад \"Теремок\""
+      }
+    },
+    {
+      "type": "way",
+      "id": 535989486,
+      "center": {
+        "lat": 57.1645003,
+        "lon": 65.7166615
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Средняя общеобразовательная школа с. Яр"
+      }
+    },
+    {
+      "type": "way",
+      "id": 537070884,
+      "center": {
+        "lat": 57.1483292,
+        "lon": 65.7633743
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Родничок"
+      }
+    },
+    {
+      "type": "way",
+      "id": 537369131,
+      "center": {
+        "lat": 57.1242339,
+        "lon": 65.5633721
+      },
+      "tags": {
+        "addr:housenumber": "12 к5",
+        "addr:street": "Широтная улица",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "1",
+        "contact:email": "ms.ksenya.matveeva@mail.ru",
+        "contact:phone": "+7 345 2783666;+7 345 2983686",
+        "contact:website": "https://город-детства72.рф",
+        "name": "Город детства",
+        "opening_hours": "Mo-Fr 07:30-13:00,15:00-20:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 537376525,
+      "center": {
+        "lat": 57.1237197,
+        "lon": 65.555996
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 176 «Фантазёры»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 537612604,
+      "center": {
+        "lat": 57.1227742,
+        "lon": 65.5707098
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "education": "school",
+        "landuse": "education",
+        "name": "Средняя школа № 60"
+      }
+    },
+    {
+      "type": "way",
+      "id": 537645310,
+      "center": {
+        "lat": 57.1207365,
+        "lon": 65.5771848
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 158"
+      }
+    },
+    {
+      "type": "way",
+      "id": 537645317,
+      "center": {
+        "lat": 57.1217086,
+        "lon": 65.574354
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 162"
+      }
+    },
+    {
+      "type": "way",
+      "id": 537868846,
+      "center": {
+        "lat": 57.1467515,
+        "lon": 65.5914772
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 100"
+      }
+    },
+    {
+      "type": "way",
+      "id": 537868850,
+      "center": {
+        "lat": 57.1474068,
+        "lon": 65.5899482
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 100"
+      }
+    },
+    {
+      "type": "way",
+      "id": 538774512,
+      "center": {
+        "lat": 57.1348714,
+        "lon": 65.5913582
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад №89"
+      }
+    },
+    {
+      "type": "way",
+      "id": 539193950,
+      "center": {
+        "lat": 57.1337101,
+        "lon": 65.5733679
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 76"
+      }
+    },
+    {
+      "type": "way",
+      "id": 540952821,
+      "center": {
+        "lat": 57.0945417,
+        "lon": 65.6156072
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "height": "2.2",
+        "name": "Детский сад № 185 «Николаша»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 542218368,
+      "center": {
+        "lat": 57.1491901,
+        "lon": 65.5804543
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 88"
+      }
+    },
+    {
+      "type": "way",
+      "id": 542221723,
+      "center": {
+        "lat": 57.1474135,
+        "lon": 65.5833941
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "детский сад № 96",
+        "ref": "96"
+      }
+    },
+    {
+      "type": "way",
+      "id": 542887184,
+      "center": {
+        "lat": 57.1392421,
+        "lon": 65.5048696
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 166"
+      }
+    },
+    {
+      "type": "way",
+      "id": 543059709,
+      "center": {
+        "lat": 57.1472837,
+        "lon": 65.49975
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Центр развития ребенка детский сад № 50"
+      }
+    },
+    {
+      "type": "way",
+      "id": 543059729,
+      "center": {
+        "lat": 57.1461251,
+        "lon": 65.5013312
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 50",
+        "ref": "50"
+      }
+    },
+    {
+      "type": "way",
+      "id": 543260076,
+      "center": {
+        "lat": 57.1502959,
+        "lon": 65.5220627
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "61",
+        "addr:street": "Краснодонская улица",
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Гимназия №1",
+        "ref": "50"
+      }
+    },
+    {
+      "type": "way",
+      "id": 545398432,
+      "center": {
+        "lat": 57.1450494,
+        "lon": 65.550777
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 183",
+        "old_name": "Родильный дом №2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 545398445,
+      "center": {
+        "lat": 57.144026,
+        "lon": 65.5544342
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 183"
+      }
+    },
+    {
+      "type": "way",
+      "id": 548487958,
+      "center": {
+        "lat": 57.1579518,
+        "lon": 65.5551588
+      },
+      "tags": {
+        "addr:housenumber": "60",
+        "addr:street": "улица Осипенко",
+        "amenity": "clinic",
+        "building": "commercial",
+        "building:levels": "2",
+        "name": "Клиника Фомина"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555925130,
+      "center": {
+        "lat": 57.1090569,
+        "lon": 65.6050938
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 3"
+      }
+    },
+    {
+      "type": "way",
+      "id": 563672704,
+      "center": {
+        "lat": 57.1657838,
+        "lon": 65.5110667
+      },
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:street": "улица Луначарского",
+        "amenity": "school",
+        "building": "yes",
+        "building:levels": "2",
+        "height": "9"
+      }
+    },
+    {
+      "type": "way",
+      "id": 585479921,
+      "center": {
+        "lat": 57.116484,
+        "lon": 65.4933471
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Гимназия № 4 (корпус № 1)",
+        "ref": "49",
+        "website": "https://gymn4-tmn.ru/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 597997801,
+      "center": {
+        "lat": 57.1655401,
+        "lon": 65.5271226
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 167"
+      }
+    },
+    {
+      "type": "way",
+      "id": 629984314,
+      "center": {
+        "lat": 57.1468361,
+        "lon": 65.4569204
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence"
+      }
+    },
+    {
+      "type": "way",
+      "id": 641810204,
+      "center": {
+        "lat": 57.1281962,
+        "lon": 65.5265186
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "fence_type": "metal",
+        "name": "Детский сад № 39"
+      }
+    },
+    {
+      "type": "way",
+      "id": 653705789,
+      "center": {
+        "lat": 57.1472166,
+        "lon": 65.6443766
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "8",
+        "addr:street": "улица Мебельщиков",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "3",
+        "name": "\"Страна чудес\" Детский сад №36 корпус 3"
+      }
+    },
+    {
+      "type": "way",
+      "id": 666977126,
+      "center": {
+        "lat": 57.1699556,
+        "lon": 65.5620788
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад №160 \"Планета мечтателей\""
+      }
+    },
+    {
+      "type": "way",
+      "id": 671021486,
+      "center": {
+        "lat": 57.1181028,
+        "lon": 65.5651221
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 169"
+      }
+    },
+    {
+      "type": "way",
+      "id": 690122612,
+      "center": {
+        "lat": 57.0944179,
+        "lon": 65.716461
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад №12"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691522335,
+      "center": {
+        "lat": 56.9579302,
+        "lon": 65.7682908
+      },
+      "tags": {
+        "addr:housenumber": "4",
+        "addr:street": "Октябрьский переулок",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "name": "Малышок"
+      }
+    },
+    {
+      "type": "way",
+      "id": 727966503,
+      "center": {
+        "lat": 57.1174305,
+        "lon": 65.494895
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад «Умка»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770588085,
+      "center": {
+        "lat": 57.0984925,
+        "lon": 65.6406592
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 25"
+      }
+    },
+    {
+      "type": "way",
+      "id": 780165857,
+      "center": {
+        "lat": 57.1773955,
+        "lon": 65.6614623
+      },
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 791408121,
+      "center": {
+        "lat": 57.1699555,
+        "lon": 65.5584044
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "fence_type": "bars",
+        "name": "Средняя общеобразовательная школа №94 корпус 2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 812487875,
+      "center": {
+        "lat": 57.1762638,
+        "lon": 65.5512226
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 134",
+        "ref": "134"
+      }
+    },
+    {
+      "type": "way",
+      "id": 816441206,
+      "center": {
+        "lat": 57.1131199,
+        "lon": 65.5312683
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 817118701,
+      "center": {
+        "lat": 57.044501,
+        "lon": 65.7164025
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Кораблик"
+      }
+    },
+    {
+      "type": "way",
+      "id": 817118785,
+      "center": {
+        "lat": 57.0462265,
+        "lon": 65.7152971
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Школа №2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 844956794,
+      "center": {
+        "lat": 56.9618519,
+        "lon": 65.7898128
+      },
+      "tags": {
+        "addr:housenumber": "5",
+        "addr:street": "улица 60 лет Октября",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "2",
+        "name": "Малышок",
+        "source:addr": "ЕГРН",
+        "start_date": "2006"
+      }
+    },
+    {
+      "type": "way",
+      "id": 845002249,
+      "center": {
+        "lat": 56.9589845,
+        "lon": 65.7706455
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "Винзилинская средняя общеобразовательная школа им. Г.С. Ковальчука"
+      }
+    },
+    {
+      "type": "way",
+      "id": 845002289,
+      "center": {
+        "lat": 56.9577357,
+        "lon": 65.7765929
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "Винзилинская средняя общеобразовательная школа им. Г.С. Ковальчука"
+      }
+    },
+    {
+      "type": "way",
+      "id": 861269229,
+      "center": {
+        "lat": 57.1358465,
+        "lon": 65.4747517
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 50 «Счастливое детство»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 861269230,
+      "center": {
+        "lat": 57.1357573,
+        "lon": 65.4705108
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2.2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 863748091,
+      "center": {
+        "lat": 57.0966883,
+        "lon": 65.6335892
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 869974198,
+      "center": {
+        "lat": 57.1527899,
+        "lon": 65.6614423
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "chain_link",
+        "landuse": "education",
+        "name": "Детский сад №36",
+        "name:ru": "Детский сад №36"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874519189,
+      "center": {
+        "lat": 57.1223792,
+        "lon": 65.5600615
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874519190,
+      "center": {
+        "lat": 57.122874,
+        "lon": 65.5544248
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 176 «Фантазёры»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874543444,
+      "center": {
+        "lat": 57.1136368,
+        "lon": 65.564182
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874543445,
+      "center": {
+        "lat": 57.111723,
+        "lon": 65.5621418
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874543446,
+      "center": {
+        "lat": 57.1105284,
+        "lon": 65.5549411
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874543447,
+      "center": {
+        "lat": 57.1078693,
+        "lon": 65.5622252
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874556685,
+      "center": {
+        "lat": 57.1034673,
+        "lon": 65.6055639
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "name": "Детский сад № 3"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874556695,
+      "center": {
+        "lat": 57.1053232,
+        "lon": 65.6083382
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 146"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874559567,
+      "center": {
+        "lat": 57.1472853,
+        "lon": 65.6447
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874560747,
+      "center": {
+        "lat": 57.1736196,
+        "lon": 65.6448661
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад №65",
+        "website": "http://www.sad65.ru"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874638008,
+      "center": {
+        "lat": 57.1817156,
+        "lon": 65.6154858
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "education": "school",
+        "fence_type": "wire",
+        "landuse": "education",
+        "name": "средняя общеобразовательная школа № 13",
+        "ref": "13"
+      }
+    },
+    {
+      "type": "way",
+      "id": 874638018,
+      "center": {
+        "lat": 57.1831905,
+        "lon": 65.6155174
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "fence_type": "wire",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 875106318,
+      "center": {
+        "lat": 57.0964673,
+        "lon": 65.6374927
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "name": "Детский сад № 25"
+      }
+    },
+    {
+      "type": "way",
+      "id": 875112183,
+      "center": {
+        "lat": 57.1053417,
+        "lon": 65.5698331
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 875113266,
+      "center": {
+        "lat": 57.139323,
+        "lon": 65.5744488
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 79 (корпус № 3)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 875114745,
+      "center": {
+        "lat": 57.1481006,
+        "lon": 65.5798446
+      },
+      "tags": {
+        "amenity": "school",
+        "check_date": "2026-03-28",
+        "name": "Школа-гимназия № 12"
+      }
+    },
+    {
+      "type": "way",
+      "id": 875115242,
+      "center": {
+        "lat": 57.1500774,
+        "lon": 65.5760133
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 77"
+      }
+    },
+    {
+      "type": "way",
+      "id": 875410033,
+      "center": {
+        "lat": 57.1449671,
+        "lon": 65.5714393
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 7"
+      }
+    },
+    {
+      "type": "way",
+      "id": 875410039,
+      "center": {
+        "lat": 57.147274,
+        "lon": 65.57475
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 895147542,
+      "center": {
+        "lat": 57.1435892,
+        "lon": 65.5460406
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 900716581,
+      "center": {
+        "lat": 57.1629339,
+        "lon": 65.4888586
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "landuse": "education",
+        "name": "Детский сад № 91",
+        "ref": "91"
+      }
+    },
+    {
+      "type": "way",
+      "id": 916241793,
+      "center": {
+        "lat": 57.1776053,
+        "lon": 65.4906379
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 918675137,
+      "center": {
+        "lat": 57.1171839,
+        "lon": 65.5733831
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2",
+        "name": "Детский сад № 164"
+      }
+    },
+    {
+      "type": "way",
+      "id": 919092415,
+      "center": {
+        "lat": 57.1151064,
+        "lon": 65.5787509
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2.2",
+        "name": "Детский сад №118"
+      }
+    },
+    {
+      "type": "way",
+      "id": 921260893,
+      "center": {
+        "lat": 57.2066093,
+        "lon": 65.6011654
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence"
+      }
+    },
+    {
+      "type": "way",
+      "id": 921260894,
+      "center": {
+        "lat": 57.2068058,
+        "lon": 65.6074869
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence"
+      }
+    },
+    {
+      "type": "way",
+      "id": 921260895,
+      "center": {
+        "lat": 57.2054598,
+        "lon": 65.6066354
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 921594947,
+      "center": {
+        "lat": 57.175467,
+        "lon": 65.5481597
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 921679789,
+      "center": {
+        "lat": 57.1485809,
+        "lon": 65.4922454
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "name": "Детский сад №137"
+      }
+    },
+    {
+      "type": "way",
+      "id": 921679796,
+      "center": {
+        "lat": 57.1483334,
+        "lon": 65.4933624
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад №50 \"Счастливое детство\""
+      }
+    },
+    {
+      "type": "way",
+      "id": 921959207,
+      "center": {
+        "lat": 57.1316833,
+        "lon": 65.496516
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Средняя общеобразовательная школа № 88",
+        "ref": "88"
+      }
+    },
+    {
+      "type": "way",
+      "id": 923684447,
+      "center": {
+        "lat": 57.1549784,
+        "lon": 65.570688
+      },
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 924638893,
+      "center": {
+        "lat": 57.1229338,
+        "lon": 65.6121347
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 954523932,
+      "center": {
+        "lat": 57.104598,
+        "lon": 65.5514358
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 954523933,
+      "center": {
+        "lat": 57.1045659,
+        "lon": 65.5515072
+      },
+      "tags": {
+        "addr:housenumber": "30 к5",
+        "addr:street": "улица Федюнинского",
+        "amenity": "school",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Heritage School",
+        "website": "https://heritageschool.ru/our-network/campus-tyumen/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 993478469,
+      "center": {
+        "lat": 57.1313406,
+        "lon": 65.5003689
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 166 (корпус № 4)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 993589717,
+      "center": {
+        "lat": 57.0847804,
+        "lon": 65.2261836
+      },
+      "tags": {
+        "addr:city": "Перевалово",
+        "addr:street": "Школьная улица",
+        "amenity": "school",
+        "name": "МАОУ Переваловская СОШ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 997945254,
+      "center": {
+        "lat": 57.1438183,
+        "lon": 65.582431
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад №101",
+        "name:ru": "Детский сад №101",
+        "opening_hours": "Mo-Fr 07:00-19:00",
+        "phone": "+7 3452 207784"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1007314204,
+      "center": {
+        "lat": 57.165205,
+        "lon": 65.5953061
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1008112584,
+      "center": {
+        "lat": 57.2155362,
+        "lon": 65.5565088
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "Школа № 52",
+        "website": "http://тюм-шк52.рф/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1010752400,
+      "center": {
+        "lat": 57.1104773,
+        "lon": 65.5583211
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2.2",
+        "name": "Детский сад № 186 «Кристаллик»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1015006423,
+      "center": {
+        "lat": 57.1438349,
+        "lon": 65.5227368
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1015006424,
+      "center": {
+        "lat": 57.1426767,
+        "lon": 65.5218799
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1020832194,
+      "center": {
+        "lat": 57.1287808,
+        "lon": 65.5211865
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 60"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1021929199,
+      "center": {
+        "lat": 57.2132065,
+        "lon": 65.4282502
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2",
+        "name": "Детский сад № 143",
+        "ref": "143"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1021929200,
+      "center": {
+        "lat": 57.2126667,
+        "lon": 65.4267732
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 58"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1030024486,
+      "center": {
+        "lat": 57.1291055,
+        "lon": 65.5263365
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "education": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1031083438,
+      "center": {
+        "lat": 57.1632938,
+        "lon": 65.4847715
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "fence_type": "bars",
+        "landuse": "education",
+        "name": "детский сад №110 корпус 1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1031083440,
+      "center": {
+        "lat": 57.162548,
+        "lon": 65.4870029
+      },
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "landuse": "education",
+        "name": "Средняя общеобразовательная школа № 22",
+        "ref": "22"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1036185479,
+      "center": {
+        "lat": 57.1395758,
+        "lon": 65.5229513
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Средняя общеобразовательная школа №30 им. Ф.Е. Федорова"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064119461,
+      "center": {
+        "lat": 57.1216634,
+        "lon": 65.4929803
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Гимназия № 4 (корпус № 2)",
+        "website": "https://gymn4-tmn.ru/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064410472,
+      "center": {
+        "lat": 57.1165141,
+        "lon": 65.4870055
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "fence_type": "wire",
+        "landuse": "education",
+        "name": "Ёлочка"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064410473,
+      "center": {
+        "lat": 57.120862,
+        "lon": 65.4889524
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 95 (корпус № 3)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1082704441,
+      "center": {
+        "lat": 57.1783569,
+        "lon": 65.563366
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1096171790,
+      "center": {
+        "lat": 57.1403452,
+        "lon": 65.4791236
+      },
+      "tags": {
+        "addr:housenumber": "137",
+        "addr:street": "Ставропольская улица",
+        "amenity": "school",
+        "building": "yes",
+        "building:levels": "4",
+        "name": "Школа № 95",
+        "website": "https://school95-tmn.ru"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1096171791,
+      "center": {
+        "lat": 57.1404924,
+        "lon": 65.4794698
+      },
+      "tags": {
+        "addr:housenumber": "137",
+        "addr:street": "Ставропольская улица",
+        "amenity": "school",
+        "building": "yes",
+        "building:levels": "3",
+        "construction": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1097229453,
+      "center": {
+        "lat": 57.1875775,
+        "lon": 65.568011
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1103353374,
+      "center": {
+        "lat": 57.1581599,
+        "lon": 65.5641984
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1105207806,
+      "center": {
+        "lat": 57.1209291,
+        "lon": 65.489378
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "1",
+        "addr:street": "Арктическая улица",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Детский сад № 95 (корпус № 3)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120516155,
+      "center": {
+        "lat": 57.0958629,
+        "lon": 65.5961137
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125539048,
+      "center": {
+        "lat": 57.1764084,
+        "lon": 65.5674506
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1141887698,
+      "center": {
+        "lat": 57.1672101,
+        "lon": 65.4654385
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2.2",
+        "name": "Детский сад № 151"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1153476322,
+      "center": {
+        "lat": 57.1637907,
+        "lon": 65.5033421
+      },
+      "tags": {
+        "addr:housenumber": "39",
+        "addr:street": "Ямская улица",
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "5",
+        "healthcare": "clinic",
+        "name": "ЮниМед"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1154171528,
+      "center": {
+        "lat": 57.1410201,
+        "lon": 65.5720703
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1154689186,
+      "center": {
+        "lat": 57.1446656,
+        "lon": 65.5742059
+      },
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1154691247,
+      "center": {
+        "lat": 57.1456245,
+        "lon": 65.57074
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157359916,
+      "center": {
+        "lat": 57.2213063,
+        "lon": 65.5294102
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад Берёзка"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157579475,
+      "center": {
+        "lat": 57.1219921,
+        "lon": 65.4618318
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1180393894,
+      "center": {
+        "lat": 57.1311828,
+        "lon": 65.585335
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад №82"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1180393901,
+      "center": {
+        "lat": 57.1322067,
+        "lon": 65.5840817
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "fence_type": "wire",
+        "height": "2.2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202751287,
+      "center": {
+        "lat": 57.1694724,
+        "lon": 65.5223499
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1211629998,
+      "center": {
+        "lat": 57.1401923,
+        "lon": 65.478644
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "fence": "wire",
+        "name": "Средняя школа № 95"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1216197132,
+      "center": {
+        "lat": 57.1820503,
+        "lon": 65.5773129
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1216731329,
+      "center": {
+        "lat": 57.0494954,
+        "lon": 65.7132587
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад \"Журавушка\""
+      }
+    },
+    {
+      "type": "way",
+      "id": 1216741895,
+      "center": {
+        "lat": 57.0492403,
+        "lon": 65.7193866
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1227078547,
+      "center": {
+        "lat": 57.1569129,
+        "lon": 65.6463414
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "landuse": "construction"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1247087454,
+      "center": {
+        "lat": 57.1519657,
+        "lon": 65.5276402
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265045831,
+      "center": {
+        "lat": 57.006065,
+        "lon": 65.4027314
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265045835,
+      "center": {
+        "lat": 57.0042327,
+        "lon": 65.4041863
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1266045664,
+      "center": {
+        "lat": 57.0623717,
+        "lon": 65.8022481
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "name": "Андреевская средняя общеобразовательная школа"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1287004166,
+      "center": {
+        "lat": 57.2214074,
+        "lon": 65.3577325
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1287004167,
+      "center": {
+        "lat": 57.2212916,
+        "lon": 65.3562511
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1313677708,
+      "center": {
+        "lat": 57.1506225,
+        "lon": 65.7653338
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "школа им.А.Аширбекова"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1352918230,
+      "center": {
+        "lat": 57.209816,
+        "lon": 65.6025183
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1352918237,
+      "center": {
+        "lat": 57.2072488,
+        "lon": 65.5854636
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1420376995,
+      "center": {
+        "lat": 57.1003895,
+        "lon": 65.582727
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421212550,
+      "center": {
+        "lat": 57.2218333,
+        "lon": 65.5277828
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "construction": "education",
+        "education": "school",
+        "name": "средняя общеобразовательная школа № 96"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1425505173,
+      "center": {
+        "lat": 57.177476,
+        "lon": 65.6630792
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "construction": "education",
+        "education": "kindergarten",
+        "landuse": "construction"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1432256225,
+      "center": {
+        "lat": 57.1661244,
+        "lon": 65.5040538
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1434721696,
+      "center": {
+        "lat": 57.1102268,
+        "lon": 65.1851093
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1434721729,
+      "center": {
+        "lat": 57.1107298,
+        "lon": 65.1820994
+      },
+      "tags": {
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1436882949,
+      "center": {
+        "lat": 57.1092524,
+        "lon": 65.4256051
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "fence_type": "bars",
+        "height": "2.2",
+        "landuse": "education",
+        "name": "Сказка"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1446667735,
+      "center": {
+        "lat": 57.1659945,
+        "lon": 65.5922384
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1446667736,
+      "center": {
+        "lat": 57.164947,
+        "lon": 65.5913865
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1456027579,
+      "center": {
+        "lat": 57.1602319,
+        "lon": 65.4269927
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "building": "construction"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1461804202,
+      "center": {
+        "lat": 57.153311,
+        "lon": 65.4865511
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "landuse": "education",
+        "name": "Детский сад №122"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1477347893,
+      "center": {
+        "lat": 57.1756282,
+        "lon": 65.5956876
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1483681748,
+      "center": {
+        "lat": 57.1583045,
+        "lon": 65.5824441
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1493378504,
+      "center": {
+        "lat": 57.2010513,
+        "lon": 65.5510175
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1509449707,
+      "center": {
+        "lat": 57.2836638,
+        "lon": 65.2329637
+      },
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "landuse": "education",
+        "name": "Новотарманская средняя школа",
+        "official_name": "МАОУ Новотарманская средняя общеобразовательная школа Тюменского муниципального района"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1509465720,
+      "center": {
+        "lat": 57.2808197,
+        "lon": 65.2363983
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "fence_type": "bars",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1527442895,
+      "center": {
+        "lat": 57.1699153,
+        "lon": 65.5877057
+      },
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "landuse": "construction",
+        "name": "Строящаяся школа «Лира»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1551269137,
+      "center": {
+        "lat": 57.1076463,
+        "lon": 65.6025566
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "name": "Детский сад №3 «Пуговки»"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1556752054,
+      "center": {
+        "lat": 57.0935848,
+        "lon": 65.5093149
+      },
+      "tags": {
+        "addr:city": "Патрушева",
+        "addr:housenumber": "6",
+        "addr:postcode": "625062",
+        "addr:street": "улица Александра Пушкина",
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "education": "kindergarten",
+        "landuse": "education",
+        "name": "Детский сад \"Иванушка\"",
+        "preschool": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1560992639,
+      "center": {
+        "lat": 57.1230587,
+        "lon": 65.6101075
+      },
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 395020,
+      "center": {
+        "lat": 57.1757843,
+        "lon": 65.5481932
+      },
+      "tags": {
+        "addr:housenumber": "94",
+        "addr:street": "улица Щербакова",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "3",
+        "name": "средняя общеобразовательная школа № 43",
+        "ref": "43",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1561583,
+      "center": {
+        "lat": 57.1399988,
+        "lon": 65.5604239
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 5",
+        "ref": "5",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 2002195,
+      "center": {
+        "lat": 57.1467051,
+        "lon": 65.569644
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 37",
+        "ref": "37",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 3210669,
+      "center": {
+        "lat": 57.1372795,
+        "lon": 65.5033596
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Средняя общеобразовательная школа № 88 (корпус № 2)",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 3740141,
+      "center": {
+        "lat": 57.1833506,
+        "lon": 65.6153492
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "22А",
+        "addr:postcode": "625029",
+        "addr:street": "Игримская улица",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "building:levels": "2",
+        "name": "детский сад № 92",
+        "smoking": "no",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 5724825,
+      "center": {
+        "lat": 57.151838,
+        "lon": 65.5274307
+      },
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "21",
+        "addr:street": "улица Крупской",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "3",
+        "name": "МАОУ Гимназия №1 г. Тюмени",
+        "type": "multipolygon",
+        "website": "https://1gymnasium.ru"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 12491139,
+      "center": {
+        "lat": 57.1827705,
+        "lon": 65.5898148
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Школа № 36",
+        "official_name": "Cредняя общеобразовательная школа № 36",
+        "ref": "36",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 12491140,
+      "center": {
+        "lat": 57.1830373,
+        "lon": 65.587136
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Лицей № 81",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 12491172,
+      "center": {
+        "lat": 57.1795685,
+        "lon": 65.5557777
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Средняя общеобразовательная школа № 62",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 12491188,
+      "center": {
+        "lat": 57.173806,
+        "lon": 65.5513873
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад № 160 «Радуга»",
+        "ref": "160",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13471707,
+      "center": {
+        "lat": 57.1349424,
+        "lon": 65.5790189
+      },
+      "tags": {
+        "amenity": "school",
+        "barrier": "fence",
+        "check_date": "2023-07-01",
+        "name": "средняя общеобразовательная школа № 7",
+        "ref": "7",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13574710,
+      "center": {
+        "lat": 57.0948741,
+        "lon": 65.5743476
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "landuse": "education",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 14543900,
+      "center": {
+        "lat": 57.0920207,
+        "lon": 65.5731173
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Средняя общеобразовательная школа № 56",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 15595433,
+      "center": {
+        "lat": 57.1322828,
+        "lon": 65.5717837
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад, ясли № 106",
+        "ref": "106",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 15595434,
+      "center": {
+        "lat": 57.1328678,
+        "lon": 65.5705293
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 77",
+        "ref": "77",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 15595435,
+      "center": {
+        "lat": 57.1325344,
+        "lon": 65.5710282
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "детский сад № 120",
+        "ref": "120",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 16328300,
+      "center": {
+        "lat": 57.1125455,
+        "lon": 65.4223989
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Московская средняя общеобразовательная школа",
+        "ref": "8",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 16521734,
+      "center": {
+        "lat": 57.0466273,
+        "lon": 65.7201839
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 16521735,
+      "center": {
+        "lat": 57.0476182,
+        "lon": 65.7197951
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "средняя общеобразовательная школа № 1",
+        "ref": "1",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 17420886,
+      "center": {
+        "lat": 57.1541835,
+        "lon": 65.5791716
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "barrier": "fence",
+        "name": "Детский сад № 75",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 19691599,
+      "center": {
+        "lat": 57.0995136,
+        "lon": 65.5972962
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Средняя общеобразовательная школа № 65",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 19691600,
+      "center": {
+        "lat": 57.0986233,
+        "lon": 65.596045
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Детский сад «Эврика»",
+        "type": "multipolygon"
+      }
+    }
+  ]
+}

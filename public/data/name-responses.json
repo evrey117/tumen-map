@@ -1,0 +1,141 @@
+{
+  "Добро на Доке, Тюмень": [],
+  "Добро, Тюмень": [
+    {
+      "place_id": 214896117,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1215302248,
+      "lat": "57.1669359",
+      "lon": "65.5770521",
+      "category": "landuse",
+      "type": "construction",
+      "place_rank": 24,
+      "importance": 0.08006223926146332,
+      "addresstype": "construction",
+      "name": "ЖК Добро",
+      "display_name": "ЖК Добро, Новая Зарека, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "construction": "ЖК Добро",
+        "suburb": "Новая Зарека",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1658302",
+        "57.1678643",
+        "65.5747390",
+        "65.5794660"
+      ]
+    },
+    {
+      "place_id": 214771063,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 748724553,
+      "lat": "57.1042454",
+      "lon": "65.5873935",
+      "category": "shop",
+      "type": "bakery",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "shop",
+      "name": "Печём добро",
+      "display_name": "Печём добро, улица Монтажников, МЖК, Восточный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "shop": "Печём добро",
+        "road": "улица Монтажников",
+        "neighbourhood": "МЖК",
+        "city_district": "Восточный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1041954",
+        "57.1042954",
+        "65.5873435",
+        "65.5874435"
+      ]
+    }
+  ],
+  "Сезоны, Тюмень": [
+    {
+      "place_id": 215756972,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 3721246340,
+      "lat": "57.0957966",
+      "lon": "65.6252801",
+      "category": "shop",
+      "type": "dry_cleaning",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "shop",
+      "name": "Русские сезоны",
+      "display_name": "Русские сезоны, Широтная улица, Войновка, Восточный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "shop": "Русские сезоны",
+        "road": "Широтная улица",
+        "suburb": "Войновка",
+        "city_district": "Восточный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.0957466",
+        "57.0958466",
+        "65.6252301",
+        "65.6253301"
+      ]
+    },
+    {
+      "place_id": 215805323,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1318774915,
+      "lat": "57.1213718",
+      "lon": "65.8914920",
+      "category": "landuse",
+      "type": "residential",
+      "place_rank": 24,
+      "importance": 0.08003750133516438,
+      "addresstype": "residential",
+      "name": "Коттеджный посёлок \"Сезоны\"",
+      "display_name": "Коттеджный посёлок \"Сезоны\", Тюменский муниципальный округ, Тюменская область, Уральский федеральный округ, Россия",
+      "address": {
+        "residential": "Коттеджный посёлок \"Сезоны\"",
+        "county": "Тюменский муниципальный округ",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1189545",
+        "57.1237873",
+        "65.8833748",
+        "65.8996093"
+      ]
+    }
+  ]
+}

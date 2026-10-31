@@ -1,0 +1,1142 @@
+{
+  "0": [
+    {
+      "place_id": 217393855,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 88357363,
+      "lat": "57.1457736",
+      "lon": "65.5963267",
+      "category": "building",
+      "type": "apartments",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "7 к1, Одесская улица, КПД, Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "house_number": "7 к1",
+        "road": "Одесская улица",
+        "suburb": "КПД",
+        "city_district": "Ленинский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1455882",
+        "57.1459564",
+        "65.5959001",
+        "65.5967535"
+      ]
+    }
+  ],
+  "1": [
+    {
+      "place_id": 216735809,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 500849830,
+      "lat": "57.1454863",
+      "lon": "65.6426160",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Лесопарковая улица",
+      "display_name": "Лесопарковая улица, Энтузиастов, Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Лесопарковая улица",
+        "suburb": "Энтузиастов",
+        "city_district": "Ленинский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1453997",
+        "57.1469284",
+        "65.6410461",
+        "65.6448717"
+      ]
+    },
+    {
+      "place_id": 216639710,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 587741616,
+      "lat": "57.1515566",
+      "lon": "65.6389883",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Лесопарковая улица",
+      "display_name": "Лесопарковая улица, Букино, Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Лесопарковая улица",
+        "suburb": "Букино",
+        "city_district": "Ленинский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1504289",
+        "57.1526921",
+        "65.6379824",
+        "65.6400029"
+      ]
+    }
+  ],
+  "2": [
+    {
+      "place_id": 216577818,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1136430142,
+      "lat": "57.1304859",
+      "lon": "65.4679468",
+      "category": "building",
+      "type": "apartments",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "11, улица Первооткрывателей, ЖК Колумб, Тюменская Слобода, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "house_number": "11",
+        "road": "улица Первооткрывателей",
+        "residential": "ЖК Колумб",
+        "suburb": "Тюменская Слобода",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1302912",
+        "57.1306807",
+        "65.4675449",
+        "65.4683487"
+      ]
+    }
+  ],
+  "3": [
+    {
+      "place_id": 215789618,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1312143938,
+      "lat": "57.1688696",
+      "lon": "65.5942756",
+      "category": "building",
+      "type": "construction",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "8, улица Пожарных и спасателей, СМП, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "house_number": "8",
+        "road": "улица Пожарных и спасателей",
+        "suburb": "СМП",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1682554",
+        "57.1693203",
+        "65.5929733",
+        "65.5944808"
+      ]
+    }
+  ],
+  "4": [
+    {
+      "place_id": 216241282,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 97193152,
+      "lat": "57.1600193",
+      "lon": "65.5401056",
+      "category": "building",
+      "type": "yes",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "5, улица Челюскинцев, Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "house_number": "5",
+        "road": "улица Челюскинцев",
+        "suburb": "Дом Печати",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1599305",
+        "57.1601081",
+        "65.5399350",
+        "65.5402762"
+      ]
+    }
+  ],
+  "5": [
+    {
+      "place_id": 215946087,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1421679608,
+      "lat": "57.1666281",
+      "lon": "65.5934881",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "tertiary",
+      "name": "улица Тимофея Кармацкого",
+      "display_name": "улица Тимофея Кармацкого, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "улица Тимофея Кармацкого",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1662715",
+        "57.1669742",
+        "65.5890225",
+        "65.5979529"
+      ]
+    },
+    {
+      "place_id": 215797535,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 36820717,
+      "lat": "57.1680433",
+      "lon": "65.5753816",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "tertiary",
+      "name": "улица Тимофея Кармацкого",
+      "display_name": "улица Тимофея Кармацкого, Новая Зарека, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "улица Тимофея Кармацкого",
+        "suburb": "Новая Зарека",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1676947",
+        "57.1683919",
+        "65.5709541",
+        "65.5798090"
+      ]
+    }
+  ],
+  "6": [
+    {
+      "place_id": 213906233,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 85183530,
+      "lat": "57.1251141",
+      "lon": "65.5234506",
+      "category": "building",
+      "type": "construction",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "25, Червишевский тракт, Южный, Комарово, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "house_number": "25",
+        "road": "Червишевский тракт",
+        "neighbourhood": "Южный",
+        "suburb": "Комарово",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1248416",
+        "57.1253868",
+        "65.5222617",
+        "65.5246392"
+      ]
+    }
+  ],
+  "7": [
+    {
+      "place_id": 216154879,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 774094266,
+      "lat": "57.1655254",
+      "lon": "65.5946695",
+      "category": "building",
+      "type": "apartments",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "5, улица Пожарных и спасателей, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625022, Россия",
+      "address": {
+        "house_number": "5",
+        "road": "улица Пожарных и спасателей",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625022",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1650407",
+        "57.1660202",
+        "65.5944097",
+        "65.5958340"
+      ]
+    }
+  ],
+  "8": [
+    {
+      "place_id": 217908300,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 461813846,
+      "lat": "57.1211931",
+      "lon": "65.4970954",
+      "category": "building",
+      "type": "construction",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "16, Арктическая улица, Тюменская Слобода, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "house_number": "16",
+        "road": "Арктическая улица",
+        "suburb": "Тюменская Слобода",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1207238",
+        "57.1216501",
+        "65.4962368",
+        "65.4974370"
+      ]
+    }
+  ],
+  "9": [
+    {
+      "place_id": 216648578,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1354604852,
+      "lat": "57.1719650",
+      "lon": "65.4856993",
+      "category": "building",
+      "type": "construction",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "117 к12, Полевая улица, Дом Обороны, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625001, Россия",
+      "address": {
+        "house_number": "117 к12",
+        "road": "Полевая улица",
+        "suburb": "Дом Обороны",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625001",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1717733",
+        "57.1721566",
+        "65.4853890",
+        "65.4860096"
+      ]
+    }
+  ],
+  "10": [
+    {
+      "place_id": 214887892,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1260545190,
+      "lat": "57.1382539",
+      "lon": "65.4681768",
+      "category": "building",
+      "type": "yes",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "100, улица Новосёлов, Маяк, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "house_number": "100",
+        "road": "улица Новосёлов",
+        "suburb": "Маяк",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1378645",
+        "57.1386463",
+        "65.4666977",
+        "65.4684175"
+      ]
+    }
+  ],
+  "11": [
+    {
+      "place_id": 216761150,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1132715257,
+      "lat": "57.1376825",
+      "lon": "65.6042599",
+      "category": "building",
+      "type": "apartments",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "74, Харьковская улица, Воровского, Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "house_number": "74",
+        "road": "Харьковская улица",
+        "suburb": "Воровского",
+        "city_district": "Ленинский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1372908",
+        "57.1379290",
+        "65.6037993",
+        "65.6049963"
+      ]
+    },
+    {
+      "place_id": 216557996,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 11875721242,
+      "lat": "57.1378156",
+      "lon": "65.6041408",
+      "category": "shop",
+      "type": "convenience",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "shop",
+      "name": "Монетка",
+      "display_name": "Монетка, 74, Харьковская улица, Воровского, Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "shop": "Монетка",
+        "house_number": "74",
+        "road": "Харьковская улица",
+        "suburb": "Воровского",
+        "city_district": "Ленинский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1377656",
+        "57.1378656",
+        "65.6040908",
+        "65.6041908"
+      ]
+    },
+    {
+      "place_id": 216689126,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 11099705499,
+      "lat": "57.1376254",
+      "lon": "65.6045562",
+      "category": "shop",
+      "type": "alcohol",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "shop",
+      "name": "Бристоль",
+      "display_name": "Бристоль, 74, Харьковская улица, Воровского, Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "shop": "Бристоль",
+        "house_number": "74",
+        "road": "Харьковская улица",
+        "suburb": "Воровского",
+        "city_district": "Ленинский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1375754",
+        "57.1376754",
+        "65.6045062",
+        "65.6046062"
+      ]
+    }
+  ],
+  "12": [
+    {
+      "place_id": 216204915,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 108285490,
+      "lat": "57.1817317",
+      "lon": "65.5208240",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Ярославская улица",
+      "display_name": "Ярославская улица, ДОК, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Ярославская улица",
+        "suburb": "ДОК",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1809503",
+        "57.1837340",
+        "65.5179884",
+        "65.5222726"
+      ]
+    },
+    {
+      "place_id": 216224827,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 45054555,
+      "lat": "57.1853680",
+      "lon": "65.5149753",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Ярославская улица",
+      "display_name": "Ярославская улица, ДОК, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625001, Россия",
+      "address": {
+        "road": "Ярославская улица",
+        "suburb": "ДОК",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625001",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1845549",
+        "57.1860736",
+        "65.5142549",
+        "65.5155869"
+      ]
+    }
+  ],
+  "13": [
+    {
+      "place_id": 214511572,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 918118482,
+      "lat": "57.1255461",
+      "lon": "65.4988205",
+      "category": "highway",
+      "type": "trunk",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "trunk",
+      "name": "Закалужская улица",
+      "display_name": "Закалужская улица, Тюменская Слобода, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Закалужская улица",
+        "suburb": "Тюменская Слобода",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1226597",
+        "57.1284185",
+        "65.4872240",
+        "65.5104136"
+      ]
+    },
+    {
+      "place_id": 216186775,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 24785475,
+      "lat": "57.1221251",
+      "lon": "65.5122824",
+      "category": "highway",
+      "type": "trunk",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "trunk",
+      "name": "Закалужская улица",
+      "display_name": "Закалужская улица, Комарово, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Закалужская улица",
+        "suburb": "Комарово",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1215511",
+        "57.1226597",
+        "65.5104136",
+        "65.5141398"
+      ]
+    }
+  ],
+  "14": [
+    {
+      "place_id": 216676595,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1427268390,
+      "lat": "57.1031469",
+      "lon": "65.4907214",
+      "category": "building",
+      "type": "construction",
+      "place_rank": 30,
+      "importance": 6.223926146329468e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "32, улица Василия Малкова, Тюменская Слобода, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "house_number": "32",
+        "road": "улица Василия Малкова",
+        "suburb": "Тюменская Слобода",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1028705",
+        "57.1038668",
+        "65.4904253",
+        "65.4922542"
+      ]
+    }
+  ],
+  "15": [
+    {
+      "place_id": 216297454,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1379881426,
+      "lat": "57.1023436",
+      "lon": "65.4893493",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "улица Владимира Абазарова",
+      "display_name": "улица Владимира Абазарова, Тюменская Слобода, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "улица Владимира Абазарова",
+        "suburb": "Тюменская Слобода",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1005046",
+        "57.1041845",
+        "65.4880969",
+        "65.4905989"
+      ]
+    }
+  ],
+  "16": [
+    {
+      "place_id": 214749932,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1418320523,
+      "lat": "57.1731123",
+      "lon": "65.4876919",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "tertiary",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, Дом Обороны, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625001, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "suburb": "Дом Обороны",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625001",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1720611",
+        "57.1744092",
+        "65.4849991",
+        "65.4904863"
+      ]
+    },
+    {
+      "place_id": 217505937,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 102784371,
+      "lat": "57.1658566",
+      "lon": "65.4989621",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "tertiary",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, Затюменка, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625001, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "suburb": "Затюменка",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625001",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1641972",
+        "57.1674895",
+        "65.4970141",
+        "65.5008899"
+      ]
+    },
+    {
+      "place_id": 218596517,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 105144553,
+      "lat": "57.1785555",
+      "lon": "65.7350410",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, СНТ «Яровское», Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "allotments": "СНТ «Яровское»",
+        "city_district": "Ленинский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1765138",
+        "57.1806289",
+        "65.7336607",
+        "65.7363778"
+      ]
+    },
+    {
+      "place_id": 214797143,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 483479697,
+      "lat": "57.2128687",
+      "lon": "65.6171290",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, CТ «Малинка», Мелиораторов, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "neighbourhood": "CТ «Малинка»",
+        "suburb": "Мелиораторов",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.2121437",
+        "57.2135936",
+        "65.6147779",
+        "65.6194801"
+      ]
+    },
+    {
+      "place_id": 214807858,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 43060323,
+      "lat": "57.2269524",
+      "lon": "65.5599041",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, Казарово, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "suburb": "Казарово",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.2267106",
+        "57.2271653",
+        "65.5527476",
+        "65.5670542"
+      ]
+    },
+    {
+      "place_id": 214805447,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 483707313,
+      "lat": "57.2161957",
+      "lon": "65.6037137",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, СНТ \"Корабельщик\", Мелиораторов, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "allotments": "СНТ \"Корабельщик\"",
+        "suburb": "Мелиораторов",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.2153808",
+        "57.2166006",
+        "65.6013160",
+        "65.6059997"
+      ]
+    },
+    {
+      "place_id": 214804487,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 704814100,
+      "lat": "57.2304021",
+      "lon": "65.5816328",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, СНТ \"Аккорд\", Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "allotments": "СНТ \"Аккорд\"",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.2293478",
+        "57.2314375",
+        "65.5810116",
+        "65.5820976"
+      ]
+    },
+    {
+      "place_id": 426952030,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 52707789,
+      "lat": "57.2469308",
+      "lon": "65.5146973",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, СНТ «Гвоздика», Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "neighbourhood": "СНТ «Гвоздика»",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.2467320",
+        "57.2471163",
+        "65.5120057",
+        "65.5173872"
+      ]
+    },
+    {
+      "place_id": 214791637,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 46346844,
+      "lat": "57.1903266",
+      "lon": "65.6231848",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, Тарманы, Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625001, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "suburb": "Тарманы",
+        "city_district": "Ленинский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625001",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1894999",
+        "57.1911532",
+        "65.6228431",
+        "65.6235264"
+      ]
+    },
+    {
+      "place_id": 214796801,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 43060699,
+      "lat": "57.2271372",
+      "lon": "65.5692806",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339557259479664,
+      "addresstype": "residential",
+      "name": "Полевая улица",
+      "display_name": "Полевая улица, СНТ Степное, Казарово, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "road": "Полевая улица",
+        "neighbourhood": "СНТ Степное",
+        "suburb": "Казарово",
+        "city_district": "Центральный административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.2266168",
+        "57.2276576",
+        "65.5692291",
+        "65.5693321"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,583 @@
+{
+  "checkedAt": "2026-10-31T09:13:14.628Z",
+  "sourceTimestamp": "2026-10-31T08:39:28Z",
+  "counts": {
+    "kindergarten": 211,
+    "school": 134,
+    "clinic": 18
+  },
+  "duplicates": [
+    {
+      "removed": "way/1064410473",
+      "retained": "way/1105207806",
+      "reason": "same-entity-same-location"
+    },
+    {
+      "removed": "way/1180393894",
+      "retained": "way/27749433",
+      "reason": "same-entity-same-location"
+    },
+    {
+      "removed": "way/1211629998",
+      "retained": "way/1096171790",
+      "reason": "same-entity-same-location"
+    },
+    {
+      "removed": "way/280040886",
+      "retained": "way/94903899",
+      "reason": "same-entity-same-location"
+    },
+    {
+      "removed": "way/874519190",
+      "retained": "way/46228019",
+      "reason": "same-entity-same-location"
+    },
+    {
+      "removed": "node/13187166591",
+      "retained": "way/1434721696",
+      "reason": "same-entity-same-location"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "node/989218392",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/1489831109",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/3277889504",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/4642572721",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/5044022062",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/8002365108",
+      "reason": "not-school"
+    },
+    {
+      "id": "node/8649653471",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/9139550719",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/9808857840",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/9832758735",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/9832758737",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/9899981009",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/10744921652",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/10788245090",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/10976162401",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/10976251723",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/10976251724",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/10976251725",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/10976251726",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/10976251727",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/11059318791",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/11622480600",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/11683864766",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/11925614117",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/12298907330",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/12655174517",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/13001289723",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/13030961392",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/13708675220",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "node/13723053097",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "way/24818695",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "way/440928226",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "way/548487958",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "way/923684447",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "way/1096171791",
+      "reason": "inactive-or-planned"
+    },
+    {
+      "id": "way/1153476322",
+      "reason": "not-eligible"
+    },
+    {
+      "id": "way/1421212550",
+      "reason": "inactive-or-planned"
+    },
+    {
+      "id": "way/1425505173",
+      "reason": "inactive-or-planned"
+    }
+  ],
+  "operatingStatusIndependentlyVerified": 0,
+  "clinics": [
+    {
+      "id": "way/131872183",
+      "osmType": "way",
+      "name": "Городская поликлиника №8",
+      "category": "clinic",
+      "lat": 57.188999,
+      "lon": 65.6399962,
+      "tags": {
+        "addr:housenumber": "28",
+        "addr:street": "Пражская улица",
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Городская поликлиника №8"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/131872183"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "way/205657842",
+      "osmType": "way",
+      "name": "Городская поликлиника №3",
+      "category": "clinic",
+      "lat": 57.15804,
+      "lon": 65.527924,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "23/1",
+        "addr:street": "улица Ленина",
+        "amenity": "clinic",
+        "building": "civic",
+        "building:levels": "4",
+        "healthcare": "clinic",
+        "name": "Городская поликлиника №3"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/205657842"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "way/27588952",
+      "osmType": "way",
+      "name": "Городская поликлиника № 8",
+      "category": "clinic",
+      "lat": 57.1841729,
+      "lon": 65.5869924,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "10Б",
+        "addr:street": "улица Ватутина",
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "6",
+        "healthcare": "clinic",
+        "name": "Городская поликлиника № 8"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/27588952"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "way/318382913",
+      "osmType": "way",
+      "name": "городская поликлиника № 12",
+      "category": "clinic",
+      "lat": 57.0951776,
+      "lon": 65.6404937,
+      "tags": {
+        "amenity": "clinic",
+        "building": "civic",
+        "building:colour": "lightyellow",
+        "building:levels": "2",
+        "name": "городская поликлиника № 12"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/318382913"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "way/371891323",
+      "osmType": "way",
+      "name": "Городская поликлиника №17",
+      "category": "clinic",
+      "lat": 57.1031253,
+      "lon": 65.5934934,
+      "tags": {
+        "addr:housenumber": "41 к1",
+        "addr:street": "улица Монтажников",
+        "amenity": "clinic",
+        "building": "apartments",
+        "building:levels": "3",
+        "healthcare": "clinic",
+        "name": "Городская поликлиника №17"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/371891323"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "way/465937769",
+      "osmType": "way",
+      "name": "Поликлиника № 8 (филиал)",
+      "category": "clinic",
+      "lat": 57.2144898,
+      "lon": 65.5493789,
+      "tags": {
+        "addr:housenumber": "23А",
+        "addr:street": "Казаровская улица",
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "1",
+        "healthcare": "clinic",
+        "name": "Поликлиника № 8 (филиал)",
+        "note": "Бывшее здание школы № 52."
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/465937769"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "way/85183462",
+      "osmType": "way",
+      "name": "Поликлиника № 5",
+      "category": "clinic",
+      "lat": 57.1278187,
+      "lon": 65.5212171,
+      "tags": {
+        "amenity": "clinic",
+        "building": "yes",
+        "building:levels": "2",
+        "healthcare": "clinic",
+        "name": "Поликлиника № 5"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/85183462"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "way/85651816",
+      "osmType": "way",
+      "name": "Детская поликлиника № 5",
+      "category": "clinic",
+      "lat": 57.1202328,
+      "lon": 65.5235992,
+      "tags": {
+        "addr:housenumber": "5А",
+        "addr:street": "улица Федюнинского",
+        "amenity": "clinic",
+        "building": "yes",
+        "healthcare": "clinic",
+        "name": "Детская поликлиника № 5"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/85651816"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "way/94903899",
+      "osmType": "way",
+      "name": "поликлиника № 13 «Тура»",
+      "category": "clinic",
+      "lat": 57.1516116,
+      "lon": 65.6505128,
+      "tags": {
+        "amenity": "clinic",
+        "emergency": "no",
+        "healthcare": "clinic",
+        "name": "поликлиника № 13 «Тура»",
+        "addr:city": "Тюмень",
+        "addr:country": "RU",
+        "addr:housenumber": "9/1",
+        "addr:postcode": "625034",
+        "addr:street": "улица Казачьи Луга",
+        "building": "yes",
+        "building:levels": "4",
+        "official_name": "поликлиника № 13",
+        "ref": "13",
+        "wheelchair": "yes"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/94903899",
+        "https://www.openstreetmap.org/way/280040886"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "way/96567904",
+      "osmType": "way",
+      "name": "Поликлиника № 19",
+      "category": "clinic",
+      "lat": 57.0453495,
+      "lon": 65.7182112,
+      "tags": {
+        "addr:city": "Боровский",
+        "addr:housenumber": "16",
+        "addr:street": "Ленинградская улица",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Поликлиника № 19"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/way/96567904"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "node/10206801073",
+      "osmType": "node",
+      "name": "Городская поликлиника № 8",
+      "category": "clinic",
+      "lat": 57.2047399,
+      "lon": 65.6056344,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "17",
+        "addr:street": "улица Мелиораторов",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Городская поликлиника № 8"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/node/10206801073"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "node/12329221958",
+      "osmType": "node",
+      "name": "Городская поликлиника №5",
+      "category": "clinic",
+      "lat": 57.1490295,
+      "lon": 65.4940486,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "level": "0",
+        "name": "Городская поликлиника №5"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/node/12329221958"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "node/2946437033",
+      "osmType": "node",
+      "name": "Детская поликлиника №6",
+      "category": "clinic",
+      "lat": 57.1337791,
+      "lon": 65.5812262,
+      "tags": {
+        "amenity": "clinic",
+        "check_date": "2025-04-16",
+        "name": "Детская поликлиника №6"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/node/2946437033"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "node/4488628690",
+      "osmType": "node",
+      "name": "Поликлиника №5",
+      "category": "clinic",
+      "lat": 57.128111,
+      "lon": 65.5403789,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Поликлиника №5",
+        "name:ru": "Поликлиника №5",
+        "opening_hours": "Mo-Sa 07:30-20:00"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/node/4488628690"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "node/4635369457",
+      "osmType": "node",
+      "name": "Поликлиника № 12",
+      "category": "clinic",
+      "lat": 57.1038936,
+      "lon": 65.6113678,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Поликлиника № 12"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/node/4635369457"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "node/4663768553",
+      "osmType": "node",
+      "name": "Поликлиника № 12",
+      "category": "clinic",
+      "lat": 57.1204855,
+      "lon": 65.5583154,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Поликлиника № 12",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-16:00; Su 09:00-12:00"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/node/4663768553"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "node/5032810321",
+      "osmType": "node",
+      "name": "Городская поликлиника № 3",
+      "category": "clinic",
+      "lat": 57.1607927,
+      "lon": 65.4916911,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Городская поликлиника № 3",
+        "name:ru": "Городская поликлиника № 3"
+      },
+      "clinicEvidence": "name-only",
+      "sources": [
+        "https://www.openstreetmap.org/node/5032810321"
+      ],
+      "operationStatus": "unverified"
+    },
+    {
+      "id": "node/9179376558",
+      "osmType": "node",
+      "name": "Городская поликлиника № 5",
+      "category": "clinic",
+      "lat": 57.1230202,
+      "lon": 65.5467377,
+      "tags": {
+        "addr:city": "Тюмень",
+        "addr:housenumber": "127",
+        "addr:postcode": "625007",
+        "addr:street": "Депутатская улица",
+        "amenity": "clinic",
+        "email": "gp5@med-to.ru",
+        "healthcare": "clinic",
+        "healthcare:speciality": "dermatology;vaccination;paediatrics",
+        "name": "Городская поликлиника № 5",
+        "opening_hours": "Mo-Sa 7:30-20:00",
+        "operator": "ГАУЗ Городская поликлиника №5",
+        "operator:type": "public",
+        "phone": "+7(3452)560005",
+        "website": "https://www.poliklinika5.ru/"
+      },
+      "clinicEvidence": "operator",
+      "sources": [
+        "https://www.openstreetmap.org/node/9179376558"
+      ],
+      "operationStatus": "unverified"
+    }
+  ]
+}
