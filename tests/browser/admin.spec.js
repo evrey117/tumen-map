@@ -26,3 +26,28 @@ test('two devices read same central data and public map refreshes after returnin
 test('mobile management fits screen and main layers remain present',async({page})=>{
  await page.setViewportSize({width:390,height:844});await setup(page);await expect(page.locator('#housing-admin')).toBeVisible();expect(await page.evaluate(()=>document.querySelector('#housing-admin').scrollWidth<=innerWidth)).toBe(true);await page.locator('#admin-close').click();await expect(page.locator('[data-category="industrial"]')).toBeVisible();await expect(page.locator('.home-card')).toHaveCount(17);
 });
+const addressResults=[
+ {lat:'57.1457736',lon:'65.5963267',osm_type:'way',osm_id:1,display_name:'Первый результат: Одесская, 7к1, Тюмень',address:{house_number:'7к1'}},
+ {lat:'57.1456944',lon:'65.5950341',osm_type:'way',osm_id:2,display_name:'Второй результат: Одесская, 7к2, Тюмень',address:{house_number:'7к2'}},
+ {lat:'57.1462663',lon:'65.5949002',osm_type:'way',osm_id:3,display_name:'Третий результат: Одесская, 7/1, Тюмень',address:{house_number:'7/1'}},
+];
+for(const mobile of [false,true])test(`first, second and third address select their own coordinates and visual target (${mobile?'mobile':'desktop'})`,async({page})=>{
+ if(mobile)await page.setViewportSize({width:390,height:844});
+ await setup(page);
+ // Test-only observation of real Leaflet state; no coordinate hooks are added to the app.
+ // Find the editor's map instance through a test-only setView wrapper, invoked on selection.
+ await page.evaluate(()=>{const original=L.Map.prototype.setView;L.Map.prototype.setView=function(...args){if(this.getContainer().id==='admin-map')window.__addressTestMap=this;return original.apply(this,args);};});
+ await page.route('https://nominatim.openstreetmap.org/**',r=>r.fulfill({json:addressResults}));await page.locator('#admin-geocode').click();await expect(page.locator('#admin-candidates button')).toHaveCount(3);
+ for(const index of [0,1,2,0]){
+  const result=addressResults[index],button=page.locator('#admin-candidates button').nth(index);await button.click();
+  await expect(page.locator('#edit-lat')).toHaveValue(result.lat);await expect(page.locator('#edit-lon')).toHaveValue(result.lon);
+  await expect(button).toHaveAttribute('aria-pressed','true');await expect(page.locator('#admin-candidates button.is-selected')).toHaveCount(1);await expect(page.locator('.candidate-coordinates:not([hidden])')).toHaveCount(1);await expect(button.locator('.candidate-coordinates')).toContainText(result.lat);await expect(button.locator('.candidate-coordinates')).toContainText(result.lon);
+  const position=await page.evaluate(()=>{const map=window.__addressTestMap;let marker;map.eachLayer(layer=>{if(layer instanceof L.Marker)marker=layer;});const point=marker.getLatLng(),expected=map.latLngToContainerPoint(point),icon=marker.getElement().querySelector('svg').getBoundingClientRect(),box=map.getContainer().getBoundingClientRect();return {lat:point.lat,lon:point.lng,pixelError:Math.hypot(icon.x+icon.width/2-box.x-expected.x,icon.y+icon.height/2-box.y-expected.y)};});
+  expect(position.lat).toBe(Number(result.lat));expect(position.lon).toBe(Number(result.lon));expect(position.pixelError).toBeLessThan(1);
+ }
+ await page.locator('#edit-confirm').check();await page.locator('#admin-map').click({position:{x:60,y:60}});await expect(page.locator('#admin-candidates button.is-selected')).toHaveCount(0);await expect(page.locator('#edit-confirm')).not.toBeChecked();
+});
+test('outdated address response does not repopulate results after the address changes',async({page})=>{
+ await setup(page);let fulfill;const ready=new Promise(resolve=>fulfill=resolve);let requested;const started=new Promise(resolve=>requested=resolve);
+ await page.route('https://nominatim.openstreetmap.org/**',async r=>{requested();await ready;await r.fulfill({json:addressResults});});await page.locator('#admin-geocode').click();await started;await page.locator('#edit-address').fill('Другой адрес');fulfill();await expect(page.locator('#admin-geocode')).toBeEnabled();await expect(page.locator('#admin-candidates button')).toHaveCount(0);
+});
