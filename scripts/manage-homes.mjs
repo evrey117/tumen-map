@@ -39,7 +39,8 @@ if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
  try{
   const raw=process.env.CHANGE_REQUEST||'';if(Buffer.byteLength(raw)>60000)throw Error('Запрос слишком большой');
   const context={repository:process.env.GITHUB_REPOSITORY,event:process.env.GITHUB_EVENT_NAME,ref:process.env.GITHUB_REF,actorId:process.env.GITHUB_ACTOR_ID,ownerId:process.env.EXPECTED_OWNER_ID};
-  executeRequest(process.cwd(),JSON.parse(raw),context);
+  let request;try{request=JSON.parse(raw);}catch{throw Error('Некорректный JSON запроса. Используйте запрос, подготовленный панелью.');}
+  executeRequest(process.cwd(),request,context);
   execFileSync('git',['config','user.name','github-actions[bot]']);execFileSync('git',['config','user.email','41898282+github-actions[bot]@users.noreply.github.com']);
   execFileSync('git',['add','--',DATA_PATH]);
   let changed=true;try{execFileSync('git',['diff','--cached','--quiet','--',DATA_PATH]);changed=false;}catch{}

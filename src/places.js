@@ -34,7 +34,7 @@ export function preparePlaces(elements) {
     const lat = element.lat ?? element.center?.lat;
     const lon = element.lon ?? element.center?.lon;
     if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
-    places.push({id: `${element.type}/${element.id}`, osmType: element.type, name: tags.name || categories[category].label, category, lat, lon, tags, clinicEvidence: category === 'clinic' ? clinicEvidence : null, sources: [`https://www.openstreetmap.org/${element.type}/${element.id}`], operationStatus: 'unverified'});
+    places.push({id: `${element.type}/${element.id}`, osmType: element.type, name: tags.name || `${categories[category].label} · название не указано в OSM`, category, lat, lon, tags, clinicEvidence: category === 'clinic' ? clinicEvidence : null, sources: [`https://www.openstreetmap.org/${element.type}/${element.id}`], operationStatus: 'unverified'});
   }
   // Prefer buildings over POIs; preserve distinct buildings/campuses with the same name.
   const priority=p=>p.osmType==='node'?2:p.tags.building?0:1;
@@ -68,3 +68,5 @@ export function placeStatus(place) {
   if (place.category !== 'clinic') return base;
   return (place.clinicEvidence === 'operator' ? 'Публичный оператор указан в OSM. ' : 'Кандидат по названию: государственная принадлежность не подтверждена. ') + base;
 }
+
+export function placeAddress(place){const t=place.tags;const text=[t['addr:city'],t['addr:street'],t['addr:housenumber']].filter(Boolean).join(', ');if(!text)return 'Адрес в OSM не указан';return text+(!t['addr:street']||!t['addr:housenumber']?' (неполный адрес OSM)':'');}

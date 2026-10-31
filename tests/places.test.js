@@ -21,3 +21,5 @@ test('planned, closed, research institutes and private clinics are excluded',()=
 test('dedupes a clinic building and its nearby named area, retaining citations',()=>{
  const out=preparePlaces([item('way',1,57.15,{amenity:'clinic',name:'поликлиника №13 «Тура»',building:'yes'}),item('way',2,57.1501,{amenity:'clinic',name:'поликлиника № 13 "Тура"'})]);assert.equal(out.places.length,1);assert.equal(out.places[0].sources.length,2);
 });
+import {placeAddress} from '../src/places.js';
+test('missing addresses and explicitly different settlements are not disguised as Tyumen',()=>{assert.equal(placeAddress({tags:{}}),'Адрес в OSM не указан');assert.match(placeAddress({tags:{'addr:city':'Боровский','addr:street':'Ленинградская','addr:housenumber':'16'}}),/^Боровский/);assert.match(placeAddress({tags:{'addr:street':'Полевая'}}),/неполный адрес/);});

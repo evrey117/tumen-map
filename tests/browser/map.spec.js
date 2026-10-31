@@ -7,7 +7,7 @@ test('all 17 complexes, search, unverified detail and filters',async({page})=>{
  await expect(page.locator('.home-card')).toHaveCount(17);
  await expect(page.locator('.leaflet-container')).toBeVisible();
  await page.getByRole('searchbox').fill('сердце');await expect(page.locator('.home-card')).toHaveCount(1);
- await page.locator('.home-card').click();await expect(page.locator('#detail')).toContainText('Харьковская, 74');await expect(page.locator('#detail')).toContainText('Найдено здание');
+ await page.locator('.home-card').click();await expect(page.locator('#detail')).toContainText('Харьковская, 74');await expect(page.locator('#detail')).toContainText('найден объект');
  await page.locator('[data-category="school"]').uncheck();await expect(page.locator('[data-category="school"]')).not.toBeChecked();
  await page.getByRole('button',{name:'Все ЖК'}).click();await expect(page.locator('.home-card')).toHaveCount(17);
  await page.getByRole('searchbox').fill('нет такого жк');await expect(page.locator('.empty')).toBeVisible();

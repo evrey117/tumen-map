@@ -1,0 +1,40 @@
+[
+  {
+    "name": "osm-lookup",
+    "url": "https://nominatim.openstreetmap.org/lookup?osm_ids=W88357363%2CW1351546966%2CW1136430142%2CW1312143938%2CW97193152%2CW1215302248%2CW85183530%2CW774094266%2CW461813846%2CW1354604852%2CW1260545190%2CW1132715257%2CW1388495122%2CW918118482%2CW1427268390%2CW1379881426%2CW1379634125&format=jsonv2&addressdetails=1&extratags=1&namedetails=1",
+    "status": 200,
+    "finalUrl": "https://nominatim.openstreetmap.org/lookup?osm_ids=W88357363%2CW1351546966%2CW1136430142%2CW1312143938%2CW97193152%2CW1215302248%2CW85183530%2CW774094266%2CW461813846%2CW1354604852%2CW1260545190%2CW1132715257%2CW1388495122%2CW918118482%2CW1427268390%2CW1379881426%2CW1379634125&format=jsonv2&addressdetails=1&extratags=1&namedetails=1",
+    "bytes": 21347
+  },
+  {
+    "name": "in-ko",
+    "url": "https://in-ko.ru/",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "name": "4d",
+    "url": "https://4d.house/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "4d-development",
+    "url": "https://4d-development.ru/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "clinic5",
+    "url": "https://www.poliklinika5.ru/",
+    "status": 200,
+    "finalUrl": "https://poliklinika5.ru/",
+    "bytes": 543828,
+    "pageTitle": "Vodka Casino - Официальный сайт Водка Казино, Бонусы и Промокоды, Вход и Регистрация",
+    "bodySHA256": "16faecf88184f6809103e3d292416bdebbe9bdd9281372c76ffceb73e9eaebb2",
+    "validOfficialEvidence": false,
+    "finding": "Returns a gambling page, not a clinic page; this does not establish that the clinic itself is closed."
+  },
+  {
+    "name": "med-to",
+    "url": "https://med-to.ru/",
+    "error": "HTTP Error 503: Service Unavailable"
+  }
+]

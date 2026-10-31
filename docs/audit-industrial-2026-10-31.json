@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-31T16:50:07.813Z",
+  "sourceTimestamp": "2026-10-31T16:46:01Z",
+  "stored": 248,
+  "freshKnownObjects": 248,
+  "identicalGeometry": 248,
+  "missing": [],
+  "scope": "Existing object IDs compared; discovery of new areas was not reverified because full city-area query returned HTTP 502."
+}

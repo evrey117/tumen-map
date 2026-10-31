@@ -31,3 +31,7 @@ test('server persistence, cross-device read and historical restore use real git 
  const before=fs.readFileSync(file,'utf8');assert.throws(()=>executeRequest(root,{version:1}, {...context,actorId:'999'}));assert.equal(fs.readFileSync(file,'utf8'),before);
  }finally{fs.rmSync(root,{recursive:true,force:true});}
 });
+import {requestMatchesDataset} from '../src/housing-store.js';
+test('unrelated revision cannot be mistaken for saving this request',()=>{
+ const draft=structuredClone(initial);draft.homes[0].name='My change';const request=buildRequest(initial,draft,'base');const other=structuredClone(initial);other.homes[1].name='Someone else change';assert.equal(requestMatchesDataset(request,other),false);assert.equal(requestMatchesDataset(request,draft),true);assert.equal(requestMatchesDataset({action:'restore'},other,initial),false);
+});

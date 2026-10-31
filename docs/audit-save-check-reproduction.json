@@ -1,0 +1,17 @@
+{
+  "scope": "Browser response interception only; no production writes",
+  "results": [
+    {
+      "target": "https://evrey117.github.io/tumen-map/",
+      "message": "Общая версия обновлена. Она доступна всем устройствам.",
+      "ownDraftRetained": false,
+      "productionWrites": 0
+    },
+    {
+      "target": "http://127.0.0.1:4173/",
+      "message": "Общая база изменилась, но ваш запрос не подтверждён. Черновик сохранён; проверьте workflow и сравните версии.",
+      "ownDraftRetained": true,
+      "productionWrites": 0
+    }
+  ]
+}

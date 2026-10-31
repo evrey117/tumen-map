@@ -34,6 +34,9 @@ jobs:
           CHANGE_REQUEST: ${{ inputs.change_request }}
           EXPECTED_OWNER_ID: ${{ github.repository_owner_id }}
   publish:
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     needs: save
     runs-on: ubuntu-latest
     permissions:
