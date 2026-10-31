@@ -1,0 +1,62 @@
+# Prepared, NOT active. Requires owner's approval for contents:write before installation.
+name: Save housing changes approved by owner
+on:
+  workflow_dispatch:
+    inputs:
+      change_request:
+        description: 'Вставьте запрос из панели «Управление ЖК»'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: housing-owner-changes
+  cancel-in-progress: false
+jobs:
+  save:
+    if: github.repository == 'evrey117/tumen-map' && github.actor_id == github.repository_owner_id && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      revision: ${{ steps.save.outputs.revision }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - id: save
+        run: node scripts/manage-homes.mjs
+        env:
+          CHANGE_REQUEST: ${{ inputs.change_request }}
+          EXPECTED_OWNER_ID: ${{ github.repository_owner_id }}
+  publish:
+    needs: save
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.save.outputs.revision }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
+        id: deploy

@@ -1,0 +1,78 @@
+import L from 'leaflet';
+import {validateDataset,revisionOf,buildRequest,fetchCentral,RAW_ROOT,DATA_PATH} from './housing-store.js';
+const clone=x=>structuredClone(x);
+const el=(tag,text)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;return node;};
+export function mountHousingAdmin({getDataset,onRefresh}){
+ const dialog=document.createElement('dialog');dialog.id='housing-admin';dialog.className='admin-dialog';
+ dialog.innerHTML=`<header class="admin-header"><div><h2>Управление ЖК</h2><p>Общие данные сохраняются только после подтверждения владельцем в GitHub. Здесь создаётся черновик — без токенов и паролей.</p></div><button id="admin-close" aria-label="Закрыть управление">×</button></header>
+ <p id="admin-auth" class="admin-notice"></p><p id="admin-message" role="status"></p>
+ <div class="admin-layout"><section class="admin-list"><button id="admin-new">+ Добавить ЖК</button><div id="admin-items"></div></section>
+ <section><form id="admin-form"><input id="edit-id" type="hidden"><label>Название<input id="edit-name" required maxlength="160"></label><label>Застройщик<input id="edit-developer" required maxlength="200"></label><label>Адрес<input id="edit-address" required maxlength="400" placeholder="Улица, дом, Тюмень"></label><button id="admin-geocode" type="button">Найти координаты по адресу</button><div id="admin-candidates"></div><p class="admin-help">Выберите результат поиска, нажмите на карту или перетащите метку. Новая метка без вашего выбора не создаётся.</p><div id="admin-map" aria-label="Карта выбора координат"></div><div class="coordinate-fields"><label>Широта<input id="edit-lat" type="number" step="any" required></label><label>Долгота<input id="edit-lon" type="number" step="any" required></label></div><label class="coordinate-confirm"><input id="edit-confirm" type="checkbox">Подтверждаю выбранное положение метки</label><p id="coordinate-note"></p><div class="admin-actions"><button type="submit">Применить в черновик</button><button id="admin-delete" type="button" class="danger">Удалить ЖК…</button></div></form></section></div>
+ <section class="admin-bottom"><p id="admin-summary"></p><div class="admin-actions"><button id="admin-save">Подготовить сохранение в GitHub</button><button id="admin-cancel">Отменить несохранённые изменения</button><button id="admin-download">Скачать резервную копию</button><button id="admin-history-button">История и восстановление</button></div><div id="admin-request" hidden><h3>Подтверждение в GitHub</h3><p>1. Скопируйте запрос. 2. Откройте GitHub и войдите владельцем. 3. Нажмите Run workflow, вставьте запрос в поле change_request и подтвердите Run workflow. После успешного выполнения данные появятся на всех устройствах.</p><textarea id="admin-payload" readonly aria-label="Запрос на сохранение"></textarea><div class="admin-actions"><button id="admin-copy">Скопировать запрос</button><a id="admin-github" target="_blank" rel="noopener">Открыть GitHub</a><button id="admin-check">Проверить сохранение</button></div></div><div id="admin-history"></div></section>`;
+ document.body.append(dialog);const $=s=>dialog.querySelector(s);
+ let base=null,draft=null,revision=null,editing=null,marker=null,editorMap=null,restoredFrom=null,config={workflowEnabled:false},lastRequest=null,dirtyForm=false,loading=false;
+ const say=text=>$('#admin-message').textContent=text;
+ const field=id=>$(id).value;
+ function list(){
+  $('#admin-items').replaceChildren();for(const h of draft.homes){const button=el('button',h.name);button.type='button';button.dataset.homeId=String(h.id);button.onclick=()=>{if(dirtyForm&&!confirm('Отменить неприменённые изменения формы?'))return;edit(h);};$('#admin-items').append(button);}
+  $('#admin-summary').textContent=`В черновике: ${draft.homes.length} ЖК. ${restoredFrom?'Подготовлено восстановление версии.':JSON.stringify(draft)===JSON.stringify(base)?'Нет несохранённых изменений.':'Есть несохранённые изменения.'}`;
+ }
+ function setPoint(lat,lon,manual=true){
+  if(!Number.isFinite(lat)||!Number.isFinite(lon))return;
+  $('#edit-lat').value=lat.toFixed(7);$('#edit-lon').value=lon.toFixed(7);$('#edit-confirm').checked=false;dirtyForm=true;
+  if(!marker){marker=L.marker([lat,lon],{draggable:true,icon:L.divIcon({className:'admin-map-pin',html:'<span>⌖</span>',iconSize:[32,32],iconAnchor:[16,30]})}).addTo(editorMap);marker.on('dragend',()=>{const p=marker.getLatLng();setPoint(p.lat,p.lng,true);});}else marker.setLatLng([lat,lon]);
+  if(manual){editing.approximate=true;editing.source=`https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=17/${lat}/${lon}`;editing.precisionLabel='Положение выбрано владельцем на карте; адрес независимо не проверен';editing.identityNote='Расстояния рассчитаны от вручную выбранной точки.';}
+  $('#coordinate-note').textContent=editing.precisionLabel||'Проверьте положение на карте.';
+ }
+ function edit(home){
+  editing=home?clone(home):{id:crypto.randomUUID(),name:'',developer:'',address:'',category:'home',approximate:true};
+  $('#edit-id').value=String(editing.id);$('#edit-name').value=editing.name;$('#edit-developer').value=editing.developer;$('#edit-address').value=editing.address;$('#admin-candidates').replaceChildren();$('#edit-confirm').checked=false;
+  if(marker){editorMap.removeLayer(marker);marker=null;}
+  $('#edit-lat').value='';$('#edit-lon').value='';
+  if(Number.isFinite(editing.lat)&&Number.isFinite(editing.lon)){setPoint(editing.lat,editing.lon,false);editorMap.setView([editing.lat,editing.lon],15);$('#edit-confirm').checked=true;}
+  $('#admin-delete').disabled=!home;$('#coordinate-note').textContent=editing.precisionLabel||'Выберите координаты и подтвердите их.';dirtyForm=false;
+ }
+ async function open(){
+  if(loading)return;loading=true;dialog.showModal();
+  if(!editorMap){editorMap=L.map($('#admin-map')).setView([57.153,65.542],12);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(editorMap);editorMap.on('click',e=>{if(editing)setPoint(e.latlng.lat,e.latlng.lng,true);});}
+  setTimeout(()=>editorMap.invalidateSize(),50);say('Загрузка общей версии…');
+  try{const response=await fetch(RAW_ROOT+'main/public/admin-config.json?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(5000)});if(response.ok)config=await response.json();else throw Error('Config unavailable');}catch{try{const response=await fetch(import.meta.env.BASE_URL+'admin-config.json',{cache:'no-store'});if(response.ok)config=await response.json();}catch{}}
+  try{const latest=await fetchCentral();base=latest.data;revision=latest.revision;say('Общая версия загружена из GitHub.');}catch{base=clone(getDataset());revision=null;say('Нет связи с GitHub. Можно подготовить черновик, но сохранить до проверки общей версии нельзя.');}
+  draft=clone(base);restoredFrom=null;lastRequest=null;$('#admin-request').hidden=true;$('#admin-history').replaceChildren();
+  $('#admin-auth').textContent=config.workflowEnabled?'Для общего сохранения войдите в GitHub владельцем evrey117. Посетители могут готовить только личные черновики.':'Безопасный workflow подготовлен, но пока не включён: требуется разрешение владельца на запись GitHub Actions в файл данных. Общие данные сейчас изменить через панель нельзя.';
+  $('#admin-github').href='https://github.com/evrey117/tumen-map/actions/workflows/manage-homes.yml';list();edit(draft.homes[0]);loading=false;
+ }
+ $('#admin-new').onclick=()=>{if(dirtyForm&&!confirm('Отменить неприменённые изменения формы?'))return;edit(null);};
+ $('#admin-form').onsubmit=e=>{
+  e.preventDefault();try{
+   if(!$('#edit-confirm').checked)throw Error('Подтвердите положение метки на карте');
+   const h={...editing,name:field('#edit-name').trim(),developer:field('#edit-developer').trim(),address:field('#edit-address').trim(),lat:Number(field('#edit-lat')),lon:Number(field('#edit-lon')),checkedAt:new Date().toISOString()};
+   if(!field('#edit-lat')||!field('#edit-lon'))throw Error('Сначала выберите координаты');
+   validateDataset({schemaVersion:1,homes:[h]});const i=draft.homes.findIndex(x=>String(x.id)===String(h.id));if(i<0)draft.homes.push(h);else draft.homes[i]=h;restoredFrom=null;list();edit(h);say('Изменения применены в черновик. Общая база ещё не изменена.');
+  }catch(error){say(error.message);}
+ };
+ $('#admin-delete').onclick=()=>{if(!confirm(`Удалить «${editing.name}» из черновика? Общая база изменится только после подтверждения в GitHub.`))return;draft.homes=draft.homes.filter(h=>String(h.id)!==String(editing.id));restoredFrom=null;list();edit(draft.homes[0]);say('Удаление подготовлено. Для общего сохранения подтвердите запрос в GitHub.');};
+ $('#admin-cancel').onclick=()=>{draft=clone(base);restoredFrom=null;$('#admin-request').hidden=true;list();edit(draft.homes[0]);say('Несохранённые изменения отменены.');};
+ for(const input of ['#edit-name','#edit-developer'])$(input).addEventListener('input',()=>dirtyForm=true);
+ $('#edit-address').addEventListener('input',()=>{dirtyForm=true;$('#edit-confirm').checked=false;editing.approximate=true;editing.precisionLabel='Адрес изменён владельцем; положение требует проверки';});
+ for(const input of ['#edit-lat','#edit-lon'])$(input).addEventListener('change',()=>setPoint(Number(field('#edit-lat')),Number(field('#edit-lon')),true));
+ let geocoding=false,lastGeocode=0;
+ $('#admin-geocode').onclick=async()=>{
+  if(geocoding||Date.now()-lastGeocode<1100)return;if(!field('#edit-address').trim()){say('Введите адрес');return;}geocoding=true;lastGeocode=Date.now();$('#admin-geocode').disabled=true;say('Поиск адреса в OpenStreetMap…');
+  try{const url=new URL('https://nominatim.openstreetmap.org/search');url.search=new URLSearchParams({q:`${field('#edit-address')}, Тюмень`,format:'jsonv2',addressdetails:'1',limit:'5',countrycodes:'ru',viewbox:'65.0,57.5,66.2,56.8',bounded:'1'});const response=await fetch(url,{signal:AbortSignal.timeout(20000)});if(!response.ok)throw Error(`Геокодер: HTTP ${response.status}`);const results=await response.json();$('#admin-candidates').replaceChildren();for(const r of results){const lat=Number(r.lat),lon=Number(r.lon);if(lat<56.8||lat>57.5||lon<65||lon>66.2)continue;const button=el('button',r.display_name);button.type='button';button.onclick=()=>{setPoint(lat,lon,false);editing.approximate=true;editing.source=`https://www.openstreetmap.org/${r.osm_type}/${r.osm_id}`;editing.precisionLabel=r.address?.house_number?'Найден адрес OSM; принадлежность ЖК требует проверки':'Приблизительно: найден ориентир, номер дома не подтверждён';$('#coordinate-note').textContent=editing.precisionLabel;editorMap.setView([lat,lon],16);say('Проверьте метку, при необходимости передвиньте и подтвердите координаты.');};$('#admin-candidates').append(button);}say($('#admin-candidates').childElementCount?'Выберите подходящий результат.':'Адрес не найден. Уточните его или укажите точку на карте вручную.');}catch(e){say(e.message);}finally{geocoding=false;$('#admin-geocode').disabled=false;}
+ };
+ $('#admin-save').onclick=async()=>{
+  try{if(dirtyForm)throw Error('Сначала примените изменения формы в черновик или отмените их');if(!revision)throw Error('Обновите панель при доступном GitHub перед сохранением');say('Проверка актуальности общей версии…');const latest=await fetchCentral();if(latest.revision!==revision)throw Error('Общая база уже изменилась. Скачайте свой черновик, откройте панель заново и повторите изменения поверх свежей версии.');lastRequest=buildRequest(base,draft,revision,restoredFrom);const payload=JSON.stringify(lastRequest);if(new TextEncoder().encode(payload).length>60000)throw Error('Слишком большой запрос. Сохраните изменения меньшими группами.');$('#admin-payload').value=payload;$('#admin-request').hidden=false;say(config.workflowEnabled?'Запрос подготовлен. Он сохранится только после вашего подтверждения Run workflow в GitHub.':'Запрос подготовлен, но workflow ещё не включён. Владельцу нужно сначала разрешить активацию безопасного сохранения.');}catch(e){say(e.message);}
+ };
+ $('#admin-copy').onclick=async()=>{try{await navigator.clipboard.writeText($('#admin-payload').value);say('Запрос скопирован.');}catch{$('#admin-payload').select();say('Скопируйте выделенный запрос вручную.');}};
+ $('#admin-github').onclick=e=>{if(!config.workflowEnabled){e.preventDefault();say('Workflow ещё не включён. Сначала требуется разрешение владельца на его активацию.');}};
+ $('#admin-check').onclick=async()=>{try{const latest=await fetchCentral();if(latest.revision===revision){say('Новая версия ещё не появилась. Проверьте результат workflow в GitHub.');return;}base=latest.data;revision=latest.revision;draft=clone(base);restoredFrom=null;list();edit(draft.homes[0]);$('#admin-request').hidden=true;onRefresh(latest);say('Общая версия обновлена. Она доступна всем устройствам.');}catch(e){say(e.message);}};
+ $('#admin-download').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(draft,null,2)],{type:'application/json'}));const link=el('a');link.href=url;link.download='tumen-housing-backup.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+ $('#admin-history-button').onclick=async()=>{
+  say('Загрузка истории GitHub…');try{const response=await fetch(`https://api.github.com/repos/evrey117/tumen-map/commits?path=${encodeURIComponent(DATA_PATH)}&per_page=30`,{signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error(`История GitHub: HTTP ${response.status}`);const history=await response.json();$('#admin-history').replaceChildren(el('h3','История версий (последние 30)'));for(const commit of history){const row=el('div');row.className='history-row';row.append(el('span',`${new Date(commit.commit.author.date).toLocaleString('ru-RU')} · ${commit.sha.slice(0,7)} · ${commit.commit.message.split('\n')[0]}`));const button=el('button','Восстановить в черновик');button.onclick=async()=>{if(!confirm('Подготовить восстановление этой версии? Общая база изменится только после подтверждения в GitHub.'))return;try{const previous=await fetchCentral(commit.sha);draft=clone(previous.data);restoredFrom=commit.sha;list();edit(draft.homes[0]);say('Восстановление подготовлено. Подтвердите его через «Подготовить сохранение в GitHub».');}catch(e){say(e.message);}};row.append(button);$('#admin-history').append(row);}say(history.length?'История загружена. Восстановление создаст новую версию, не удаляя историю.':'История нового файла данных появится после первого сохранения в GitHub.');}catch(e){say(e.message);}
+ };
+ function close(){if((dirtyForm||JSON.stringify(draft)!==JSON.stringify(base))&&!confirm('Закрыть панель и отменить несохранённые изменения?'))return;dialog.close();}
+ $('#admin-close').onclick=close;dialog.addEventListener('cancel',e=>{e.preventDefault();close();});
+ const button=document.querySelector('#manage-homes');button.addEventListener('click',()=>open().catch(e=>{loading=false;say(e.message);}));
+ return {open};
+}

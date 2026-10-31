@@ -1,22 +1,5 @@
-export const homes = [
-['Румянский','Баланс Девелопмент','Одесская, 7к1'],
-['Чистые пруды','Паритет','Лесопарковая, 22'],
-['Мотивы','География','Первооткрывателей, 11'],
-['Окинава','География','Пожарных и спасателей, 8'],
-['Челюскинцев, 5','ПСК Дом','Челюскинцев, 5'],
-['Добро на Доке','Инко','Тимофея Кармацкого, 18'],
-['Futuro','Newton','Червишевский тракт, 25'],
-['Айвазовский','ЭНКО','Пожарных и спасателей, 5'],
-['Прео','ЭНКО','Арктическая, 16'],
-['Фатера','Характер Девелопмент','Полевая, 117к12'],
-['Домашний','Страна Девелопмент','Новосёлов, 100'],
-['Сердце Сибири','Страна Девелопмент','Харьковская, 74'],
-['Остров-сад','Страна Девелопмент','Ярославская, 9к1'],
-['Сибирский','Люди','Московский тракт / Закалужская'],
-['Символ','ГК Создатели','Василия Малкова, 32'],
-['Сезоны','4D','Владимира Абазарова, 5'],
-['Плэй','Newton','Полевая, 93']
-].map(([name,developer,address],id)=>({id,name,developer,address,category:'home'}));
+import initialHomes from '../public/data/residential.json' with {type:'json'};
+export const homes = structuredClone(initialHomes.homes);
 export const categories = {home:{label:'Жилые комплексы',color:'#3467ec'},school:{label:'Школы',color:'#168b60'},kindergarten:{label:'Детские сады',color:'#ee9324'},clinic:{label:'Поликлиники',color:'#d94a58'},industrial:{label:'Промзоны',color:'#854ac6'}};
 export const normalize = s => s.toLocaleLowerCase('ru').replaceAll('ё','е').trim();
 export function distance(a,b){const rad=Math.PI/180;const dlat=(b[0]-a[0])*rad,dlon=(b[1]-a[1])*rad;return 6371000*2*Math.asin(Math.sqrt(Math.sin(dlat/2)**2+Math.cos(a[0]*rad)*Math.cos(b[0]*rad)*Math.sin(dlon/2)**2));}
