@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-31T17:10:28.396Z",
+  "scope": "Actual production CLI, local bare Git origin, local HTTP publication and two browser contexts inside an isolated sandbox. GitHub owner identity is simulated; production data and Pages are not edited.",
+  "checks": [
+    {
+      "name": "production CLI create/edit/delete, actual commit and push to isolated bare origin",
+      "passed": true,
+      "savedSha": "a91909c5e663f56f53c195b67cac94582cfda1fa"
+    },
+    {
+      "name": "unauthorized actor and stale revision rejected without changing remote",
+      "passed": true
+    },
+    {
+      "name": "saved data published over isolated HTTP, survives reload and second mobile browser context",
+      "passed": true
+    },
+    {
+      "name": "restore historical Git version, push new commit, republish and refresh both devices",
+      "passed": true,
+      "restoredSha": "37f9e92808952390b9e5a7fd9ff8e02dabfb14dd"
+    },
+    {
+      "name": "production JSON unchanged and temporary public endpoint is read only",
+      "passed": true
+    }
+  ]
+}

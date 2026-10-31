@@ -26,7 +26,7 @@ let industrialFeatures=[],industrialRequest=null;
 const industrialLayers=new Map();
 let housingEvidence={byId:{}};
 try{housingEvidence=await getJSON(import.meta.env.BASE_URL+'data/verification.json');}catch{}
-function housingEvidenceNote(h){const evidence=housingEvidence.byId?.[String(h.id)];if(!evidence||evidence.source!==h.source||evidence.address!==h.address||evidence.lat!==h.lat||evidence.lon!==h.lon)return '';return evidence.constructionTag?'В OSM объект помечен как строительство. Сдача и заселение ЖК официально не подтверждены.':'Совпадение адреса в OSM не подтверждает принадлежность здания ЖК, застройщика или сдачу объекта.';}
+function housingEvidenceNote(h){const evidence=housingEvidence.byId?.[String(h.id)];if(!evidence||evidence.source!==h.source||evidence.address!==h.address||evidence.lat!==h.lat||evidence.lon!==h.lon)return '';const checked=Number.isFinite(Date.parse(housingEvidence.checkedAt))?new Date(housingEvidence.checkedAt).toLocaleDateString('ru-RU',{timeZone:'Europe/Moscow'}):'дата не указана';return `Проверка источника OSM: ${checked}. `+(evidence.constructionTag?'В этом снимке объект помечен как строительство. Сдача и заселение ЖК официально не подтверждены.':'Совпадение адреса в OSM не подтверждает принадлежность здания ЖК, застройщика или сдачу объекта.');}
 
 let currentDataset={schemaVersion:1,homes:structuredClone(homes)},currentRevision=null;
 try{const response=await fetch(import.meta.env.BASE_URL+'data/residential.json',{cache:'no-store'});if(response.ok){const text=await response.text();currentDataset=validateDataset(JSON.parse(text));currentRevision=await revisionOf(text);homes.splice(0,homes.length,...structuredClone(currentDataset.homes));}}catch(e){console.warn('Используется резервный список ЖК:',e.message);}
