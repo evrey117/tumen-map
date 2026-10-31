@@ -1,3 +1,4 @@
+import {industrialArea,nearestIndustrial,formatDistance,formatArea} from './industrial.js';
 import {preparePlaces,placeStatus} from './places.js';
 import L from 'leaflet';
 import './style.css';
@@ -13,6 +14,8 @@ tiles.on('tileload',()=>{tileLoaded=true;$('#tile-warning').hidden=true;});
 tiles.on('tileerror',()=>{if(!tileLoaded)$('#tile-warning').hidden=false;});
 const layers=Object.fromEntries(Object.keys(categories).map(k=>[k,L.layerGroup().addTo(map)]));
 let selected=null,infrastructure=[],busy=false;
+let industrialFeatures=[],industrialRequest=null;
+const industrialLayers=new Map();
 function readCache(){try{return JSON.parse(localStorage.getItem('tyumen-geocodes-v1')||'{}');}catch{return {};}}
 const cache=readCache();
 try{const bundledHomes=await getJSON(import.meta.env.BASE_URL+'data/homes.json');for(const h of homes){if(validPoint(bundledHomes[h.id]))Object.assign(h,bundledHomes[h.id]);}}catch(e){console.warn(e.message);}
@@ -32,8 +35,8 @@ function renderList(){const q=normalize($('#search').value);const filtered=homes
  for(const h of filtered){const b=document.createElement('button');b.className='home-card'+(selected?.id===h.id?' active':'');b.dataset.id=h.id;b.innerHTML=`<span class="home-icon">⌂</span><span><strong>${escape(h.name)}</strong><small>${escape(h.developer)}</small><small>${escape(h.address)}</small><small class="${h.lat&&!h.approximate?'verified':'state'}">${h.lat?(h.approximate?'≈ '+(h.precisionLabel||'Приблизительно'):'✓ Адрес найден в OSM'):'Координаты не подтверждены'}</small></span><span class="arrow">↗</span>`;b.onclick=()=>selectHome(h);$('#homes').append(b);}
 }
 function drawHomes(){layers.home.clearLayers();for(const h of homes){if(!h.lat)continue;h.marker=L.marker([h.lat,h.lon],{icon:icon('home'),title:h.name}).addTo(layers.home).bindPopup(`<strong>${escape(h.name)}</strong><br>${escape(h.developer)}<br>${escape(h.address)}<br><small>${h.approximate?(h.precisionLabel||'Приблизительная точка'):'Адрес найден в OSM'}</small>`);h.marker.on('click',()=>selectHome(h,false));}}
-function detail(h){$('#detail').hidden=false;$('#detail').innerHTML=`<button class="close" aria-label="Закрыть карточку">×</button><span class="eyebrow">ЖИЛОЙ КОМПЛЕКС</span><h2>${escape(h.name)}</h2><p>${escape(h.developer)}<br>Тюмень, ${escape(h.address)}</p><p>${h.lat?(h.approximate?'≈ '+(h.precisionLabel||'Приблизительная точка района; не адрес здания.'):'✓ Найдено здание с совпадающим адресом в OpenStreetMap.'):'Координаты не подтверждены. Метка появится после успешной проверки адреса.'}</p>${h.identityNote?`<p class="state">${escape(h.identityNote)}</p>`:''}${h.source?`<a class="source" href="${escape(h.source)}" target="_blank" rel="noopener">Источник координат ↗</a>`:''}<div class="nearby" id="nearby">${h.lat?'Инфраструктура в радиусе 2 км…':'Поиск инфраструктуры доступен после определения координат.'}</div>`;$('.close').onclick=()=>{$('#detail').hidden=true;selected=null;renderList();};}
-function selectHome(h,fly=true){selected=h;renderList();detail(h);if(h.lat){enable('home');if(fly)map.flyTo([h.lat,h.lon],15,{duration:.6});h.marker?.openPopup();loadNearby(h);}}
+function detail(h){$('#detail').hidden=false;$('#detail').innerHTML=`<button class="close" aria-label="Закрыть карточку">×</button><span class="eyebrow">ЖИЛОЙ КОМПЛЕКС</span><h2>${escape(h.name)}</h2><p>${escape(h.developer)}<br>Тюмень, ${escape(h.address)}</p><p>${h.lat?(h.approximate?'≈ '+(h.precisionLabel||'Приблизительная точка района; не адрес здания.'):'✓ Найдено здание с совпадающим адресом в OpenStreetMap.'):'Координаты не подтверждены. Метка появится после успешной проверки адреса.'}</p>${h.identityNote?`<p class="state">${escape(h.identityNote)}</p>`:''}${h.source?`<a class="source" href="${escape(h.source)}" target="_blank" rel="noopener">Источник координат ↗</a>`:''}<div class="nearby industrial-nearby" id="industrial-nearby">${h.lat?'Ближайшие промышленные территории…':'Расстояния до промзон доступны после определения координат.'}</div><div class="nearby" id="nearby">${h.lat?'Инфраструктура в радиусе 2 км…':'Поиск инфраструктуры доступен после определения координат.'}</div>`;$('.close').onclick=()=>{$('#detail').hidden=true;selected=null;renderList();};}
+function selectHome(h,fly=true){selected=h;renderList();detail(h);if(h.lat){enable('home');if(fly)map.flyTo([h.lat,h.lon],15,{duration:.6});h.marker?.openPopup();loadNearby(h);loadIndustrialNearby(h);}}
 $('#search').addEventListener('input',renderList);$('#search').addEventListener('keydown',e=>{if(e.key==='Enter'){const h=homes.find(h=>normalize(h.name).includes(normalize($('#search').value)));if(h)selectHome(h);}});
 document.addEventListener('keydown',e=>{if(e.key==='/'&&e.target.tagName!=='INPUT'){e.preventDefault();$('#search').focus();}});
 $('#all').onclick=()=>{selected=null;$('#detail').hidden=true;enable('home');$('#search').value='';renderList();const points=homes.filter(h=>h.lat).map(h=>[h.lat,h.lon]);if(points.length)map.fitBounds(points,{padding:[50,50],maxZoom:13});else map.setView([57.153,65.542],12);};
@@ -68,11 +71,46 @@ async function fetchInfrastructure(){if(infrastructureRequest)return infrastruct
  try{return await infrastructureRequest;}catch(e){infrastructureRequest=null;throw e;}
 }
 async function loadNearby(h){try{await fetchInfrastructure();if(selected?.id!==h.id)return;const nearby=infrastructure.map(i=>({...i,meters:distance([h.lat,h.lon],[i.lat,i.lon])})).filter(i=>i.meters<=2000).sort((a,b)=>a.meters-b.meters);
- $('#nearby').innerHTML=`<strong>Рядом · до 2 км по прямой</strong><p>По данным OSM. Работа учреждений не подтверждена. Поликлиники без сведений о публичном операторе отмечены как кандидаты.</p>${Object.keys(categories).filter(k=>k!=='home').map(k=>`<div>${categories[k].label}: ${nearby.filter(i=>i.category===k).length}</div>`).join('')}${nearby.map(i=>`<button data-place="${i.id}">${escape(i.name)}${i.category==='clinic'&&i.clinicEvidence==='name-only'?' (гос. статус не подтверждён)':''} · ${Math.round(i.meters)} м ↗</button>`).join('')}${!nearby.length?'<p>В OSM поблизости объектов не найдено. Это не означает их отсутствия.</p>':''}`;
+ $('#nearby').innerHTML=`<strong>Рядом · до 2 км по прямой</strong><p>По данным OSM. Работа учреждений не подтверждена. Поликлиники без сведений о публичном операторе отмечены как кандидаты.</p>${Object.keys(categories).filter(k=>k!=='home'&&k!=='industrial').map(k=>`<div>${categories[k].label}: ${nearby.filter(i=>i.category===k).length}</div>`).join('')}${nearby.map(i=>`<button data-place="${i.id}">${escape(i.name)}${i.category==='clinic'&&i.clinicEvidence==='name-only'?' (гос. статус не подтверждён)':''} · ${Math.round(i.meters)} м ↗</button>`).join('')}${!nearby.length?'<p>В OSM поблизости объектов не найдено. Это не означает их отсутствия.</p>':''}`;
  $('#nearby').querySelectorAll('button').forEach(b=>b.onclick=()=>{const i=infrastructure.find(i=>i.id===b.dataset.place);enable(i.category);map.flyTo([i.lat,i.lon],16);i.marker.openPopup();});
  }catch{if(selected?.id===h.id)$('#nearby').innerHTML='<strong>Инфраструктура пока недоступна</strong><p>Не удалось получить данные Overpass. Повторите запрос после восстановления доступа.</p><button id="retry-nearby">Повторить</button>';$('#retry-nearby')?.addEventListener('click',()=>loadNearby(h));}}
-$('#retry').onclick=()=>{resolveHomes();fetchInfrastructure().catch(()=>{});};
-renderList();drawHomes();$('#status').textContent=`ЖК на карте: ${homes.filter(h=>h.lat).length}/17 · есть приблизительные`;fetchInfrastructure().catch(e=>console.warn('Overpass недоступен:',e.message));
+
+const industrialWarning='Промышленное назначение не является оценкой опасности. Нет проверенных сведений о действующем производстве и воздействии на окружающую среду.';
+async function loadIndustrial(){
+ if(industrialRequest)return industrialRequest;
+ industrialRequest=(async()=>{
+  const data=await getJSON(import.meta.env.BASE_URL+'data/industrial.geojson');
+  if(data.type!=='FeatureCollection'||!Array.isArray(data.features))throw Error('Invalid industrial dataset');
+  industrialFeatures=data.features;
+  const style={color:'#783bb1',weight:2,opacity:0.95,fillColor:'#9854d2',fillOpacity:0.23};
+  L.geoJSON(data,{style,onEachFeature:(feature,layer)=>{
+   const p=feature.properties,t=p.tags||{};
+   const status=t.disused==='yes'||t['disused:landuse']?'В OSM есть отметка о неиспользовании территории. ':'';
+   const popup=`<strong>${escape(p.name)}</strong><br><span>Промышленная территория</span><br>Площадь по контуру OSM: ${formatArea(industrialArea(feature))}<br>Использование: landuse=industrial${t.industrial?' · '+escape(t.industrial):''}<br>${t.operator?'Оператор по OSM: '+escape(t.operator)+'<br>':''}<p>${escape(status+industrialWarning)}</p><small>Расчёт площади по сферической модели Земли, не кадастровые сведения.</small><br><a href="${escape(p.source)}" target="_blank" rel="noopener">Источник: OpenStreetMap ↗</a>`;
+   layer.bindPopup(popup);layer.bindTooltip(p.name,{sticky:true});
+   layer.on('mouseover',()=>layer.setStyle({weight:3,fillOpacity:0.33}));
+   layer.on('mouseout',()=>layer.setStyle(style));
+   industrialLayers.set(p.id,layer);
+  }}).addTo(layers.industrial);
+  const filter=$('[data-category="industrial"]').closest('label');filter.title=`${industrialFeatures.length} территорий · © OpenStreetMap · ${data.metadata?.osmTimestamp||''}`;
+  return industrialFeatures;
+ })();
+ try{return await industrialRequest;}catch(e){industrialRequest=null;throw e;}
+}
+async function loadIndustrialNearby(h){
+ try{
+  const features=await loadIndustrial();if(selected?.id!==h.id)return;
+  const nearby=nearestIndustrial([h.lon,h.lat],features);
+  $('#industrial-nearby').innerHTML=`<strong>Ближайшие промышленные территории</strong><p>По прямой до границы, с учётом внутренних контуров.${h.approximate?' Точка ЖК приблизительная — расстояния также ориентировочные.':''}</p>${nearby.map(item=>`<button data-industrial="${escape(item.feature.properties.id)}">${escape(item.feature.properties.name)} · ${formatDistance(item.meters)} до границы${item.inside?' · ЖК внутри территории':''}</button>`).join('')}${!nearby.length?'<p>В загруженной выборке промышленные территории не найдены.</p>':''}<p>${industrialWarning}</p>`;
+  $('#industrial-nearby').querySelectorAll('button').forEach(b=>b.onclick=()=>{
+   enable('industrial');map.closePopup();const layer=industrialLayers.get(b.dataset.industrial);map.fitBounds(layer.getBounds(),{padding:[40,40],maxZoom:16});layer.openPopup();
+  });
+ }catch(e){
+  if(selected?.id===h.id){$('#industrial-nearby').innerHTML='<strong>Промзоны недоступны</strong><p>Не удалось загрузить реальные контуры. Расстояния не рассчитаны.</p><button id="retry-industrial">Повторить</button>';$('#retry-industrial').onclick=()=>loadIndustrialNearby(h);}
+ }
+}
+$('#retry').onclick=()=>{resolveHomes();fetchInfrastructure().catch(()=>{});loadIndustrial().then(()=>{if(selected)loadIndustrialNearby(selected);}).catch(()=>{});};
+renderList();drawHomes();$('#status').textContent=`ЖК на карте: ${homes.filter(h=>h.lat).length}/17 · есть приблизительные`;fetchInfrastructure().catch(e=>console.warn('Overpass недоступен:',e.message));loadIndustrial().catch(e=>{console.warn('Промзоны недоступны:',e.message);const filter=$('[data-category="industrial"]').closest('label');filter.append(' · недоступны');filter.title='Не удалось загрузить реальные контуры';});
 
 }
 init().catch(e=>{console.error(e);document.querySelector("#status").textContent="Ошибка запуска карты";});

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap / Overpass API",
+    "licence": "ODbL 1.0, © OpenStreetMap contributors",
+    "cityBoundary": "https://www.openstreetmap.org/relation/2049854",
+    "query": "[out:json][timeout:60];rel(2049854);map_to_area->.city;(way[landuse=industrial](area.city);relation[landuse=industrial](area.city););out geom;",
+    "osmTimestamp": "2026-10-31T12:42:51Z",
+    "collectedAt": "2026-10-31T12:44:34.256Z",
+    "scope": "Industrial polygons selected by the OSM administrative area of Tyumen; complete original contours preserved, including parts crossing the city boundary.",
+    "rejected": []
+  },
+  "rawElements": 248,
+  "converted": 248,
+  "valid": 248,
+  "polygons": 245,
+  "multiPolygons": 3,
+  "holes": 1
+}
