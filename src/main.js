@@ -1,4 +1,4 @@
-import {markerIcon,socialClusterGroup} from './markers.js';
+import {markerIcon} from './markers.js';
 import {defaultMarkerSize} from './marker-sizes.js';
 import {mountHousingAdmin} from './admin.js';
 import {fetchCentral,validateDataset,revisionOf} from './housing-store.js';
@@ -18,8 +18,7 @@ tiles.on('tileload',()=>{tileLoaded=true;$('#tile-warning').hidden=true;});
 tiles.on('tileerror',()=>{if(!tileLoaded)$('#tile-warning').hidden=false;});
 let markerPreset=defaultMarkerSize;
 for(const [name,zIndex] of [['industrialPane',350],['socialPane',500],['housingPane',620]])map.createPane(name).style.zIndex=zIndex;
-const socialCategories=['school','kindergarten','clinic'];
-const layers=Object.fromEntries(Object.keys(categories).map(k=>[k,(socialCategories.includes(k)?socialClusterGroup(k,()=>markerPreset):L.layerGroup()).addTo(map)]));
+const layers=Object.fromEntries(Object.keys(categories).map(k=>[k,L.layerGroup().addTo(map)]));
 function updateSocialLabels(){map.getContainer().classList.toggle('show-social-labels',map.getZoom()>=16);}
 map.on('zoomend',updateSocialLabels);updateSocialLabels();
 let selected=null,infrastructure=[],busy=false;
@@ -32,7 +31,7 @@ function updateHomeVisuals(){
 }
 $('#marker-size').value=markerPreset;
 $('#marker-size').addEventListener('change',e=>{
- markerPreset=e.target.value;updateHomeVisuals();for(const i of infrastructure)i.marker.setIcon(markerIcon(i.category,markerPreset));for(const category of socialCategories)layers[category].refreshClusters();
+ markerPreset=e.target.value;updateHomeVisuals();for(const i of infrastructure)i.marker.setIcon(markerIcon(i.category,markerPreset));
 });
 for(const [key,c] of Object.entries(categories)){
  const label=document.createElement('label');label.className='filter';label.style.setProperty('--color',c.color);
@@ -69,13 +68,13 @@ async function fetchInfrastructure(){if(infrastructureRequest)return infrastruct
  const query='[out:json][timeout:30];(nwr[amenity=school](56.95,65.15,57.3,65.85);nwr[amenity=kindergarten](56.95,65.15,57.3,65.85);nwr[amenity=clinic](56.95,65.15,57.3,65.85););out center tags;';
  infrastructureRequest=(async()=>{let data;try{data=await getJSON(import.meta.env.BASE_URL+'data/infrastructure.json');}catch{}let lastError;for(const host of ['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter']){if(data)break;try{data=await getJSON(host,{method:'POST',body:new URLSearchParams({data:query})});break;}catch(e){lastError=e;}}if(!data)throw lastError;
  const prepared=preparePlaces(data.elements);infrastructure=prepared.places;
- for(const i of infrastructure){i.marker=L.marker([i.lat,i.lon],{icon:markerIcon(i.category,markerPreset),pane:'socialPane',title:''}).addTo(layers[i.category]).bindPopup(`<strong>${escape(i.name)}</strong><br>${categories[i.category].label}<br>${escape([i.tags['addr:street'],i.tags['addr:housenumber']].filter(Boolean).join(', '))}<br><small>${escape(placeStatus(i))}</small><br>${i.sources.map((source,index)=>`<a href="${escape(source)}" target="_blank" rel="noopener">Источник OSM ${index+1} ↗</a>`).join('<br>')}`);const name=document.createElement('span');name.textContent=i.name;i.marker.bindTooltip(name,{className:'social-label',direction:'top',offset:[0,-8]});i.marker.on('add',()=>i.marker.getElement()?.setAttribute('aria-label',i.name));}
+ for(const i of infrastructure){i.marker=L.marker([i.lat,i.lon],{icon:markerIcon(i.category,markerPreset),pane:'socialPane',title:''}).addTo(layers[i.category]).bindPopup(`<strong>${escape(i.name)}</strong><br>${categories[i.category].label}<br>${escape([i.tags['addr:street'],i.tags['addr:housenumber']].filter(Boolean).join(', '))}<br><small>${escape(placeStatus(i))}</small><br>${i.sources.map((source,index)=>`<a href="${escape(source)}" target="_blank" rel="noopener">Источник OSM ${index+1} ↗</a>`).join('<br>')}`);const name=document.createElement('span');name.textContent=i.name;i.marker.bindTooltip(name,{className:'social-label',direction:'top',offset:[0,-8]});i.marker.getElement()?.setAttribute('aria-label',i.name);i.marker.on('add',()=>i.marker.getElement()?.setAttribute('aria-label',i.name));}
  return infrastructure;})();
  try{return await infrastructureRequest;}catch(e){infrastructureRequest=null;throw e;}
 }
 async function loadNearby(h){try{await fetchInfrastructure();if(selected?.id!==h.id)return;const nearby=infrastructure.map(i=>({...i,meters:distance([h.lat,h.lon],[i.lat,i.lon])})).filter(i=>i.meters<=2000).sort((a,b)=>a.meters-b.meters);
  $('#nearby').innerHTML=`<strong>Рядом · до 2 км по прямой</strong><p>По данным OSM. Работа учреждений не подтверждена. Поликлиники без сведений о публичном операторе отмечены как кандидаты.</p>${Object.keys(categories).filter(k=>k!=='home'&&k!=='industrial').map(k=>`<div>${categories[k].label}: ${nearby.filter(i=>i.category===k).length}</div>`).join('')}${nearby.map(i=>`<button data-place="${i.id}">${escape(i.name)}${i.category==='clinic'&&i.clinicEvidence==='name-only'?' (гос. статус не подтверждён)':''} · ${Math.round(i.meters)} м ↗</button>`).join('')}${!nearby.length?'<p>В OSM поблизости объектов не найдено. Это не означает их отсутствия.</p>':''}`;
- $('#nearby').querySelectorAll('button').forEach(b=>b.onclick=()=>{const i=infrastructure.find(i=>i.id===b.dataset.place);enable(i.category);map.setView([i.lat,i.lon],16,{animate:false});layers[i.category].zoomToShowLayer(i.marker,()=>i.marker.openPopup());});
+ $('#nearby').querySelectorAll('button').forEach(b=>b.onclick=()=>{const i=infrastructure.find(i=>i.id===b.dataset.place);enable(i.category);map.setView([i.lat,i.lon],16,{animate:false});i.marker.openPopup();});
  }catch{if(selected?.id===h.id)$('#nearby').innerHTML='<strong>Инфраструктура пока недоступна</strong><p>Не удалось получить данные Overpass. Повторите запрос после восстановления доступа.</p><button id="retry-nearby">Повторить</button>';$('#retry-nearby')?.addEventListener('click',()=>loadNearby(h));}}
 
 const industrialWarning='Промышленное назначение не является оценкой опасности. Нет проверенных сведений о действующем производстве и воздействии на окружающую среду.';

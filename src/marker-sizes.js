@@ -1,7 +1,7 @@
 export const markerSizes = Object.freeze({
- compact: {home:42,social:14,cluster:24},
- standard: {home:46,social:16,cluster:26},
- large: {home:48,social:18,cluster:28},
+ compact: {home:32,social:20},
+ standard: {home:33,social:21},
+ large: {home:34,social:22},
 });
 export const defaultMarkerSize = 'standard';
 export function markerDimensions(preset=defaultMarkerSize,selected=false){
