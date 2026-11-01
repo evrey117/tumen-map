@@ -1,6 +1,7 @@
+import {validatePricing} from './prices.js';
 export const DATA_PATH = 'public/data/residential.json';
 export const RAW_ROOT = 'https://raw.githubusercontent.com/evrey117/tumen-map/';
-const allowed = new Set(['id','name','developer','address','category','lat','lon','source','approximate','precisionLabel','identityNote','checkedAt']);
+const allowed = new Set(['id','name','developer','address','category','lat','lon','source','approximate','precisionLabel','identityNote','checkedAt','pricing','coordinateUnresolved']);
 export function validateDataset(data) {
  if(data?.schemaVersion!==1||!Array.isArray(data.homes)||data.homes.length>2000)throw Error('Неверный формат списка ЖК');
  const ids=new Set();
@@ -9,6 +10,9 @@ export function validateDataset(data) {
   if(!((Number.isSafeInteger(h.id)&&h.id>=0)||(typeof h.id==='string'&&/^[a-zA-Z0-9-]{1,80}$/.test(h.id))))throw Error('Неверный ID');
   if(ids.has(String(h.id)))throw Error('Повторяющийся ID');ids.add(String(h.id));
   for(const [k,max] of [['name',160],['developer',200],['address',400]])if(typeof h[k]!=='string'||!h[k].trim()||h[k].length>max)throw Error('Заполните название, застройщика и адрес');
+  if(h.coordinateUnresolved!==undefined&&typeof h.coordinateUnresolved!=='boolean')throw Error('Неверный статус положения ЖК');
+  if(h.coordinateUnresolved&&!h.approximate)throw Error('Неустановленная точка должна быть приблизительной');
+  if(h.pricing!==undefined)validatePricing(h.pricing);
   if(h.category!=='home'||!Number.isFinite(h.lat)||!Number.isFinite(h.lon)||h.lat<56.8||h.lat>57.5||h.lon<65||h.lon>66.2)throw Error('Координаты должны быть в поддерживаемой области Тюмени и окрестностей');
   if(typeof h.source!=='string'||!/^https:\/\/(www\.)?openstreetmap\.org\//.test(h.source))throw Error('Нужен источник координат OpenStreetMap');
   if(typeof h.approximate!=='boolean')throw Error('Укажите точность координат');

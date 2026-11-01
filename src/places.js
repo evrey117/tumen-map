@@ -64,7 +64,7 @@ export function preparePlaces(elements) {
 }
 
 export function placeStatus(place) {
-  const base = 'Текущая работа учреждения не подтверждена независимым источником.';
+  const base = 'Не проверено. Текущая работа учреждения не подтверждена независимым источником.';
   if (place.category !== 'clinic') return base;
   return (place.clinicEvidence === 'operator' ? 'Публичный оператор указан в OSM. ' : 'Кандидат по названию: государственная принадлежность не подтверждена. ') + base;
 }

@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://api.github.com/repos/evrey117/tumen-map",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://evrey117.github.io/tumen-map/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://gkinko.ru/kvartiry/dobrodok",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://nominatim.openstreetmap.org/search?q=Tyumen&format=jsonv2",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://xn--80az8a.xn--d1aqf.xn--p1ai/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://tyumen-city.ru/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://admtyumen.ru/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://med-to.ru/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]
