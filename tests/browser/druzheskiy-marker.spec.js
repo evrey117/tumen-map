@@ -5,7 +5,7 @@ for(const mobile of [false,true])test(`Druzheskiy sourced marker opens the corre
  await page.route(/^https:\/\//,r=>r.abort());
  await page.route('**/data/residential.json',r=>r.fulfill({json:data}));
  await page.goto('/');
- await expect(page.locator('.housing-marker')).toHaveCount(18);
+ await expect(page.locator('.housing-marker')).toHaveCount(data.homes.length);
  await page.getByRole('searchbox').fill('Дружеский');
  const marker=page.locator('.housing-marker[title="Дружеский"]');
  await expect(marker).toHaveCount(1);await marker.click({force:true});

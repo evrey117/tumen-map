@@ -1,0 +1,254 @@
+{
+  "checkedAt": "2026-11-16T17:13:50.775566+00:00",
+  "responses": {
+    "Николая Машарова 6, Тюмень": [
+      {
+        "place_id": 428213348,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1090891057,
+        "lat": "57.1493206",
+        "lon": "65.5561723",
+        "category": "building",
+        "type": "construction",
+        "place_rank": 30,
+        "importance": 6.223926146329468e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "6, улица Николая Машарова, Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "house_number": "6",
+          "road": "улица Николая Машарова",
+          "suburb": "Дом Печати",
+          "city_district": "Центральный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1491369",
+          "57.1495066",
+          "65.5556544",
+          "65.5565887"
+        ]
+      }
+    ],
+    "Счастье, Тюмень": [
+      {
+        "place_id": 216336206,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 12596164120,
+        "lat": "57.1488858",
+        "lon": "65.5430308",
+        "category": "tourism",
+        "type": "artwork",
+        "place_rank": 30,
+        "importance": 6.223926146329468e-05,
+        "addresstype": "tourism",
+        "name": "Счастье",
+        "display_name": "Счастье, площадь Единства и Согласия, Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "tourism": "Счастье",
+          "road": "площадь Единства и Согласия",
+          "suburb": "Дом Печати",
+          "city_district": "Центральный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1488358",
+          "57.1489358",
+          "65.5429808",
+          "65.5430808"
+        ]
+      },
+      {
+        "place_id": 216693991,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 1483317712,
+        "lat": "57.0947171",
+        "lon": "65.6457655",
+        "category": "amenity",
+        "type": "training",
+        "place_rank": 30,
+        "importance": 6.223926146329468e-05,
+        "addresstype": "amenity",
+        "name": "Счастье",
+        "display_name": "Счастье, 4, Вербовая улица, Войновка, Восточный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "amenity": "Счастье",
+          "house_number": "4",
+          "road": "Вербовая улица",
+          "suburb": "Войновка",
+          "city_district": "Восточный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.0946671",
+          "57.0947671",
+          "65.6457155",
+          "65.6458155"
+        ]
+      },
+      {
+        "place_id": 216692145,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1445745099,
+        "lat": "57.1538171",
+        "lon": "65.5608498",
+        "category": "landuse",
+        "type": "residential",
+        "place_rank": 24,
+        "importance": 0.08006223926146332,
+        "addresstype": "residential",
+        "name": "ЖК Счастье",
+        "display_name": "ЖК Счастье, Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "residential": "ЖК Счастье",
+          "suburb": "Дом Печати",
+          "city_district": "Центральный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1530740",
+          "57.1545395",
+          "65.5594367",
+          "65.5622781"
+        ]
+      },
+      {
+        "place_id": 216735080,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1156031245,
+        "lat": "56.6318115",
+        "lon": "66.2722522",
+        "category": "place",
+        "type": "neighbourhood",
+        "place_rank": 24,
+        "importance": 0.08004992980849925,
+        "addresstype": "neighbourhood",
+        "name": "Счастье",
+        "display_name": "Счастье, Ялуторовск, городской округ Ялуторовск, Тюменская область, Уральский федеральный округ, Россия",
+        "address": {
+          "neighbourhood": "Счастье",
+          "town": "Ялуторовск",
+          "county": "городской округ Ялуторовск",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "56.6304542",
+          "56.6331465",
+          "66.2702742",
+          "66.2748796"
+        ]
+      }
+    ],
+    "Максима Горького 68, Тюмень": [
+      {
+        "place_id": 430330148,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 105753804,
+        "lat": "57.1500634",
+        "lon": "65.5623481",
+        "category": "building",
+        "type": "apartments",
+        "place_rank": 30,
+        "importance": 6.223926146329468e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "68, улица Максима Горького, Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625048, Россия",
+        "address": {
+          "house_number": "68",
+          "road": "улица Максима Горького",
+          "suburb": "Дом Печати",
+          "city_district": "Центральный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625048",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1498647",
+          "57.1501960",
+          "65.5617069",
+          "65.5629646"
+        ]
+      }
+    ],
+    "Профсоюзная 53, Тюмень": [
+      {
+        "place_id": 216677674,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1192336342,
+        "lat": "57.1538280",
+        "lon": "65.5604885",
+        "category": "building",
+        "type": "apartments",
+        "place_rank": 30,
+        "importance": 6.223926146329468e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "53, Профсоюзная улица, Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "house_number": "53",
+          "road": "Профсоюзная улица",
+          "suburb": "Дом Печати",
+          "city_district": "Центральный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1536609",
+          "57.1539935",
+          "65.5601755",
+          "65.5607995"
+        ]
+      }
+    ]
+  }
+}

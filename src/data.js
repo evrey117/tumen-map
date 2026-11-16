@@ -1,6 +1,6 @@
 import initialHomes from '../public/data/residential.json' with {type:'json'};
 export const homes = structuredClone(initialHomes.homes);
-export const categories = {home:{label:'Жилые комплексы',color:'#3467ec'},school:{label:'Школы',color:'#168b60'},kindergarten:{label:'Детские сады',color:'#ee9324'},clinic:{label:'Поликлиники',color:'#d94a58'},industrial:{label:'Промзоны',color:'#854ac6'}};
+export const categories = {home:{label:'Остальные ЖК',color:'#3467ec'},center:{label:'ЖК в центре',color:'#d9a52c'},school:{label:'Школы',color:'#168b60'},kindergarten:{label:'Детские сады',color:'#ee9324'},clinic:{label:'Поликлиники',color:'#d94a58'},industrial:{label:'Промзоны',color:'#854ac6'}};
 export const normalize = s => s.toLocaleLowerCase('ru').replaceAll('ё','е').trim();
 export function distance(a,b){const rad=Math.PI/180;const dlat=(b[0]-a[0])*rad,dlon=(b[1]-a[1])*rad;return 6371000*2*Math.asin(Math.sqrt(Math.sin(dlat/2)**2+Math.cos(a[0]*rad)*Math.cos(b[0]*rad)*Math.sin(dlon/2)**2));}
 export function classify(tags={}){

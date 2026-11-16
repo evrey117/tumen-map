@@ -16,3 +16,11 @@
 .housing-prices{margin:18px 0;border-top:1px solid #e5ebf4;padding-top:12px}.housing-prices h3{font-size:16px;margin:4px 0 8px}.housing-prices .price-explanation{font-size:11px}.housing-prices dl{margin:10px 0}.price-row{display:grid;grid-template-columns:94px minmax(0,1fr);gap:8px;padding:11px 0;border-bottom:1px solid #edf0f5;font-size:12px}.price-row dt{padding-top:2px}.price-row dd{margin:0;min-width:0}.price-row strong{font-size:14px;color:#20344b}.price-row small,.price-row a{display:block;font-size:10px;line-height:1.6;margin-top:5px;overflow-wrap:anywhere}.official-website{font-size:12px}.detail .close{position:sticky;top:0;z-index:2;box-shadow:0 0 0 4px white}.price-editor{min-width:0;border:1px solid #d7dfeb;border-radius:9px;margin:18px 0;padding:12px}.price-editor legend{font-size:14px;font-weight:600}.price-edit-row{border-top:1px solid #e5ebf4;padding:10px 0}.price-edit-row summary{font-size:13px;cursor:pointer}.price-editor textarea{height:65px;resize:vertical;font:inherit;border:1px solid #cbd6e5;border-radius:7px;margin-top:5px}.price-editor input{min-width:0}.admin-layout>section{min-width:0}
 
 .price-source-details{margin-top:6px}.price-source-details summary{font-size:10px;line-height:1.5;color:#3467ec;cursor:pointer}.price-source-details[open]{padding-bottom:4px}
+
+/* Central housing: same house symbol and sizes, gold with a dark outline. */
+.center-marker .housing-symbol{background:#e5b83f;border-color:#63491d;box-shadow:0 3px 10px #87661945,0 1px 3px #49331230}
+.center-marker .housing-symbol svg{stroke:#3c2c10}
+.center-marker.is-selected .housing-symbol{background:#f4ca58;box-shadow:0 0 0 5px #d9a52c38,0 6px 16px #87661955}
+.center-home .home-icon{background:#fff1c6;color:#715015}
+.center-badge{display:inline-block;padding:2px 7px;margin:4px 0 2px;border:1px solid #d5b768;border-radius:5px;background:#fff4d3;color:#654b18;font-size:10px;font-weight:700;line-height:1.4}
+.detail-center{margin:0 0 10px}
