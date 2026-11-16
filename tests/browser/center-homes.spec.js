@@ -5,14 +5,14 @@ for(const mobile of [false,true])test(`central homes remain distinct through fil
  await page.route(/^https:\/\//,r=>r.abort());
  await page.route('**/data/residential.json',r=>r.fulfill({json:data}));
  await page.goto('/');
- await expect(page.locator('.housing-marker')).toHaveCount(21);
+ await expect(page.locator('.housing-marker')).toHaveCount(data.homes.length);
  await expect(page.locator('.center-marker')).toHaveCount(4);
  await page.locator('[data-category="home"]').uncheck();
  await expect(page.locator('.housing-marker')).toHaveCount(4);
  await page.locator('[data-category="center"]').uncheck();
  await expect(page.locator('.housing-marker')).toHaveCount(0);
  await page.getByRole('button',{name:'Все ЖК'}).click();
- await expect(page.locator('.housing-marker')).toHaveCount(21);
+ await expect(page.locator('.housing-marker')).toHaveCount(data.homes.length);
  for(const name of ['Челюскинцев, 5','Машаров','Счастье в Тюмени','Даудель']){
   await page.getByRole('searchbox').fill(name);await page.locator('.home-card').click();
   await expect(page.locator('#detail .detail-center')).toHaveText('Центр');

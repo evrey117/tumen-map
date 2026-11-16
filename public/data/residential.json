@@ -1357,6 +1357,21 @@
           }
         }
       }
+    },
+    {
+      "id": "supersky",
+      "name": "SuperSky (Суперский)",
+      "developer": "Newton",
+      "address": "Ветеранов Труда, 36к1",
+      "category": "home",
+      "lat": 57.1881495,
+      "lon": 65.5947919,
+      "source": "https://www.openstreetmap.org/way/1456201921",
+      "approximate": true,
+      "precisionLabel": "Контур SuperSky в OSM; метка ЖК, не точка входа в дом",
+      "checkedAt": "2026-11-16T17:31:09.123185+00:00",
+      "identityNote": "Адрес дома подтверждён инструкцией застройщика по эксплуатации: Ветеранов Труда, 36, корпус 1. Метка установлена по центру одноимённого контура SuperSky в OpenStreetMap; координаты конкретного корпуса не подтверждены. Источник адреса: https://newton.ru/pdf/presentation/supersky/Supersky_инструкция.pdf",
+      "officialWebsite": "https://newton.ru/supersky"
     }
   ]
 }

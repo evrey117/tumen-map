@@ -7,7 +7,7 @@ const data=JSON.parse(fs.readFileSync(new URL('../public/data/residential.json',
 test('central group uses four distinct housing records and sourced address buildings',()=>{
  validateDataset(data);
  const central=data.homes.filter(isCenterHome);
- assert.equal(central.length,4);assert.equal(data.homes.length,21);
+ assert.equal(central.length,4);assert.equal(data.homes.length,22);
  assert.equal(data.homes.filter(h=>h.name==='Челюскинцев, 5').length,1);
  assert.equal(central.find(h=>h.id===4).name,'Челюскинцев, 5');
  assert.deepEqual(central.map(h=>housingLayer(h)),Array(4).fill('center'));

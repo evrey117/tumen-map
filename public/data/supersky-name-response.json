@@ -1,0 +1,36 @@
+[
+  {
+    "place_id": 216257290,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 1456201921,
+    "lat": "57.1881495",
+    "lon": "65.5947919",
+    "category": "landuse",
+    "type": "residential",
+    "place_rank": 24,
+    "importance": 0.08006223926146332,
+    "addresstype": "residential",
+    "name": "SuperSky",
+    "display_name": "SuperSky, Тарманы, Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+    "address": {
+      "residential": "SuperSky",
+      "suburb": "Тарманы",
+      "city_district": "Ленинский административный округ",
+      "city": "Тюмень",
+      "county": "городской округ Тюмень",
+      "state": "Тюменская область",
+      "ISO3166-2-lvl4": "RU-TYU",
+      "region": "Уральский федеральный округ",
+      "postcode": "625000",
+      "country": "Россия",
+      "country_code": "ru"
+    },
+    "boundingbox": [
+      "57.1877465",
+      "57.1887082",
+      "65.5936868",
+      "65.5959223"
+    ]
+  }
+]
