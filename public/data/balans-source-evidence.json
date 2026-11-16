@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-16",
+  "officialWebsite": "https://72dom.com/complexes/zhk-balans",
+  "coordinates": [
+    {
+      "place_id": 421853608,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1216425815,
+      "lat": "57.1191735",
+      "lon": "65.6014815",
+      "category": "landuse",
+      "type": "residential",
+      "place_rank": 24,
+      "importance": 0.08006223926146332,
+      "addresstype": "residential",
+      "name": "ЖК Баланс",
+      "display_name": "ЖК Баланс, Воровского, Ленинский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "boundingbox": [
+        "57.1182144",
+        "57.1200240",
+        "65.6004212",
+        "65.6034486"
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "id": "02d3b849-896c-4b62-ae11-dadb2499dbe6",
+      "price": 4680000,
+      "total_area": 21.8,
+      "rooms": 0,
+      "status": "free",
+      "number": "118",
+      "floor_number": "11",
+      "building_number": "Баланс, ГП-22",
+      "url": "https://72dom.com/complexes/zhk-balans/flats/studia-21.8m-korpus-22-kv-118"
+    },
+    {
+      "id": "0e0f1dca-2ae0-41e6-bf24-c2be38aac011",
+      "price": 7700000,
+      "total_area": 35.5,
+      "rooms": 1,
+      "status": "free",
+      "number": "263-1e88",
+      "floor_number": "23",
+      "building_number": "Баланс, ГП-15",
+      "url": "https://72dom.com/complexes/zhk-balans/flats/0e0f1dca-2ae0-41e6-bf24-c2be38aac011"
+    },
+    {
+      "id": "c7ffc1e7-d7b2-484b-9291-04b60da28290",
+      "price": 7500000,
+      "total_area": 48.8,
+      "rooms": 2,
+      "status": "free",
+      "number": "236-d3a5",
+      "floor_number": "21",
+      "building_number": "Баланс, ГП-18",
+      "url": "https://72dom.com/complexes/zhk-balans/flats/c7ffc1e7-d7b2-484b-9291-04b60da28290"
+    }
+  ],
+  "addressSources": [
+    "https://наш.дом.рф/сервисы/каталог-новостроек/объект/53940",
+    "https://наш.дом.рф/сервисы/каталог-новостроек/объект/53941",
+    "https://наш.дом.рф/сервисы/каталог-новостроек/объект/52048"
+  ]
+}

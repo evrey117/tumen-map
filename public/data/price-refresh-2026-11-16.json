@@ -2766,6 +2766,58 @@
         "state": "not_confirmed",
         "reason": "В проверенных текущих предложениях застройщика цена этой категории не подтверждена. Это не означает отсутствия квартир в продаже."
       }
+    },
+    "balans": {
+      "studio": {
+        "state": "verified",
+        "observation": {
+          "amount": 4680000,
+          "area": 21.8,
+          "url": "https://72dom.com/complexes/zhk-balans/flats/studia-21.8m-korpus-22-kv-118",
+          "checkedAt": "2026-11-16",
+          "layout": "Студия",
+          "conditions": "Цена свободной квартиры из официального каталога. Условия оплаты и акций уточняются у застройщика.",
+          "lot": "№118; Баланс, ГП-22; этаж 11",
+          "observedStatus": "free"
+        },
+        "candidateCount": 1
+      },
+      "one": {
+        "state": "verified",
+        "observation": {
+          "amount": 7700000,
+          "area": 35.5,
+          "url": "https://72dom.com/complexes/zhk-balans/flats/0e0f1dca-2ae0-41e6-bf24-c2be38aac011",
+          "checkedAt": "2026-11-16",
+          "layout": "1-комнатная",
+          "conditions": "Цена свободной квартиры из официального каталога. Условия оплаты и акций уточняются у застройщика.",
+          "lot": "№263-1e88; Баланс, ГП-15; этаж 23",
+          "observedStatus": "free"
+        },
+        "candidateCount": 1
+      },
+      "two": {
+        "state": "verified",
+        "observation": {
+          "amount": 7500000,
+          "area": 48.8,
+          "url": "https://72dom.com/complexes/zhk-balans/flats/c7ffc1e7-d7b2-484b-9291-04b60da28290",
+          "checkedAt": "2026-11-16",
+          "layout": "2-комнатная",
+          "conditions": "Цена свободной квартиры из официального каталога. Условия оплаты и акций уточняются у застройщика.",
+          "lot": "№236-d3a5; Баланс, ГП-18; этаж 21",
+          "observedStatus": "free"
+        },
+        "candidateCount": 1
+      },
+      "three": {
+        "state": "not_confirmed",
+        "reason": "В проверенном официальном каталоге цена этой категории не найдена. Это не означает отсутствия квартир в продаже."
+      },
+      "four": {
+        "state": "not_confirmed",
+        "reason": "В проверенном официальном каталоге цена этой категории не найдена. Это не означает отсутствия квартир в продаже."
+      }
     }
   },
   "excluded": [
@@ -3022,16 +3074,20 @@
     "eklipt": {
       "verifiedCategories": 3,
       "state": "checked"
+    },
+    "balans": {
+      "verifiedCategories": 3,
+      "state": "checked"
     }
   },
   "totals": {
-    "homes": 23,
-    "categories": 115,
-    "verified": 83,
-    "not_confirmed": 32,
+    "homes": 24,
+    "categories": 120,
+    "verified": 86,
+    "not_confirmed": 34,
     "retained_unverified": 0
   },
-  "verifiedHomes": 21,
+  "verifiedHomes": 22,
   "continuationPreviousPricing": {
     "10": {
       "checkedAt": "2026-11-01",
