@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-16T17:34:12.846805+00:00",
+  "query": "Эклипт, Тюмень",
+  "response": [
+    {
+      "place_id": 215747546,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1456242420,
+      "lat": "57.1655357",
+      "lon": "65.4157811",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08006223926146332,
+      "addresstype": "neighbourhood",
+      "name": "Эклипт",
+      "display_name": "Эклипт, Учхоз, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+      "address": {
+        "neighbourhood": "Эклипт",
+        "suburb": "Учхоз",
+        "city_district": "Калининский административный округ",
+        "city": "Тюмень",
+        "county": "городской округ Тюмень",
+        "state": "Тюменская область",
+        "ISO3166-2-lvl4": "RU-TYU",
+        "region": "Уральский федеральный округ",
+        "postcode": "625000",
+        "country": "Россия",
+        "country_code": "ru"
+      },
+      "boundingbox": [
+        "57.1642009",
+        "57.1673966",
+        "65.4124330",
+        "65.4205109"
+      ]
+    }
+  ]
+}
