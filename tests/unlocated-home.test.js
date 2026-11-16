@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {validateDataset,buildRequest} from '../src/housing-store.js';
 import {applyChangeRequest} from '../scripts/manage-homes.mjs';
-const data=JSON.parse(fs.readFileSync(new URL('../public/data/residential.json',import.meta.url)));
+const data=JSON.parse(fs.readFileSync(new URL('./fixtures/unlocated-residential.json',import.meta.url)));
 test('Druzheskiy preserves the original 17 located homes without inventing a point or prices',()=>{
  validateDataset(data);const home=data.homes.find(h=>h.id==='druzheskiy');
  assert.equal(data.homes.length,18);assert.equal(data.homes.filter(h=>Number.isFinite(h.lat)&&Number.isFinite(h.lon)).length,17);

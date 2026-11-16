@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-16T16:54:05.382831+00:00",
+  "responses": {
+    "95": [
+      {
+        "place_id": 428361050,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1245167703,
+        "lat": "57.1324251",
+        "lon": "65.4749158",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 6.223926146329468e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "95, Кремлёвская улица, Маяк, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "house_number": "95",
+          "road": "Кремлёвская улица",
+          "suburb": "Маяк",
+          "city_district": "Калининский административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1319408",
+          "57.1329818",
+          "65.4746291",
+          "65.4765622"
+        ]
+      }
+    ],
+    "97": [
+      {
+        "place_id": 427986573,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1245167704,
+        "lat": "57.1321774",
+        "lon": "65.4753960",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 6.223926146329468e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "97, Кремлёвская улица, Маяк, Калининский административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "house_number": "97",
+          "road": "Кремлёвская улица",
+          "suburb": "Маяк",
+          "city_district": "Калининский административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1320616",
+          "57.1322932",
+          "65.4751452",
+          "65.4756468"
+        ]
+      }
+    ]
+  }
+}
