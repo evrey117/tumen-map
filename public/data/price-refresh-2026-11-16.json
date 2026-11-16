@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-11-16",
-  "policy": "Минимальные среди найденных конкретных предложений, не гарантированный абсолютный минимум. Только официальные сайты; забронированные и проданные лоты исключены. Страна: прежние суммы не перепроверены и сохраняют исходную дату.",
+  "policy": "Минимальные среди найденных конкретных предложений, не гарантированный абсолютный минимум. Только официальные сайты; забронированные и проданные лоты исключены. Цены Страны подтверждены в браузере при 100% оплате; история неудачных запросов сохранена.",
   "previousPricing": {
     "0": {
       "checkedAt": "2026-11-01",
@@ -1943,83 +1943,248 @@
     },
     "10": {
       "studio": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "10",
+          "category": "studio",
+          "amount": 4030000,
+          "area": 20.84,
+          "url": "https://strana.com/tmn/domashnyi/flats/14027973/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 4% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№187; Дом Экологичный, секция 2, этаж 11/13",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "one": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "10",
+          "category": "one",
+          "amount": 5280000,
+          "area": 28.49,
+          "url": "https://strana.com/tmn/domashnyi/flats/14347441/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 4% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№111; Дом Процветающий, секция 1, этаж 13/15",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "two": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "10",
+          "category": "two",
+          "amount": 5370000,
+          "area": 30.3,
+          "url": "https://strana.com/tmn/domashnyi/flats/14896550/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 5% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№271; Дом Технологичный, секция 3, этаж 15/15",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "three": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "10",
+          "category": "three",
+          "amount": 8080000,
+          "area": 47.11,
+          "url": "https://strana.com/tmn/domashnyi/flats/14347808/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 4% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№3; Дом Инновационный, секция 1, этаж 2/15",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "four": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "10",
+          "category": "four",
+          "amount": 10980000,
+          "area": 79.18,
+          "url": "https://strana.com/tmn/domashnyi/flats/14078436/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 4% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№416; Дом Креативный, секция 3, этаж 13/15",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       }
     },
     "11": {
       "studio": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "11",
+          "category": "studio",
+          "amount": 5128500,
+          "area": 24.86,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14938435/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 15% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№206; Квартал Инженеров, секция 1, этаж 20/25",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "one": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "11",
+          "category": "one",
+          "amount": 6210000,
+          "area": 29.62,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14938746/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 10% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№517; Квартал Инженеров, секция 4, этаж 5/25",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "two": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "11",
+          "category": "two",
+          "amount": 5930000,
+          "area": 29.16,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14938239/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 10% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№10; Квартал Инженеров, секция 1, этаж 2/25",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "three": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "11",
+          "category": "three",
+          "amount": 9270000,
+          "area": 57.09,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14938393/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 10% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№164; Квартал Инженеров, секция 1, этаж 16/25",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "four": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "11",
+          "category": "four",
+          "amount": 11678500,
+          "area": 71.72,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14938383/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 14% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно. В тегах акции указана скидка 15%, в переключателе оплаты — 14%; сохранена полная отображаемая цена 11 678 500 ₽ без пересчёта процента.",
+          "lot": "№154; Квартал Инженеров, секция 1, этаж 16/25",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       }
     },
     "12": {
       "studio": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "12",
+          "category": "studio",
+          "amount": 3947500,
+          "area": 20.77,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/15382167/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 12% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№251; Дом Майорка, корпус 1, секция 3, этаж 2/24",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "one": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "12",
+          "category": "one",
+          "amount": 5420000,
+          "area": 31.46,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/16058468/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 9% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№203; Дом Тенерифе, секция 2, этаж 2/14",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "two": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "12",
+          "category": "two",
+          "amount": 5230000,
+          "area": 28.08,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/16059229/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 9% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№964; Дом Тенерифе, секция 5, этаж 16/17",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "three": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "12",
+          "category": "three",
+          "amount": 8380000,
+          "area": 54.44,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/16059037/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 9% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№772; Дом Тенерифе, секция 5, этаж 2/17",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       },
       "four": {
-        "state": "retained_unverified",
-        "reason": "HTTP 401",
-        "originalDate": "2026-11-01"
+        "state": "verified",
+        "observation": {
+          "homeId": "12",
+          "category": "four",
+          "amount": 11480000,
+          "area": 73.87,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/16058810/",
+          "checkedAt": "2026-11-16",
+          "observedStatus": "Открытая карточка с кнопкой «Забронировать бесплатно»",
+          "conditions": "100% оплата, скидка 9% по переключателю карточки. Ремонт и меблировка не включены. Рассрочка рассчитывается отдельно.",
+          "lot": "№545; Дом Тенерифе, секция 3, этаж 15/16",
+          "method": "Live browser UI, fully loaded official apartment card; 100% payment selected; optional renovation unchecked"
+        },
+        "candidateCount": 1
       }
     },
     "13": {
@@ -2807,16 +2972,16 @@
       "state": "checked"
     },
     "10": {
-      "verifiedCategories": 0,
-      "state": "blocked"
+      "verifiedCategories": 5,
+      "state": "checked"
     },
     "11": {
-      "verifiedCategories": 0,
-      "state": "blocked"
+      "verifiedCategories": 5,
+      "state": "checked"
     },
     "12": {
-      "verifiedCategories": 0,
-      "state": "blocked"
+      "verifiedCategories": 5,
+      "state": "checked"
     },
     "13": {
       "verifiedCategories": 4,
@@ -2862,9 +3027,198 @@
   "totals": {
     "homes": 23,
     "categories": 115,
-    "verified": 68,
+    "verified": 83,
     "not_confirmed": 32,
-    "retained_unverified": 15
+    "retained_unverified": 0
   },
-  "verifiedHomes": 18
+  "verifiedHomes": 21,
+  "continuationPreviousPricing": {
+    "10": {
+      "checkedAt": "2026-11-01",
+      "website": "https://strana.com/tmn/flats/?project=UHJvamVjdFR5cGU6ZG9tYXNobnlp",
+      "notes": "Не удалось перепроверить цены 16.11.2026: официальный каталог застройщика недоступен. Прежние суммы сохранены с исходными датами; актуальность необходимо уточнить у застройщика.",
+      "categories": {
+        "studio": {
+          "offerId": "P038",
+          "amount": 4090000,
+          "area": 20.84,
+          "url": "https://strana.com/tmn/domashnyi/flats/14027973/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 5%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№187; Дом Экологичный, секция 2, этаж 11/13",
+          "layout": "Студия",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "one": {
+          "offerId": "P039",
+          "amount": 5300000,
+          "area": 28.49,
+          "url": "https://strana.com/tmn/domashnyi/flats/14347441/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 5%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№111; Дом Процветающий, секция 1, этаж 13/15",
+          "layout": "1-комнатная",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "two": {
+          "offerId": "P040",
+          "amount": 5450000,
+          "area": 30.3,
+          "url": "https://strana.com/tmn/domashnyi/flats/14896550/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 5%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№271; Дом Технологичный, секция 3, этаж 15/15",
+          "layout": "2-комнатная (европланировка)",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "three": {
+          "offerId": "P041",
+          "amount": 7663000,
+          "area": 47.11,
+          "url": "https://strana.com/tmn/domashnyi/flats/14347838/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 12%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№33; Дом Инновационный, секция 1, этаж 5/15",
+          "layout": "3-комнатная (европланировка)",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "four": {
+          "offerId": "P042",
+          "amount": 10910000,
+          "area": 79.18,
+          "url": "https://strana.com/tmn/domashnyi/flats/14078436/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 5%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№416; Дом Креативный, секция 3, этаж 13/15",
+          "layout": "4-комнатная (европланировка)",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        }
+      }
+    },
+    "11": {
+      "checkedAt": "2026-11-01",
+      "website": "https://strana.com/tmn/projects/serdtche-sibiri/",
+      "notes": "Не удалось перепроверить цены 16.11.2026: официальный каталог застройщика недоступен. Прежние суммы сохранены с исходными датами; актуальность необходимо уточнить у застройщика.",
+      "categories": {
+        "studio": {
+          "offerId": "P043",
+          "amount": 5349000,
+          "area": 29.89,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14938321/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 17%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№92; Квартал Инженеров, секция 1, этаж 10/25",
+          "layout": "Студия",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "one": {
+          "offerId": "P044",
+          "amount": 6500000,
+          "area": 29.62,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14938746/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 8%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№517; Квартал Инженеров, секция 4, этаж 5/25",
+          "layout": "1-комнатная",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "two": {
+          "offerId": "P045",
+          "amount": 6350000,
+          "area": 30.01,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14939021/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 10%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№792; Квартал Инженеров, секция 5, этаж 2/25",
+          "layout": "2-комнатная (европланировка)",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "three": {
+          "offerId": "P046",
+          "amount": 9000000,
+          "area": 54.29,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14938878/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 17%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№649; Квартал Инженеров, секция 4, этаж 15/25",
+          "layout": "3-комнатная (европланировка)",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "four": {
+          "offerId": "P047",
+          "amount": 11570000,
+          "area": 71.72,
+          "url": "https://strana.com/tmn/serdtche-sibiri/flats/14938361/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 17%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№132; Квартал Инженеров, секция 1, этаж 14/25",
+          "layout": "4-комнатная (европланировка)",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        }
+      }
+    },
+    "12": {
+      "checkedAt": "2026-11-01",
+      "website": "https://strana.com/tmn/projects/ostrov-sad/",
+      "notes": "Не удалось перепроверить цены 16.11.2026: официальный каталог застройщика недоступен. Прежние суммы сохранены с исходными датами; актуальность необходимо уточнить у застройщика.",
+      "categories": {
+        "studio": {
+          "offerId": "P048",
+          "amount": 4360000,
+          "area": 20.77,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/15382167/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 5%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№251; Майорка, корпус 1, секция 3, этаж 2/24",
+          "layout": "Студия",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "one": {
+          "offerId": "P049",
+          "amount": 5420000,
+          "area": 31.46,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/16058468/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 10%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№203; Тенерифе, секция 2, этаж 2/14",
+          "layout": "1-комнатная",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "two": {
+          "offerId": "P050",
+          "amount": 5230000,
+          "area": 28.08,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/16059229/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 10%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№964; Тенерифе, секция 5, этаж 16/17",
+          "layout": "2-комнатная (европланировка)",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "three": {
+          "offerId": "P051",
+          "amount": 8380000,
+          "area": 54.44,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/16059037/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 10%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№772; Тенерифе, секция 5, этаж 2/17",
+          "layout": "3-комнатная (европланировка)",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        },
+        "four": {
+          "offerId": "P052",
+          "amount": 11480000,
+          "area": 73.87,
+          "url": "https://strana.com/tmn/ostrov-sad/flats/16058810/",
+          "checkedAt": "2026-11-01",
+          "conditions": "100% оплата, скидка 10%. На карточке также есть ипотечный вариант с той же скидкой; рассрочка рассчитывается отдельно",
+          "lot": "№545; Тенерифе, этаж 15/16",
+          "layout": "4-комнатная (европланировка)",
+          "warning": "Не удалось перепроверить 16.11.2026: официальный каталог застройщика недоступен. Это прежняя цена с исходной датой; актуальность не подтверждена."
+        }
+      }
+    }
+  },
+  "continuationMethod": "HTTP-запросы возвращали 401. Затем в браузере после полной загрузки подтверждены 15 карточек: выбран способ 100% оплаты, видна полная цена и доступна кнопка бронирования. Сверены прежние и похожие варианты."
 }

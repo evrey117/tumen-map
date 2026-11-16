@@ -17,7 +17,7 @@ test('current price rows retain exact observed values and dates; failed checks c
    }else{assert.equal(price.amount,null);assert.ok(price.reason);}
   }
  }
- assert.equal(verified,68);assert.equal(retained,15);
+ assert.equal(verified,83);assert.equal(retained,0);
  assert.equal(data.homes.find(h=>h.id===5).pricing.categories.one.amount,null);
  assert.ok(audit.excluded.some(x=>x.homeId==='5'&&x.reason.includes('sold')));
  const superSky=data.homes.find(h=>h.id==='supersky');assert.equal(superSky.pricing.categories.one.amount,6724000);
