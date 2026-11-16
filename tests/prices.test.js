@@ -7,6 +7,7 @@ import {applyChangeRequest} from '../scripts/manage-homes.mjs';
 const data=JSON.parse(fs.readFileSync(new URL('../public/data/residential.json',import.meta.url)));
 const evidence=JSON.parse(fs.readFileSync(new URL('../public/data/price-evidence.json',import.meta.url)));
 const centerEvidence=JSON.parse(fs.readFileSync(new URL('../public/data/center-price-evidence.json',import.meta.url)));
+const refresh=JSON.parse(fs.readFileSync(new URL('../public/data/price-refresh-2026-11-16.json',import.meta.url)));
 const owner={repository:'evrey117/tumen-map',event:'workflow_dispatch',ref:'refs/heads/main',actorId:'101',ownerId:'101'};
 test('85 original categories match Excel evidence (updated Chelyuskintsev retained in archive); archived rows excluded',()=>{
  validateDataset(data);let filled=0,missing=0;
@@ -14,7 +15,7 @@ test('85 original categories match Excel evidence (updated Chelyuskintsev retain
   const name=Object.keys(evidence.mapping).find(name=>evidence.mapping[name]===home.id);
   assert.equal(Object.keys(home.pricing.categories).length,5);
   for(const [key,label] of Object.entries(PRICE_CATEGORIES)){
-   const entry=(home.id===4?centerEvidence.previousChelyuskintsevPricing:home.pricing).categories[key],offers=evidence.sheets['Источники'].slice(1).filter(row=>row[1]===name&&row[2]===label&&row[11]===1);
+   const entry=(home.id===4?centerEvidence.previousChelyuskintsevPricing:refresh.previousPricing[String(home.id)]).categories[key],offers=evidence.sheets['Источники'].slice(1).filter(row=>row[1]===name&&row[2]===label&&row[11]===1);
    if(offers.length){filled++;assert.equal(entry.amount,Math.min(...offers.map(row=>row[3])));const row=offers.find(row=>row[0]===entry.offerId);assert.ok(row);assert.equal(entry.url,row[5]);assert.equal(entry.area,row[4]);assert.equal(entry.conditions,row[7]);assert.equal(entry.checkedAt,row[6]);}
    else{missing++;assert.equal(entry.amount,null);assert.ok(entry.reason);}
   }
