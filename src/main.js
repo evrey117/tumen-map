@@ -3,7 +3,7 @@ import {pricesMarkup} from './prices.js';
 import {markerIcon} from './markers.js';
 import {defaultMarkerSize} from './marker-sizes.js';
 import {mountHousingAdmin} from './admin.js';
-import {fetchCentral,validateDataset,revisionOf} from './housing-store.js';
+import {validateDataset,revisionOf} from './housing-store.js';
 import {industrialArea,nearestIndustrial,formatDistance,formatArea} from './industrial.js';
 import {preparePlaces,placeStatus,placeAddress} from './places.js';
 import L from 'leaflet';
@@ -80,7 +80,8 @@ function replaceHousing(latest){
  if(selectedId!==undefined){const home=homes.find(h=>String(h.id)===String(selectedId));if(home){selected=home;updateHomeVisuals();if(detailWasOpen){detail(home);loadNearby(home);loadIndustrialNearby(home);}}else{selected=null;$('#detail').hidden=true;}}
  $('#status').textContent=`${housingCountLabel()} · общая версия обновлена`;
 }
-async function refreshHousing(manual=false){try{const latest=await fetchCentral();replaceHousing(latest);if(manual)$('#status').textContent=`${housingCountLabel()} · данные GitHub актуальны`;}catch(e){if(manual)$('#status').textContent='GitHub недоступен · показана последняя загруженная версия';}}
+async function fetchPublishedHousing(){const response=await fetch(import.meta.env.BASE_URL+'data/residential.json',{cache:'no-store',signal:AbortSignal.timeout(8000)});if(!response.ok)throw Error(`HTTP ${response.status}`);const text=await response.text();return {data:validateDataset(JSON.parse(text)),revision:await revisionOf(text)};}
+async function refreshHousing(manual=false){try{const latest=await fetchPublishedHousing();replaceHousing(latest);if(manual)$('#status').textContent=`${housingCountLabel()} · данные карты актуальны`;}catch(e){if(manual)$('#status').textContent='Обновление карты недоступно · показана последняя загруженная версия';}}
 mountHousingAdmin({getDataset:()=>structuredClone(currentDataset),onRefresh:replaceHousing});
 setInterval(()=>{if(!document.hidden)refreshHousing();},60000);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshHousing();});
