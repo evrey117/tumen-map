@@ -1,0 +1,3605 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "Официальные предложения застройщиков. Комнатность по классификации застройщика, включая европланировки. Вторичка исключена.",
+  "previousChelyuskintsevPricing": {
+    "checkedAt": "2026-11-01",
+    "website": "https://premium.72dom.com/?complexes=%D0%A7%D0%B5%D0%BB%D1%8E%D1%81%D0%BA%D0%B8%D0%BD%D1%86%D0%B5%D0%B2+5",
+    "notes": "Каталог 500 после первой загрузки. 2Е включает кухню-гостиную",
+    "categories": {
+      "studio": {
+        "offerId": "P017",
+        "amount": 10140000,
+        "area": 23.5,
+        "url": "https://premium.72dom.com/?complexes=%D0%A7%D0%B5%D0%BB%D1%8E%D1%81%D0%BA%D0%B8%D0%BD%D1%86%D0%B5%D0%B2+5",
+        "checkedAt": "2026-11-01",
+        "conditions": "Основная цена 10 140 000 ₽. Альтернативная «Ещё бонус» 10 200 000 ₽. Каталог позднее вернул 500",
+        "lot": "ГП-3; этаж 8",
+        "layout": "Студия",
+        "warning": ""
+      },
+      "one": {
+        "amount": null,
+        "checkedAt": "2026-11-01",
+        "reason": "Премиальный каталог после первоначальной загрузки вернул 500 «Ошибка сервера, скоро всё заработает». Фильтры и пагинация не позволили проверить карточку 1К. В поисковом индексе есть 1К 35,8 м² от 14,23 млн ₽, но актуальная фиксированная цена лота не подтверждена."
+      },
+      "two": {
+        "offerId": "P018",
+        "amount": 13680000,
+        "area": 38.1,
+        "url": "https://premium.72dom.com/?complexes=%D0%A7%D0%B5%D0%BB%D1%8E%D1%81%D0%BA%D0%B8%D0%BD%D1%86%D0%B5%D0%B2+5",
+        "checkedAt": "2026-11-01",
+        "conditions": "Цена «Ещё бонус» 13 680 000 ₽; основная цена 13 710 000 ₽. Условия программы не раскрыты. Каталог позднее вернул 500",
+        "lot": "ГП-1; этаж 3",
+        "layout": "Евродвухкомнатная (2Е)",
+        "warning": ""
+      },
+      "three": {
+        "amount": null,
+        "checkedAt": "2026-11-01",
+        "reason": "Каталог после первоначальной загрузки вернул 500. Фильтр 3Е и пагинация не дали проверяемой карточки с фиксированной ценой. В индексе есть 3Е 55,9 м² от 16,24 млн ₽; значение «от» не перенесено как цена конкретной квартиры."
+      },
+      "four": {
+        "amount": null,
+        "checkedAt": "2026-11-01",
+        "reason": "Каталог вернул 500 после первой загрузки. В интерфейсе были 4Е и 5Е, но открыть соответствующие квартиры и корпуса не удалось. Отсутствие квартир не утверждается."
+      }
+    }
+  },
+  "sources": {
+    "masharov": {
+      "catalogUrls": [
+        "https://masharov-kvartal.ru/apartments",
+        "https://masharov-kvartal.ru/apartments?page=2",
+        "https://masharov-kvartal.ru/apartments?page=3"
+      ],
+      "offerCount": 57
+    },
+    "chelyuskintsev": {
+      "catalogUrl": "https://premium.72dom.com/?complexes=%D0%A7%D0%B5%D0%BB%D1%8E%D1%81%D0%BA%D0%B8%D0%BD%D1%86%D0%B5%D0%B2+5",
+      "sourceOfferCount": 160,
+      "projectOfferCount": 122
+    },
+    "schaste-v-tyumeni": {
+      "url": "https://etalongroup.ru/tmn/object/zhk-schaste-v-tyumeni/",
+      "result": "На официальной странице проекта опубликованы паркинги и кладовые. Текущие предложения квартир с фиксированными ценами не найдены. Это не доказательство отсутствия квартир в продаже; требуется уточнение у застройщика."
+    },
+    "daudel": {
+      "url": "https://sibinteldev.ru/",
+      "result": "На официальном сайте застройщика есть описание ЖК, но действующий каталог квартир «Даудель» с фиксированными ценами не найден. Предложения вторичного рынка не включены; наличие остатков у застройщика требует уточнения."
+    }
+  },
+  "offers": {
+    "masharov": [
+      {
+        "category": "studio",
+        "id": 1392,
+        "status": "В продаже",
+        "name": "Студия",
+        "area": 28.39,
+        "price": {
+          "is_hidden": 0,
+          "price": 7371000,
+          "price_old": 8190000
+        },
+        "floor": 3,
+        "number": "1",
+        "url": "https://masharov-kvartal.ru/apartments/1392",
+        "stocks": [
+          {
+            "name": "Квартира месяца",
+            "tooltip": null
+          }
+        ]
+      },
+      {
+        "category": "one",
+        "id": 1430,
+        "status": "В продаже",
+        "name": "1-комнатная квартира",
+        "area": 44.17,
+        "price": {
+          "is_hidden": 0,
+          "price": 10270000,
+          "price_old": 0
+        },
+        "floor": 6,
+        "number": "39",
+        "url": "https://masharov-kvartal.ru/apartments/1430",
+        "stocks": [
+          {
+            "name": "Рассрочка с платежом от 40 000 ₽",
+            "tooltip": "Условия уточняйте в отделе продаж"
+          }
+        ]
+      },
+      {
+        "category": "two",
+        "id": 1471,
+        "status": "В продаже",
+        "name": "2-комнатная квартира",
+        "area": 54.01,
+        "price": {
+          "is_hidden": 0,
+          "price": 12130000,
+          "price_old": 0
+        },
+        "floor": 10,
+        "number": "80",
+        "url": "https://masharov-kvartal.ru/apartments/1471",
+        "stocks": [
+          {
+            "name": "Рассрочка с платежом от 40 000 ₽",
+            "tooltip": "Условия уточняйте в отделе продаж"
+          }
+        ]
+      },
+      {
+        "category": "three",
+        "id": 1538,
+        "status": "В продаже",
+        "name": "3-комнатная квартира",
+        "area": 89.39,
+        "price": {
+          "is_hidden": 0,
+          "price": 15750500,
+          "price_old": 18530000
+        },
+        "floor": 16,
+        "number": "147",
+        "url": "https://masharov-kvartal.ru/apartments/1538",
+        "stocks": [
+          {
+            "name": "Кладовая в подарок",
+            "tooltip": "Подробности уточняйте в отделе продаж"
+          },
+          {
+            "name": "Квартира месяца",
+            "tooltip": null
+          },
+          {
+            "name": "Рассрочка с платежом от 40 000 ₽",
+            "tooltip": "Условия уточняйте в отделе продаж"
+          }
+        ]
+      },
+      {
+        "category": "four",
+        "id": 1063,
+        "status": "В продаже",
+        "name": "4-комнатная квартира",
+        "area": 136.6,
+        "price": {
+          "is_hidden": 0,
+          "price": 29530000,
+          "price_old": 0
+        },
+        "floor": 13,
+        "number": "212",
+        "url": "https://masharov-kvartal.ru/apartments/1063",
+        "stocks": []
+      }
+    ],
+    "chelyuskintsev": [
+      {
+        "uid": "00f37ddc-f9ad-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "C",
+        "number": "163",
+        "declared_square": 23.5,
+        "house": "ГП-3",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 10140000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 10200000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f647-f830-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "C",
+        "number": "8",
+        "declared_square": 31.3,
+        "house": "ГП-2",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 11710000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 11800000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938ea62-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "C",
+        "number": "29",
+        "declared_square": 31.3,
+        "house": "ГП-2",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 12030000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 12140000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938e274-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "C",
+        "number": "43",
+        "declared_square": 31.3,
+        "house": "ГП-2",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 13020000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 13130000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99c007-fa6d-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "171",
+        "declared_square": 38.1,
+        "house": "ГП-1",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 13710000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 13680000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f54dcf-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "116",
+        "declared_square": 40.4,
+        "house": "ГП-3",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 13710000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 13820000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f55035-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "118",
+        "declared_square": 38.3,
+        "house": "ГП-3",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 13760000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 13870000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f5456a-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "127",
+        "declared_square": 38.3,
+        "house": "ГП-3",
+        "floor": 4,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 13970000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14090000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99b409-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "181",
+        "declared_square": 38.1,
+        "house": "ГП-1",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 14130000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14100000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f39bd7-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "136",
+        "declared_square": 38.3,
+        "house": "ГП-3",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 14130000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14250000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f88b-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "12",
+        "declared_square": 39.1,
+        "house": "ГП-2",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 14130000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14250000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "abae6d37-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "89",
+        "declared_square": 45,
+        "house": "ГП-4",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 14180000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14150000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "d190bbb1-fa75-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "1K",
+        "number": "203",
+        "declared_square": 35.8,
+        "house": "ГП-5",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 14230000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14350000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99ae0a-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "186",
+        "declared_square": 38.1,
+        "house": "ГП-1",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 14290000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14260000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f3910c-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "145",
+        "declared_square": 38.3,
+        "house": "ГП-3",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 14290000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14410000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f541d1-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "124",
+        "declared_square": 39.8,
+        "house": "ГП-3",
+        "floor": 4,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 14500000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14620000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "48e64b70-f836-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "50",
+        "declared_square": 55.9,
+        "house": "ГП-4",
+        "floor": 2,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 16240000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14520000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f3983e-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "133",
+        "declared_square": 39.8,
+        "house": "ГП-3",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 14650000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 14780000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f09d-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "26",
+        "declared_square": 39.1,
+        "house": "ГП-2",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 15070000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 15210000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "43e0f17f-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "77",
+        "declared_square": 46,
+        "house": "ГП-4",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 15130000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 15100000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f54304-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "125",
+        "declared_square": 40.4,
+        "house": "ГП-3",
+        "floor": 4,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 15280000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 15420000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f39971-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "134",
+        "declared_square": 40.4,
+        "house": "ГП-3",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 15550000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 15680000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938eaf3-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "30",
+        "declared_square": 41.2,
+        "house": "ГП-2",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 15550000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 15680000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f559cd-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "C",
+        "number": "111",
+        "declared_square": 45.2,
+        "house": "ГП-3",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 15760000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "bd99a80b-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "191",
+        "declared_square": 38.1,
+        "house": "ГП-1",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 15860000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 15830000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f38641-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "154",
+        "declared_square": 38.3,
+        "house": "ГП-3",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 15910000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 16060000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "43e10715-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "55",
+        "declared_square": 51.4,
+        "house": "ГП-4",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 16120000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 16100000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "abae699e-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "92",
+        "declared_square": 45,
+        "house": "ГП-4",
+        "floor": 4,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 16440000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 16410000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "43e10116-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "60",
+        "declared_square": 51.4,
+        "house": "ГП-4",
+        "floor": 4,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 16440000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 16410000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938eca6-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "33",
+        "declared_square": 39.1,
+        "house": "ГП-2",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 16440000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "abae6605-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "95",
+        "declared_square": 45,
+        "house": "ГП-4",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 16540000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 16520000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938e6fc-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "37",
+        "declared_square": 41.2,
+        "house": "ГП-2",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 16700000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 16850000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f1bf-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "14",
+        "declared_square": 63.4,
+        "house": "ГП-2",
+        "floor": 4,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 18850000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 16870000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "d190c1b0-fa75-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "200",
+        "declared_square": 57.4,
+        "house": "ГП-5",
+        "floor": 2,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 17020000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 16990000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "abae5ed3-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "101",
+        "declared_square": 45,
+        "house": "ГП-4",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 17020000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 16990000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f38ea6-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "143",
+        "declared_square": 40.4,
+        "house": "ГП-3",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 17070000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 17230000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938e9d1-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "28",
+        "declared_square": 63.4,
+        "house": "ГП-2",
+        "floor": 6,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 19850000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 17390000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f383db-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "152",
+        "declared_square": 40.4,
+        "house": "ГП-3",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 17490000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 17650000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f9ad-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "3",
+        "declared_square": 61.5,
+        "house": "ГП-2",
+        "floor": 2,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 17750000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 17550000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f55501-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "107",
+        "declared_square": 68.1,
+        "house": "ГП-3",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 19260000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 17600000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938e5da-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "35",
+        "declared_square": 63.4,
+        "house": "ГП-2",
+        "floor": 7,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 20150000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 17650000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938e305-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "44",
+        "declared_square": 41.2,
+        "house": "ГП-2",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 17750000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 17920000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f382a8-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "151",
+        "declared_square": 39.8,
+        "house": "ГП-3",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 18010000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18180000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f54a36-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "113",
+        "declared_square": 67.9,
+        "house": "ГП-3",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 19720000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18020000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f769-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "10",
+        "declared_square": 61.5,
+        "house": "ГП-2",
+        "floor": 3,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 18280000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18070000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f54b69-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "114",
+        "declared_square": 72,
+        "house": "ГП-3",
+        "floor": 3,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 20680000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18120000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f37ca9-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "162",
+        "declared_square": 38.3,
+        "house": "ГП-3",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 18170000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18340000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f372-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "17",
+        "declared_square": 61.5,
+        "house": "ГП-2",
+        "floor": 4,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 18430000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18220000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938ef7b-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "24",
+        "declared_square": 61.5,
+        "house": "ГП-2",
+        "floor": 5,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 18590000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18380000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938eb84-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "31",
+        "declared_square": 61.5,
+        "house": "ГП-2",
+        "floor": 6,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 18750000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18530000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f5409e-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "123",
+        "declared_square": 72,
+        "house": "ГП-3",
+        "floor": 4,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 21780000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18530000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938e78d-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "38",
+        "declared_square": 61.5,
+        "house": "ГП-2",
+        "floor": 7,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 18910000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18690000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f91c-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "2",
+        "declared_square": 74.1,
+        "house": "ГП-2",
+        "floor": 2,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 21390000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18740000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f53f6b-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "122",
+        "declared_square": 67.9,
+        "house": "ГП-3",
+        "floor": 4,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 20530000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18770000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "abae5b3a-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "104",
+        "declared_square": 45,
+        "house": "ГП-4",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 18800000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18780000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f3970b-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "132",
+        "declared_square": 72,
+        "house": "ГП-3",
+        "floor": 5,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 22080000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18800000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99bda1-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "169",
+        "declared_square": 71.3,
+        "house": "ГП-1",
+        "floor": 3,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 20820000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18830000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "43e0fb17-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "65",
+        "declared_square": 51.4,
+        "house": "ГП-4",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 18850000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 18830000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f37910-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "159",
+        "declared_square": 39.8,
+        "house": "ГП-3",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 18850000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 19030000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938e8af-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "40",
+        "declared_square": 39.1,
+        "house": "ГП-2",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 18910000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "bd99b7a2-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "174",
+        "declared_square": 71.3,
+        "house": "ГП-1",
+        "floor": 4,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 21110000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 19100000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "43e0f518-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "70",
+        "declared_square": 51.4,
+        "house": "ГП-4",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 19120000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 19100000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "43e0ef19-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "75",
+        "declared_square": 51.4,
+        "house": "ГП-4",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 19330000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 19310000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99b1a3-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "179",
+        "declared_square": 71.3,
+        "house": "ГП-1",
+        "floor": 5,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 21800000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 19310000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99c4d3-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "166",
+        "declared_square": 60.6,
+        "house": "ГП-1",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 19430000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "00f395d8-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "131",
+        "declared_square": 67.9,
+        "house": "ГП-3",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 19430000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 19620000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f37a43-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "160",
+        "declared_square": 40.3,
+        "house": "ГП-3",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 19430000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 19620000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f38c40-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "141",
+        "declared_square": 72,
+        "house": "ГП-3",
+        "floor": 6,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 19700000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "2938e4b8-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "47",
+        "declared_square": 39.1,
+        "house": "ГП-2",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 19850000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "2938e396-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "45",
+        "declared_square": 61.5,
+        "house": "ГП-2",
+        "floor": 8,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 20120000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 19890000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "48e64dd6-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "52",
+        "declared_square": 77.7,
+        "house": "ГП-4",
+        "floor": 2,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 22560000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 20200000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99aba4-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "184",
+        "declared_square": 71.3,
+        "house": "ГП-1",
+        "floor": 6,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 23340000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 20200000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f55767-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "109",
+        "declared_square": 73.1,
+        "house": "ГП-3",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 20480000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "d190bce4-fa75-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "204",
+        "declared_square": 57.4,
+        "house": "ГП-5",
+        "floor": 3,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 20690000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 20680000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f38175-f9ad-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "150",
+        "declared_square": 72,
+        "house": "ГП-3",
+        "floor": 7,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 20800000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "43e0f9e4-f836-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "64",
+        "declared_square": 55.9,
+        "house": "ГП-4",
+        "floor": 5,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 21530000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 21300000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f38b0d-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "2E",
+        "number": "140",
+        "declared_square": 67.9,
+        "house": "ГП-3",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 21530000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "06f5529b-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "120",
+        "declared_square": 73.3,
+        "house": "ГП-3",
+        "floor": 3,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 21950000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 21710000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938fa3e-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "4",
+        "declared_square": 78.5,
+        "house": "ГП-2",
+        "floor": 2,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 22010000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 21760000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "abae6c04-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "88",
+        "declared_square": 85,
+        "house": "ГП-4",
+        "floor": 3,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 25000000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 21920000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "abae686b-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "91",
+        "declared_square": 85,
+        "house": "ГП-4",
+        "floor": 4,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 25770000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 22200000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "43e0fc4a-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "66",
+        "declared_square": 89.8,
+        "house": "ГП-4",
+        "floor": 5,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 27200000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 22230000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "43e0f64b-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "71",
+        "declared_square": 89.8,
+        "house": "ГП-4",
+        "floor": 6,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 27700000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 22440000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f7fa-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "11",
+        "declared_square": 78.5,
+        "house": "ГП-2",
+        "floor": 3,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 22850000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 22600000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "43e0f04c-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "76",
+        "declared_square": 89.8,
+        "house": "ГП-4",
+        "floor": 7,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 28250000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 22650000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f547d0-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "129",
+        "declared_square": 73.3,
+        "house": "ГП-3",
+        "floor": 4,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 23000000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 22750000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "abae6f9d-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "85",
+        "declared_square": 90.9,
+        "house": "ГП-4",
+        "floor": 2,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 25110000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 22750000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "06f53d05-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "138",
+        "declared_square": 73.3,
+        "house": "ГП-3",
+        "floor": 5,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 23480000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 23220000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "00f39372-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "147",
+        "declared_square": 73.3,
+        "house": "ГП-3",
+        "floor": 6,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 24050000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 23800000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99c26d-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "173",
+        "declared_square": 88,
+        "house": "ГП-1",
+        "floor": 3,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 26910000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 23960000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99bb3b-fa6d-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "177",
+        "declared_square": 89.5,
+        "house": "ГП-1",
+        "floor": 4,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 24020000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "00f388a7-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "156",
+        "declared_square": 73.3,
+        "house": "ГП-3",
+        "floor": 7,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 24320000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 24060000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99bc6e-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "178",
+        "declared_square": 88,
+        "house": "ГП-1",
+        "floor": 4,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 27260000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 24170000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "abae64d2-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "94",
+        "declared_square": 85,
+        "house": "ГП-4",
+        "floor": 5,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 27320000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 24470000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "d190ba7e-fa75-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "202",
+        "declared_square": 75.5,
+        "house": "ГП-5",
+        "floor": 3,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 25890000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 25350000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782d1c4-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "81",
+        "declared_square": 51.2,
+        "house": "Апарт-отель",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 34550000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 25360000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "d190c2e3-fa75-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "201",
+        "declared_square": 94.7,
+        "house": "ГП-5",
+        "floor": 2,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 26520000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 25970000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782db65-ca55-11ee-b552-00155d015d18",
+        "status": "Бронь",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "79",
+        "declared_square": 55.1,
+        "house": "Апарт-отель",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 35700000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 26090000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f00c-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "25",
+        "declared_square": 78.5,
+        "house": "ГП-2",
+        "floor": 5,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 27000000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 26710000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938ec15-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "32",
+        "declared_square": 78.5,
+        "house": "ГП-2",
+        "floor": 6,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 27260000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "c3294519-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "168",
+        "declared_square": 98.2,
+        "house": "ГП-1",
+        "floor": 2,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 27310000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782e475-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "57",
+        "declared_square": 86.4,
+        "house": "Апарт-отель",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 37980000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 27570000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782df5c-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "67",
+        "declared_square": 86.4,
+        "house": "Апарт-отель",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 38240000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 27880000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "bd99b66f-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "183",
+        "declared_square": 88,
+        "house": "ГП-1",
+        "floor": 5,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 29150000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 28550000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "abae6139-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "97",
+        "declared_square": 85,
+        "house": "ГП-4",
+        "floor": 6,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 29040000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 28740000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a7f3-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "29",
+        "declared_square": 55.1,
+        "house": "Апарт-отель",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 28870000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "2938f525-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "6",
+        "declared_square": 94.5,
+        "house": "ГП-2",
+        "floor": 3,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 29620000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 29010000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "f951c8ca-ca53-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "21",
+        "declared_square": 51.1,
+        "house": "Апарт-отель",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 29170000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "abae6e6a-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "5E",
+        "number": "90",
+        "declared_square": 103.2,
+        "house": "ГП-4",
+        "floor": 3,
+        "rooms": 4,
+        "costs": [
+          {
+            "cost": 29780000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 29170000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938f12e-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "13",
+        "declared_square": 94.5,
+        "house": "ГП-2",
+        "floor": 4,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 29990000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 29380000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "2938e81e-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "39",
+        "declared_square": 78.5,
+        "house": "ГП-2",
+        "floor": 7,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 29570000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "abae7203-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "5E",
+        "number": "87",
+        "declared_square": 111.7,
+        "house": "ГП-4",
+        "floor": 2,
+        "rooms": 4,
+        "costs": [
+          {
+            "cost": 29830000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "abae5a07-f989-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "103",
+        "declared_square": 85,
+        "house": "ГП-4",
+        "floor": 8,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 30300000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 29990000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a6d1-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "27",
+        "declared_square": 86.4,
+        "house": "Апарт-отель",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 31230000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a36b-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "39",
+        "declared_square": 55.1,
+        "house": "Апарт-отель",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 31290000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "bd99b070-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "188",
+        "declared_square": 88,
+        "house": "ГП-1",
+        "floor": 6,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 32190000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 31540000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "d190be17-fa75-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "205",
+        "declared_square": 94.7,
+        "house": "ГП-5",
+        "floor": 3,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 32460000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 31800000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a249-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "37",
+        "declared_square": 86.4,
+        "house": "Апарт-отель",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 31810000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782e3e4-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "56",
+        "declared_square": 101.1,
+        "house": "Апарт-отель",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 43520000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 32000000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782eb41-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "31",
+        "declared_square": 51.1,
+        "house": "Апарт-отель",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 32450000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "2938e427-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "46",
+        "declared_square": 78.5,
+        "house": "ГП-2",
+        "floor": 8,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 32670000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782e10f-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "51",
+        "declared_square": 51.1,
+        "house": "Апарт-отель",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 32920000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "bd99aa71-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "3E",
+        "number": "193",
+        "declared_square": 88,
+        "house": "ГП-1",
+        "floor": 7,
+        "rooms": 2,
+        "costs": [
+          {
+            "cost": 33770000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 33090000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782dbf6-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "61",
+        "declared_square": 51.2,
+        "house": "Апарт-отель",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 33180000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a762-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "28",
+        "declared_square": 93.9,
+        "house": "Апарт-отель",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 33410000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782d6dd-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "71",
+        "declared_square": 51.2,
+        "house": "Апарт-отель",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 33530000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782decb-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "66",
+        "declared_square": 101.3,
+        "house": "Апарт-отель",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 47820000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 33860000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a2da-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "38",
+        "declared_square": 93.9,
+        "house": "Апарт-отель",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 34120000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "bd99c606-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "167",
+        "declared_square": 130.3,
+        "house": "ГП-1",
+        "floor": 2,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 34140000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "2938ed37-f830-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "20",
+        "declared_square": 94.5,
+        "house": "ГП-2",
+        "floor": 5,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 34770000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "2938e940-f830-11ef-b562-00155d015d18",
+        "status": "Бронь",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "27",
+        "declared_square": 94.5,
+        "house": "ГП-2",
+        "floor": 6,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 35240000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a1b8-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "36",
+        "declared_square": 101.1,
+        "house": "Апарт-отель",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 36580000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a640-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "26",
+        "declared_square": 101.1,
+        "house": "Апарт-отель",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 36970000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782d9b2-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "76",
+        "declared_square": 101.3,
+        "house": "Апарт-отель",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 52320000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 37160000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782d499-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "86",
+        "declared_square": 101.3,
+        "house": "Апарт-отель",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 53570000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 38290000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782e506-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "58",
+        "declared_square": 93.9,
+        "house": "Апарт-отель",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 38340000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782e2c2-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "54",
+        "declared_square": 124.1,
+        "house": "Апарт-отель",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 54800000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 38910000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782e353-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "55",
+        "declared_square": 123.6,
+        "house": "Апарт-отель",
+        "floor": 5,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 53840000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 39120000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782de3a-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "65",
+        "declared_square": 123.9,
+        "house": "Апарт-отель",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 54320000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 39940000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782dda9-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "64",
+        "declared_square": 124.4,
+        "house": "Апарт-отель",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 55310000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          },
+          {
+            "cost": 40350000,
+            "has_bonus": true,
+            "title": "Цена Еще бонус"
+          }
+        ]
+      },
+      {
+        "uid": "7782dfed-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "68",
+        "declared_square": 93.9,
+        "house": "Апарт-отель",
+        "floor": 6,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 40870000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782d5bb-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "88",
+        "declared_square": 93.9,
+        "house": "Апарт-отель",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 41020000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782dad4-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "2E",
+        "number": "78",
+        "declared_square": 93.9,
+        "house": "Апарт-отель",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 41540000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a127-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "35",
+        "declared_square": 123.6,
+        "house": "Апарт-отель",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 44820000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "06f55634-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "108",
+        "declared_square": 242.4,
+        "house": "ГП-3",
+        "floor": 2,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 44890000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a096-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "34",
+        "declared_square": 124.1,
+        "house": "Апарт-отель",
+        "floor": 3,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 45610000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "48e64f09-f836-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "53",
+        "declared_square": 224.7,
+        "house": "ГП-4",
+        "floor": 2,
+        "rooms": 3,
+        "costs": [
+          {
+            "cost": 45700000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a5af-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "25",
+        "declared_square": 123.6,
+        "house": "Апарт-отель",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 46000000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a51e-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "24",
+        "declared_square": 124.1,
+        "house": "Апарт-отель",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 46820000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782d890-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "74",
+        "declared_square": 124.4,
+        "house": "Апарт-отель",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 52660000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782d377-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "84",
+        "declared_square": 124.4,
+        "house": "Апарт-отель",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 53660000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "bd99c3a0-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "5E",
+        "number": "165",
+        "declared_square": 310.4,
+        "house": "ГП-1",
+        "floor": 2,
+        "rooms": 4,
+        "costs": [
+          {
+            "cost": 54390000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "06f55b00-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "5E",
+        "number": "112",
+        "declared_square": 354.4,
+        "house": "ГП-3",
+        "floor": 2,
+        "rooms": 4,
+        "costs": [
+          {
+            "cost": 56180000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "2938de44-f830-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "5E",
+        "number": "1",
+        "declared_square": 274.4,
+        "house": "ГП-2",
+        "floor": 2,
+        "rooms": 4,
+        "costs": [
+          {
+            "cost": 57420000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782d921-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "75",
+        "declared_square": 123.9,
+        "house": "Апарт-отель",
+        "floor": 7,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 57480000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7782d408-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "85",
+        "declared_square": 123.9,
+        "house": "Апарт-отель",
+        "floor": 8,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 58050000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "bd99a0d9-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "5E",
+        "number": "194",
+        "declared_square": 266.6,
+        "house": "ГП-1",
+        "floor": 8,
+        "rooms": 4,
+        "costs": [
+          {
+            "cost": 58190000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "bd99a472-fa6d-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "5E",
+        "number": "197",
+        "declared_square": 315.5,
+        "house": "ГП-1",
+        "floor": 8,
+        "rooms": 4,
+        "costs": [
+          {
+            "cost": 62500000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "00f37f0f-f9ad-11ef-b562-00155d015d18",
+        "status": "Свободна",
+        "complex": "Челюскинцев 5",
+        "type": "4E",
+        "number": "164",
+        "declared_square": 274.6,
+        "house": "ГП-3",
+        "floor": 8,
+        "rooms": 5,
+        "costs": [
+          {
+            "cost": 65660000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      },
+      {
+        "uid": "7d87a48d-ca55-11ee-b552-00155d015d18",
+        "status": "Свободна",
+        "complex": "Дом Форм",
+        "type": "3E",
+        "number": "23",
+        "declared_square": 175,
+        "house": "Апарт-отель",
+        "floor": 2,
+        "rooms": 1,
+        "costs": [
+          {
+            "cost": 69570000,
+            "has_bonus": false,
+            "title": "Базовая цена"
+          }
+        ]
+      }
+    ]
+  }
+}

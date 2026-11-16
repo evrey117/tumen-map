@@ -16,7 +16,7 @@ for(const mobile of [false,true])test(`all 17 cards show five sourced prices, mi
   const card=page.locator('#detail');await expect(card).toBeVisible();await expect(card.locator('.housing-prices h3')).toHaveText('Цены квартир');
   await expect(card.locator('.price-row')).toHaveCount(5);
   for(const key of Object.keys(PRICE_CATEGORIES)){const entry=home.pricing.categories[key],row=card.locator(`[data-price-category="${key}"]`);await expect(row.locator('strong')).toHaveText(formatPrice(entry.amount));if(entry.url)await expect(row.locator('a')).toHaveAttribute('href',entry.url);}
-  await expect(card.locator('.official-website')).toHaveAttribute('href',home.pricing.website);await expect(card.locator('time')).toHaveText('01.11.2026');
+  await expect(card.locator('.official-website')).toHaveAttribute('href',home.pricing.website);await expect(card.locator('time')).toHaveText(home.pricing.checkedAt.split('-').reverse().join('.'));
   await card.locator('.close').click();await expect(card).toBeHidden();
   if(mobile)await page.locator('#mobile-toggle').click();
  }
