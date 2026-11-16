@@ -65,20 +65,21 @@ function renderList(){const q=normalize($('#search').value);const filtered=homes
 }
 function drawHomes(){layers.home.clearLayers();for(const h of homes){if(!h.lat)continue;h.marker=L.marker([h.lat,h.lon],{icon:markerIcon('home',markerPreset),pane:'housingPane',title:h.name}).addTo(layers.home).bindPopup(`<strong>${escape(h.name)}</strong><br>${escape(h.developer)}<br>${escape(h.address)}<br><small>${h.approximate?escape(h.precisionLabel||'Приблизительная точка'):'Адрес найден в OSM'}</small>`);h.marker.on('click',()=>selectHome(h,false));}updateHomeVisuals();}
 function detail(h){$('#detail').hidden=false;$('#detail').innerHTML=`<button class="close" aria-label="Закрыть карточку">×</button><span class="eyebrow">ЖИЛОЙ КОМПЛЕКС</span><h2>${escape(h.name)}</h2>${pricesMarkup(h,escape)}<p>${escape(h.developer)}<br>Тюмень, ${escape(h.address)}</p><p>${h.lat?(h.approximate?'≈ '+escape(h.precisionLabel||'Приблизительная точка района; не адрес здания.'):'В OSM найден объект с совпадающим адресом. Принадлежность ЖК отдельно не подтверждена.'):'Координаты не подтверждены. Метка появится после успешной проверки адреса.'}</p>${housingEvidenceNote(h)?`<p class="state">${escape(housingEvidenceNote(h))}</p>`:''}${h.identityNote?`<p class="state">${escape(h.identityNote)}</p>`:''}${h.source?`<a class="source" href="${escape(h.source)}" target="_blank" rel="noopener">${h.coordinateUnresolved?'Источник прежней ошибочной точки':'Источник координат'} ↗</a>`:''}<div class="nearby industrial-nearby" id="industrial-nearby">${h.lat?'Ближайшие промышленные территории…':'Расстояния до промзон доступны после определения координат.'}</div><div class="nearby" id="nearby">${h.lat?'Инфраструктура в радиусе 2 км…':'Поиск инфраструктуры доступен после определения координат.'}</div>`;$('.close').onclick=()=>{$('#detail').hidden=true;map.closePopup();selected=null;renderList();updateHomeVisuals();};}
-function selectHome(h,fly=true){selected=h;updateHomeVisuals();renderList();detail(h);if(h.lat){enable('home');focusHomePoint(h,fly);loadNearby(h);loadIndustrialNearby(h);}}
+function selectHome(h,fly=true){selected=h;updateHomeVisuals();renderList();detail(h);if(h.lat){enable('home');focusHomePoint(h,fly);loadNearby(h);loadIndustrialNearby(h);}else if(mobileView()){collapseSidebar(true);}}
 $('#search').addEventListener('input',renderList);$('#search').addEventListener('keydown',e=>{if(e.key==='Enter'){const h=homes.find(h=>normalize(h.name).includes(normalize($('#search').value)));if(h)selectHome(h);}});
 document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)&&!e.target.isContentEditable){e.preventDefault();$('#search').focus();}});
 $('#all').onclick=()=>{if(mobileView())collapseSidebar(true);map.closePopup();selected=null;updateHomeVisuals();$('#detail').hidden=true;enable('home');$('#search').value='';renderList();const points=homes.filter(h=>h.lat).map(h=>[h.lat,h.lon]);if(points.length)map.fitBounds(points,{padding:[50,50],maxZoom:13});else map.setView([57.153,65.542],12);};
 $('#mobile-toggle').onclick=()=>collapseSidebar(!$('.sidebar').classList.contains('collapsed'));
 async function getJSON(url,options={}){const response=await fetch(url,{...options,signal:AbortSignal.timeout(20000)});if(!response.ok)throw Error(`HTTP ${response.status}`);return response.json();}
+function housingCountLabel(){return `ЖК на карте: ${homes.filter(h=>Number.isFinite(h.lat)&&Number.isFinite(h.lon)).length} · без координат: ${homes.filter(h=>h.lat===null).length}`;}
 function replaceHousing(latest){
  if(latest.revision===currentRevision)return;
  currentDataset=structuredClone(latest.data);currentRevision=latest.revision;
  const selectedId=selected?.id,detailWasOpen=!$('#detail').hidden;homes.splice(0,homes.length,...structuredClone(currentDataset.homes));drawHomes();renderList();
  if(selectedId!==undefined){const home=homes.find(h=>String(h.id)===String(selectedId));if(home){selected=home;updateHomeVisuals();if(detailWasOpen){detail(home);loadNearby(home);loadIndustrialNearby(home);}}else{selected=null;$('#detail').hidden=true;}}
- $('#status').textContent=`ЖК на карте: ${homes.length} · общая версия обновлена`;
+ $('#status').textContent=`${housingCountLabel()} · общая версия обновлена`;
 }
-async function refreshHousing(manual=false){try{const latest=await fetchCentral();replaceHousing(latest);if(manual)$('#status').textContent=`ЖК на карте: ${homes.length} · данные GitHub актуальны`;}catch(e){if(manual)$('#status').textContent='GitHub недоступен · показана последняя загруженная версия';}}
+async function refreshHousing(manual=false){try{const latest=await fetchCentral();replaceHousing(latest);if(manual)$('#status').textContent=`${housingCountLabel()} · данные GitHub актуальны`;}catch(e){if(manual)$('#status').textContent='GitHub недоступен · показана последняя загруженная версия';}}
 mountHousingAdmin({getDataset:()=>structuredClone(currentDataset),onRefresh:replaceHousing});
 setInterval(()=>{if(!document.hidden)refreshHousing();},60000);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshHousing();});
@@ -132,7 +133,7 @@ async function loadIndustrialNearby(h){
  }
 }
 $('#retry').onclick=()=>{refreshHousing(true);fetchInfrastructure().catch(()=>{});loadIndustrial().then(()=>{if(selected)loadIndustrialNearby(selected);}).catch(()=>{});};
-renderList();drawHomes();refreshHousing();$('#status').textContent=`ЖК на карте: ${homes.filter(h=>h.lat).length} · есть приблизительные`;fetchInfrastructure().catch(e=>console.warn('Overpass недоступен:',e.message));loadIndustrial().catch(e=>{console.warn('Промзоны недоступны:',e.message);const filter=$('[data-category="industrial"]').closest('label');filter.append(' · недоступны');filter.title='Не удалось загрузить реальные контуры';});
+renderList();drawHomes();refreshHousing();$('#status').textContent=`${housingCountLabel()} · есть приблизительные`;fetchInfrastructure().catch(e=>console.warn('Overpass недоступен:',e.message));loadIndustrial().catch(e=>{console.warn('Промзоны недоступны:',e.message);const filter=$('[data-category="industrial"]').closest('label');filter.append(' · недоступны');filter.title='Не удалось загрузить реальные контуры';});
 
 }
 init().catch(e=>{console.error(e);document.querySelector("#status").textContent="Ошибка запуска карты";});

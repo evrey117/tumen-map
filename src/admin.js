@@ -36,6 +36,7 @@ export function mountHousingAdmin({getDataset,onRefresh}){
   if(marker){editorMap.removeLayer(marker);marker=null;}
   $('#edit-lat').value='';$('#edit-lon').value='';
   if(Number.isFinite(editing.lat)&&Number.isFinite(editing.lon)){setPoint(editing.lat,editing.lon,false);editorMap.stop();editorMap.setView([editing.lat,editing.lon],15,{animate:false});$('#edit-confirm').checked=true;}
+  for(const key of ['lat','lon'])$('#edit-'+key).required=!(editing.coordinateUnresolved&&editing.lat===null&&editing.lon===null);
   const pricing=editing.pricing;
   $('#edit-price-date').value=pricing?.checkedAt||'';$('#edit-price-website').value=pricing?.website||'';$('#edit-price-notes').value=pricing?.notes||'';
   for(const key of Object.keys(PRICE_CATEGORIES)){const e=pricing?.categories[key];$('#edit-price-'+key).value=e?.amount??'';$('#edit-price-date-'+key).value=e?.checkedAt||pricing?.checkedAt||'';$('#edit-price-area-'+key).value=e?.area??'';$('#edit-price-url-'+key).value=e?.url||'';$('#edit-price-conditions-'+key).value=e?.conditions||'';}
@@ -54,9 +55,10 @@ export function mountHousingAdmin({getDataset,onRefresh}){
  $('#admin-new').onclick=()=>{if(dirtyForm&&!confirm('Отменить неприменённые изменения формы?'))return;edit(null);};
  $('#admin-form').onsubmit=e=>{
   e.preventDefault();try{
-   if(!$('#edit-confirm').checked)throw Error('Подтвердите положение метки на карте');
-   const h={...editing,name:field('#edit-name').trim(),developer:field('#edit-developer').trim(),address:field('#edit-address').trim(),lat:Number(field('#edit-lat')),lon:Number(field('#edit-lon')),checkedAt:editing.checkedAt||new Date().toISOString()};
-   if(!field('#edit-lat')||!field('#edit-lon'))throw Error('Сначала выберите координаты');
+   const unlocated=editing.coordinateUnresolved&&field('#edit-lat')===''&&field('#edit-lon')==='';
+   if(!unlocated&&!$('#edit-confirm').checked)throw Error('Подтвердите положение метки на карте');
+   const h={...editing,name:field('#edit-name').trim(),developer:field('#edit-developer').trim(),address:field('#edit-address').trim(),lat:unlocated?null:Number(field('#edit-lat')),lon:unlocated?null:Number(field('#edit-lon')),checkedAt:editing.checkedAt||new Date().toISOString()};
+   if(!unlocated&&(!field('#edit-lat')||!field('#edit-lon')))throw Error('Сначала выберите координаты');
    const keys=Object.keys(PRICE_CATEGORIES);
    const hasPricing=editing.pricing||field('#edit-price-website')||field('#edit-price-date')||field('#edit-price-notes')||keys.some(key=>['','date-','area-','url-','conditions-'].some(prefix=>field('#edit-price-'+prefix+key)));
    if(hasPricing){

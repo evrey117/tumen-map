@@ -9,7 +9,7 @@ const evidence=JSON.parse(fs.readFileSync(new URL('../public/data/price-evidence
 const owner={repository:'evrey117/tumen-map',event:'workflow_dispatch',ref:'refs/heads/main',actorId:'101',ownerId:'101'};
 test('all 85 categories exactly match eligible Excel evidence; 37 archived rows never become prices',()=>{
  validateDataset(data);let filled=0,missing=0;
- for(const home of data.homes){
+ for(const home of data.homes.filter(h=>Object.values(evidence.mapping).includes(h.id))){
   const name=Object.keys(evidence.mapping).find(name=>evidence.mapping[name]===home.id);
   assert.equal(Object.keys(home.pricing.categories).length,5);
   for(const [key,label] of Object.entries(PRICE_CATEGORIES)){
@@ -25,7 +25,7 @@ test('all 85 categories exactly match eligible Excel evidence; 37 archived rows 
 test('pricing rejects injected URLs, invalid dates, negative/fractional prices and unknown fields; legacy homes remain valid',()=>{
  const original=data.homes[0].pricing;
  for(const change of [p=>p.website='javascript:alert(1)',p=>p.website='https://user:password@example.com',p=>p.checkedAt='2026-02-30',p=>p.categories.studio.amount=-1,p=>p.categories.studio.amount=1.5,p=>p.categories.studio.amount='5220000',p=>p.categories.studio.url='data:text/html,evil',p=>p.categories.studio.area=-3,p=>p.categories.studio.secret='hidden',p=>delete p.categories.four]){const p=structuredClone(original);change(p);assert.throws(()=>validatePricing(p));}
- const legacy=structuredClone(data);for(const h of legacy.homes)delete h.pricing;assert.equal(validateDataset(legacy).homes.length,17);
+ const legacy=structuredClone(data);for(const h of legacy.homes)delete h.pricing;assert.equal(validateDataset(legacy).homes.length,data.homes.length);
  assert.equal(formatPrice(null),'Цена не указана');assert.match(formatPrice(5220000),/5\s220\s000 ₽/);
 });
 test('price edits and removal persist through existing owner workflow, cross-device reload and restore',()=>{

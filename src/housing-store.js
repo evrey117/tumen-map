@@ -1,7 +1,7 @@
-import {validatePricing} from './prices.js';
+import {validatePricing,safeWebsite} from './prices.js';
 export const DATA_PATH = 'public/data/residential.json';
 export const RAW_ROOT = 'https://raw.githubusercontent.com/evrey117/tumen-map/';
-const allowed = new Set(['id','name','developer','address','category','lat','lon','source','approximate','precisionLabel','identityNote','checkedAt','pricing','coordinateUnresolved']);
+const allowed = new Set(['id','name','developer','address','category','lat','lon','source','approximate','precisionLabel','identityNote','checkedAt','pricing','coordinateUnresolved','officialWebsite']);
 export function validateDataset(data) {
  if(data?.schemaVersion!==1||!Array.isArray(data.homes)||data.homes.length>2000)throw Error('Неверный формат списка ЖК');
  const ids=new Set();
@@ -13,8 +13,10 @@ export function validateDataset(data) {
   if(h.coordinateUnresolved!==undefined&&typeof h.coordinateUnresolved!=='boolean')throw Error('Неверный статус положения ЖК');
   if(h.coordinateUnresolved&&!h.approximate)throw Error('Неустановленная точка должна быть приблизительной');
   if(h.pricing!==undefined)validatePricing(h.pricing);
-  if(h.category!=='home'||!Number.isFinite(h.lat)||!Number.isFinite(h.lon)||h.lat<56.8||h.lat>57.5||h.lon<65||h.lon>66.2)throw Error('Координаты должны быть в поддерживаемой области Тюмени и окрестностей');
-  if(typeof h.source!=='string'||!/^https:\/\/(www\.)?openstreetmap\.org\//.test(h.source))throw Error('Нужен источник координат OpenStreetMap');
+  const unlocated=h.lat===null&&h.lon===null&&h.coordinateUnresolved===true&&h.approximate===true;
+  if(h.category!=='home'||(!unlocated&&(!Number.isFinite(h.lat)||!Number.isFinite(h.lon)||h.lat<56.8||h.lat>57.5||h.lon<65||h.lon>66.2)))throw Error('Координаты должны быть в поддерживаемой области Тюмени и окрестностей');
+  if(!(unlocated&&h.source===null)&&(typeof h.source!=='string'||!/^https:\/\/(www\.)?openstreetmap\.org\//.test(h.source)))throw Error('Нужен источник координат OpenStreetMap');
+  if(h.officialWebsite!==undefined&&(!safeWebsite(h.officialWebsite)||h.officialWebsite.length>2000))throw Error('Нужен официальный HTTPS-сайт');
   if(typeof h.approximate!=='boolean')throw Error('Укажите точность координат');
   for(const k of ['precisionLabel','identityNote','checkedAt'])if(h[k]!==undefined&&(typeof h[k]!=='string'||h[k].length>1200))throw Error('Неверные сведения о координатах');
  }

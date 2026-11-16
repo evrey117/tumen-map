@@ -6,14 +6,14 @@ async function setup(page,getData=()=>data){
  await page.route(/^https:\/\//,r=>r.abort());
  await page.route(central,r=>r.fulfill({json:getData()}));
  await page.route('**/admin-config.json*',r=>r.fulfill({json:{workflowEnabled:true}}));
- await page.goto('/');await expect(page.locator('.home-card')).toHaveCount(17);
+ await page.goto('/');await expect(page.locator('.home-card')).toHaveCount(data.homes.length);
 }
 for(const mobile of [false,true])test(`all 17 cards show five sourced prices, missing values and official links (${mobile?'mobile':'desktop'})`,async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));if(mobile)await page.setViewportSize({width:390,height:844});await setup(page);
  if(!mobile){await page.locator('.custom-marker[title="Румянский"]').click();await expect(page.locator('#detail .price-row')).toHaveCount(5);await page.locator('#detail .close').click();}
- for(const home of data.homes){
+ for(const home of data.homes.filter(h=>h.pricing)){
   await page.locator('.home-card').filter({hasText:home.name}).click();
-  const card=page.locator('#detail');await expect(card).toBeVisible();await expect(card.locator('.housing-prices h3')).toHaveText('Найденные цены квартир');
+  const card=page.locator('#detail');await expect(card).toBeVisible();await expect(card.locator('.housing-prices h3')).toHaveText('Цены квартир');
   await expect(card.locator('.price-row')).toHaveCount(5);
   for(const key of Object.keys(PRICE_CATEGORIES)){const entry=home.pricing.categories[key],row=card.locator(`[data-price-category="${key}"]`);await expect(row.locator('strong')).toHaveText(formatPrice(entry.amount));if(entry.url)await expect(row.locator('a')).toHaveAttribute('href',entry.url);}
   await expect(card.locator('.official-website')).toHaveAttribute('href',home.pricing.website);await expect(card.locator('time')).toHaveText('01.11.2026');

@@ -33,7 +33,7 @@ def main():
     data_path = ROOT / 'public/data/residential.json'
     dataset = json.loads(data_path.read_text())
     homes = {h['id']: h for h in dataset['homes']}
-    assert set(homes) == set(IDS.values()), 'Unexpected housing IDs; review mapping'
+    assert set(IDS.values()).issubset(homes), 'Unexpected housing IDs; review mapping'
     populated = 0
     conflicts = []
     for summary in sheets['Цены для карты'][1:]:
