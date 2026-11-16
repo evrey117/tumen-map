@@ -1,6 +1,15 @@
 name: Deploy map to GitHub Pages
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'public/data/**'
+      - 'src/**'
+      - 'index.html'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/pages.yml'
 permissions:
   contents: read
   pages: write
