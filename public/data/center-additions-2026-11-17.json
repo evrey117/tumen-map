@@ -1,0 +1,158 @@
+{
+  "checkedAt": "2026-11-17",
+  "responses": {
+    "pervomayskaya-1a": [
+      {
+        "place_id": 215834038,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 86482202,
+        "lat": "57.1573199",
+        "lon": "65.5424422",
+        "category": "place",
+        "type": "neighbourhood",
+        "place_rank": 24,
+        "importance": 0.08006223926146332,
+        "addresstype": "neighbourhood",
+        "name": "Жилой комплекс \"1А Первомайская\"",
+        "display_name": "Жилой комплекс \"1А Первомайская\", Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "neighbourhood": "Жилой комплекс \"1А Первомайская\"",
+          "suburb": "Дом Печати",
+          "city_district": "Центральный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1568559",
+          "57.1578393",
+          "65.5416406",
+          "65.5432909"
+        ]
+      }
+    ],
+    "white-house": [
+      {
+        "place_id": 215797020,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1052613964,
+        "lat": "57.1554665",
+        "lon": "65.5385266",
+        "category": "building",
+        "type": "apartments",
+        "place_rank": 30,
+        "importance": 6.223926146329468e-05,
+        "addresstype": "building",
+        "name": "ЖК White house",
+        "display_name": "ЖК White house, 8, Первомайская улица, Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "building": "ЖК White house",
+          "house_number": "8",
+          "road": "Первомайская улица",
+          "suburb": "Дом Печати",
+          "city_district": "Центральный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1549980",
+          "57.1557916",
+          "65.5377957",
+          "65.5388682"
+        ]
+      }
+    ],
+    "templin": [
+      {
+        "place_id": 214613888,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 36820346,
+        "lat": "57.1580077",
+        "lon": "65.5615123",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05339557259479664,
+        "addresstype": "residential",
+        "name": "улица Циолковского",
+        "display_name": "улица Циолковского, Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625002, Россия",
+        "address": {
+          "road": "улица Циолковского",
+          "suburb": "Дом Печати",
+          "city_district": "Центральный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625002",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1565239",
+          "57.1595314",
+          "65.5585221",
+          "65.5645226"
+        ]
+      }
+    ],
+    "rechnoy-port": [
+      {
+        "place_id": 215790096,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1083474933,
+        "lat": "57.1632431",
+        "lon": "65.5650686",
+        "category": "landuse",
+        "type": "residential",
+        "place_rank": 24,
+        "importance": 0.08006223926146332,
+        "addresstype": "residential",
+        "name": "ЖК Речной порт",
+        "display_name": "ЖК Речной порт, Дом Печати, Центральный административный округ, Тюмень, городской округ Тюмень, Тюменская область, Уральский федеральный округ, 625000, Россия",
+        "address": {
+          "residential": "ЖК Речной порт",
+          "suburb": "Дом Печати",
+          "city_district": "Центральный административный округ",
+          "city": "Тюмень",
+          "county": "городской округ Тюмень",
+          "state": "Тюменская область",
+          "ISO3166-2-lvl4": "RU-TYU",
+          "region": "Уральский федеральный округ",
+          "postcode": "625000",
+          "country": "Россия",
+          "country_code": "ru"
+        },
+        "boundingbox": [
+          "57.1623194",
+          "57.1638126",
+          "65.5624993",
+          "65.5676549"
+        ]
+      }
+    ]
+  },
+  "templinOfficialPoint": {
+    "lat": 57.15876,
+    "lon": 65.560729,
+    "source": "https://ludi-ludi.ru/projects/templin/",
+    "selector": "data-coords=\"65.560729, 57.158760\"; data-map-title=\"Темплин\"",
+    "rejectedGeocoder": "street centroid"
+  }
+}

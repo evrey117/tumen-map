@@ -1483,6 +1483,214 @@
           }
         }
       }
+    },
+    {
+      "id": "pervomayskaya-1a",
+      "name": "Квартал 1А Первомайская",
+      "developer": "Брусника",
+      "address": "Первомайская / Советская / Сакко",
+      "category": "home",
+      "lat": 57.1573199,
+      "lon": 65.5424422,
+      "source": "https://www.openstreetmap.org/way/86482202",
+      "approximate": true,
+      "precisionLabel": "Центр территории квартала в OSM; не вход в корпус",
+      "identityNote": "Квартал на пересечении Первомайской, Советской и Сакко. На официальном сайте предложения обозначены как апартаменты. Метка по центру одноимённой территории OSM; не офис продаж.",
+      "checkedAt": "2026-11-17T07:46:57.585705+00:00",
+      "officialWebsite": "https://tyumen.brusnika.ru/projects/1a/",
+      "pricing": {
+        "checkedAt": "2026-11-17",
+        "website": "https://tyumen.brusnika.ru/projects/1a/",
+        "notes": "Комплекс добавлен на карту 17.11.2026. Цены конкретных предложений пока не проверены. Проект с апартаментами; юридический статус помещения уточняется отдельно.",
+        "categories": {
+          "studio": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/1a/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "one": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/1a/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "two": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/1a/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "three": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/1a/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "four": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/1a/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          }
+        }
+      }
+    },
+    {
+      "id": "white-house",
+      "name": "White House",
+      "developer": "Newton",
+      "address": "Первомайская, 8",
+      "category": "home",
+      "lat": 57.1554665,
+      "lon": 65.5385266,
+      "source": "https://www.openstreetmap.org/way/1052613964",
+      "approximate": false,
+      "precisionLabel": "Адресное здание ЖК в OpenStreetMap",
+      "identityNote": "Адрес и название подтверждены официальным сайтом застройщика. Метка по центру здания в OpenStreetMap.",
+      "checkedAt": "2026-11-17T07:46:57.585720+00:00",
+      "officialWebsite": "https://newton.ru/white-house",
+      "pricing": {
+        "checkedAt": "2026-11-17",
+        "website": "https://newton.ru/white-house",
+        "notes": "Комплекс добавлен на карту 17.11.2026. Цены конкретных предложений пока не проверены.",
+        "categories": {
+          "studio": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://newton.ru/white-house",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "one": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://newton.ru/white-house",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "two": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://newton.ru/white-house",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "three": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://newton.ru/white-house",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "four": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://newton.ru/white-house",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          }
+        }
+      }
+    },
+    {
+      "id": "templin",
+      "name": "Темплин",
+      "developer": "Люди",
+      "address": "Циолковского, 1а",
+      "category": "home",
+      "lat": 57.15876,
+      "lon": 65.560729,
+      "source": "https://www.openstreetmap.org/?mlat=57.15876&mlon=65.560729#map=18/57.15876/65.560729",
+      "approximate": true,
+      "precisionLabel": "Точка проекта с официальной карты застройщика; не вход в дом",
+      "identityNote": "Координаты 57.158760, 65.560729 указаны на официальной странице проекта в data-coords с названием «Темплин». Ответ геокодера с центром улицы отклонён. Ссылка координат открывает эту точку в OSM. Офис на Республики не используется.",
+      "checkedAt": "2026-11-17T07:46:57.585734+00:00",
+      "officialWebsite": "https://ludi-ludi.ru/projects/templin/",
+      "pricing": {
+        "checkedAt": "2026-11-17",
+        "website": "https://ludi-ludi.ru/projects/templin/",
+        "notes": "Комплекс добавлен на карту 17.11.2026. Цены конкретных предложений пока не проверены.",
+        "categories": {
+          "studio": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://ludi-ludi.ru/projects/templin/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "one": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://ludi-ludi.ru/projects/templin/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "two": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://ludi-ludi.ru/projects/templin/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "three": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://ludi-ludi.ru/projects/templin/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "four": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://ludi-ludi.ru/projects/templin/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          }
+        }
+      }
+    },
+    {
+      "id": "rechnoy-port",
+      "name": "Речной порт",
+      "developer": "Брусника",
+      "address": "Причальная улица",
+      "category": "home",
+      "lat": 57.1632431,
+      "lon": 65.5650686,
+      "source": "https://www.openstreetmap.org/way/1083474933",
+      "approximate": true,
+      "precisionLabel": "Центр территории ЖК в OSM; не вход в корпус",
+      "identityNote": "Район «Речной порт» от Брусники на Причальной улице. Метка по центру одноимённой территории OSM; корпуса занимают большую территорию.",
+      "checkedAt": "2026-11-17T07:46:57.585740+00:00",
+      "officialWebsite": "https://tyumen.brusnika.ru/projects/rechnoj-port/",
+      "pricing": {
+        "checkedAt": "2026-11-17",
+        "website": "https://tyumen.brusnika.ru/projects/rechnoj-port/",
+        "notes": "Комплекс добавлен на карту 17.11.2026. Цены конкретных предложений пока не проверены.",
+        "categories": {
+          "studio": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/rechnoj-port/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "one": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/rechnoj-port/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "two": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/rechnoj-port/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "three": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/rechnoj-port/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          },
+          "four": {
+            "amount": null,
+            "checkedAt": "2026-11-17",
+            "url": "https://tyumen.brusnika.ru/projects/rechnoj-port/",
+            "reason": "Цены конкретных предложений по этой категории пока не проверены."
+          }
+        }
+      }
     }
   ]
 }

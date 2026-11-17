@@ -5,7 +5,7 @@ const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url)));
 const data=read('../public/data/residential.json'),audit=read('../public/data/price-refresh-2026-11-16.json');
 test('current price rows retain exact observed values and dates; failed checks cannot become fresh quotes',()=>{
  let verified=0,retained=0;
- for(const h of data.homes){
+ for(const h of data.homes.filter(h=>audit.selected[String(h.id)])){
   const status=audit.selected[String(h.id)];assert.equal(Object.keys(status).length,5);
   for(const [key,s]of Object.entries(status)){
    const price=h.pricing.categories[key];
